@@ -1,0 +1,35 @@
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin overlay($bg-color) {
+	&:before {
+		content: "";
+		position: absolute;
+		background: $bg-color;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+	&:hover {
+		&:before {
+			opacity: 0.5;
+		}
+	}
+
+}
+
+
+
+

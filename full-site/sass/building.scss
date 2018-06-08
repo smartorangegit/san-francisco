@@ -1,0 +1,421 @@
+.main_page {
+  height: auto;
+}
+.clearfix::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.content_building{
+  background: url('../img/main_bg.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  .content_subname{
+    text-transform: inherit;
+    p{
+      margin-bottom: 14px;
+    }
+  }
+}
+  .content_wrap{
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 36px 20px;
+  }
+  .status_wrap .content_name{
+    width: 20%;
+    float: left;
+  }
+  .status_content{
+    width: 80%;
+    float: left;
+    padding-top: 10px;
+    padding-left: 16px;
+    box-sizing: border-box;
+}
+  .status_progress_name{
+    width: 100px;
+    float: left;
+    li{
+      padding: 12px 0;
+    }
+  }
+  svg.button{
+    padding: 0;
+    margin: 6px 30px;
+  }
+  .status_timebar{
+    float: left;
+    padding-top: 4px;
+  }
+  .status_img {
+    width: 80%;
+    height: 100%;
+    float: left;
+    position: relative;
+  }
+  .status_level{
+    width: 20%;
+    float: left;
+    text-align: center;
+    padding-top: 50px;
+    .content_subname{
+      font-size: 40px;
+      margin: 6px auto;
+    }
+    .content_text{
+      padding: 0;
+    }
+  }
+  .status_picture{
+    clear: both;
+    height: 315px;
+    margin-bottom: 35px;
+  }
+  img.house_status{
+    position: absolute;
+    z-index: 0;
+  }
+  img.house_full{
+    position: absolute;
+    z-index: 1;
+  }
+  .building_text_1 {
+    width: 80%;
+    // float: left;
+  }
+  .photo-box {
+    margin: 30px auto;
+    position: relative;
+    clear: both;
+    list-style: none;
+  }
+  figure {
+    position: relative;
+  	float: left;
+  	overflow: hidden;
+  	margin: 10px;
+  	width: 480px;
+  	height: 375px;
+    background:url('../img/hover1.png') repeat;
+  	text-align: center;
+  	cursor: pointer;
+    box-sizing: border-box;
+  }
+  figure img {
+  	position: relative;
+  	display: block;
+    margin: 0 auto;
+    padding: 16px 16px 115px 16px;
+    box-sizing: border-box;
+  	min-height: 100%;
+  	max-width: 100%;
+  	opacity: 1;
+  }
+  figure figcaption {
+  	padding: 1em;
+  	color: #fff;
+  	text-transform: uppercase;
+  	font-size: 1.25em;
+  	-webkit-backface-visibility: hidden;
+  	backface-visibility: hidden;
+    box-sizing: border-box;
+  }
+  figure figcaption,
+  figure figcaption > a {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+  }
+  figure.effect-oscar p {
+    padding: 0 8px 8px 4px;
+    font-family: "StTransmission-300Light";
+    text-transform: none;
+    color: #b2b2b2;
+  }
+
+  .fig_wrap {
+    width: calc(100% - 32px);
+    position: absolute;
+    height: 104px;
+    left: 16px;
+    bottom: 16px;
+    background:url('../img/main_bg.jpg');
+  }
+  .build_date {
+    font-family: "AkzidenzGroteskPro-LightCn";
+    position: absolute;
+    top: 298px;
+    right: 40px;
+    transition: 0.5s;
+    letter-spacing: 2px;
+    z-index: 2;
+  }
+  a.build {
+    border: none;
+    text-decoration: none;
+  }
+  a.build:focus{
+    outline: none;
+  }
+                                            // styles for developers
+.content_developer{
+    background: url('../img/dev_bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 30px;
+    .content_wrap{
+      height: calc(100% - 44px);
+      width: auto;
+    }
+    .content_text p{
+      margin-bottom: 16px;
+    }
+    .button.docum__link {
+    margin: 30px auto 10px;
+    max-width: 320px;
+    padding: 14px 20px;
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+  }
+.developer__top{
+  // display: flex;
+  // display: -webkit-flex;
+  // justify-content: space-between;
+  // -webkit-justify-content: space-between;
+}
+.developer_item {
+  width: 230px;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 10px;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+.developer_item .content_text {
+  padding: 16px 0 0 0;
+}
+.logo_proj {
+  display: inline-block;
+  width: 20%;
+  box-sizing: border-box;
+  text-align: center;
+  text-align: -webkit-center;
+  vertical-align: middle;
+}
+.button.docum__link{
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  padding: 14px 30px;
+  text-align: center;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.logo_proj img {
+  width: 85%;
+  height: 100%;
+}
+figure.effect-oscar p {line-height: 1;}
+.developer_box {
+  position: relative;
+  .content_text{
+    text-align: center;
+    color: white;
+    font-size: 24px;
+  }
+
+}
+.bx-wrapper {margin: 20px auto 50px;}
+.proj_slider {
+  display: flex;
+  align-items: center;
+}
+.developer_box-controls {
+  position: absolute;
+  width: 14px;
+  height: 25px;
+  top: 50%;
+  background-image: url('/img/bx-slider_left-right_spritesheet.png');
+  background-repeat: no-repeat;
+}
+.developer_box-controls:hover {
+  cursor: pointer;
+}
+.developer_box-controls_prev-slide {
+  left: 0;
+}
+.developer_box-controls_next-slide {
+  right: 0;
+  background-position: -14px 0px;
+}
+
+.logo_proj_rybalsky img{
+  width: 55%;
+}
+
+.logo_proj_new-york {
+  margin-bottom: -10px;
+}
+
+.logo_proj_bristol {
+  margin-bottom: 30px;
+}
+
+.logo_proj_chicago {
+  margin-bottom: -17px;
+}
+
+.logo_proj_einstein img {
+  width: 55%;
+}
+
+.logo_proj_resident {
+  margin-bottom: -20px;
+}
+.flattype_form.form {
+    display: block;
+    position: static;
+    transform: none;
+    margin: 0 auto 30px;
+    background: none;
+    border: 1px solid #666;
+}
+
+@media only screen and (max-width:1200px){
+  .content_building {
+    .content_wrap{
+      width: 100%;
+    }
+  }
+  .developer_item{
+    // height: 200px;
+  }
+}
+@media only screen and (max-width:1060px) and (min-width:769px){
+  .status_wrap .content_name {
+    width: 100%;
+    float: none;
+}
+img.house_status {
+    width: 100%;
+}
+img.house_full {
+    width: 100%;
+}
+}
+
+@media only screen and (max-width:768px) {
+.content_building {
+  .content_wrap{
+    max-width: 100%;
+    padding: 36px 6px;
+  }
+  .building_text_1, .building_text_2{
+    width: 100%;
+    float: none;
+  }
+  .build_date{
+    top:22px;
+    font-size: 16px;
+  }
+  .photo-box {
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  figure img {
+  	min-height: 0;
+
+  }
+  figure.effect-oscar {
+    width: 100%;
+    max-width: 400px;
+    float: none;
+    height: auto;
+    h2.content_subname{
+      font-size: 20px;
+      margin: 0;
+    }
+  }
+}
+.status_wrap .content_name {
+  width: 100%;
+  float: none;
+}
+.status_content {
+    width: 100%;
+    float: none;
+    padding-left: 0px;
+}
+.status_progress_name {
+    width: 89px;
+    .content_text {
+      font-size: 14px;
+    }
+}
+.status_buttons{
+  clear: both;
+  text-align: center;
+}
+svg.button {
+    padding: 0;
+    margin: 2px 0px;
+}
+.status_img {
+    width: 100%;
+    height: 106px;
+    float: none;
+    margin: 30px auto;
+}
+img.house_status, img.house_full{
+  max-width: 100%;
+  max-height: 100%;
+  bottom: 0;
+}
+.status_level {
+    width: 100%;
+    float: none;
+    padding-top: 0px;
+}
+.status_picture {
+    clear: both;
+    height: auto
+  }
+
+                                              // stylesfor developers
+.content_developer{
+    .content_wrap{
+    }
+.developer_item {
+  width: 100%;
+  float: none;
+  padding: 20px;
+  height: 200px;
+  box-sizing: border-box;
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.developer_box{
+  margin-bottom: 30px;
+}
+}
+.logo_proj {
+  width: 100%;
+  float: none;
+  margin-top: 20px;
+}
+}

@@ -1,0 +1,24 @@
+#RewriteCond %{REQUEST_URI} !\?
+#RewriteCond %{REQUEST_URI} !\&
+#RewriteCond %{REQUEST_URI} !\=
+#RewriteCond %{REQUEST_URI} !\.
+#RewriteCond %{REQUEST_URI} !\/$
+RewriteEngine On
+#Redirect 301 /news/mi_stali_partnerom_it_weekend http://san.smarto.com.ua/news/mi-stali-partnerom-it-weekend/
+ 
+<FilesMatch .(json|cur|ico|png|css|js|jpg|jpeg|pdf|txt|xml)$> 
+RewriteEngine off 
+Header set Cache-Control "max-age=84600, public"
+</FilesMatch>
+
+<FilesMatch "(action|ajax|mini|url|application|pdf_save_application|update_news|update_hod|multy_img|del_img_hod|del_empty).php"> 
+RewriteEngine off 
+</FilesMatch>
+
+
+RewriteCond %{HTTP_HOST} ^www\.(.*)$
+RewriteRule ^(.*)$ http://%1/$1 [L,R=301]
+
+#RewriteRule ^(.*[^\/])$ /$1/ [R=301,L] 
+RewriteRule ^(.*)$ index.php?%{REQUEST_URI} [QSA,L]  
+

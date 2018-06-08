@@ -1,0 +1,17 @@
+.nav-pills {
+    display: block;
+    margin: 0 auto;
+    width: 800px;
+    background-color: aliceblue;
+  }
+.adm {
+  width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+form select {
+    width: 160px;
+    outline: 1px solid blue;
+    height: 30px;
+    margin-top: 30px;
+}

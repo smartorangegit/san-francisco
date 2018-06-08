@@ -1,0 +1,253 @@
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 768px)
+and (orientation : portrait) {
+  .portrait {
+    display: block!important;
+  }
+  // block for portrait orientation
+
+  .portrait {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,53,170,1)
+  }
+  .port-message {
+    width: 300px;
+    color: white;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "PFDinTextUniversal-Regular";
+    padding-top: 150px;
+  }
+  .port-message img {
+    width: 60px;
+    display: block;
+    margin: 0 auto;
+  }
+  // end
+}
+
+@media only screen and (min-width : 320px) and (max-width : 768px)
+and (orientation : landscape) {
+
+html, body {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  // overflow: hidden!important;
+}
+body#class_beg{
+  height: 100%;
+}
+body#class_beg .header_choice1{
+  min-height: 100%;
+}
+.header.choice1 .header-bottom{
+  padding-top:48px;
+}
+
+.timeline_ryb {
+    max-width: 250px;
+  }
+#content .header .wrap_header {
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 10px;
+}
+
+#class_beg footer {
+  position: absolute;
+  display: none;
+}
+.header.choice {
+  height: 100%;
+  width: 100%;
+  background: url('../img/choice.jpg');
+  background-size:cover;;
+  position: static;
+    .wrap_header {
+      width: 100%;
+      height: 100%;
+      }
+    }
+    .choice-name {
+      top: 40px;
+    }
+    .choice-name-kom {
+      max-width: 180px;
+    }
+    .choice-item {
+      width: 100px;
+      font-size: 8px;
+      h3, .newh3 {
+        font-size: 14px;
+      }
+    }
+    .choice-svg {
+      svg{
+        width: 100%;
+        height: auto;
+      }
+      }
+    .choice--1{
+      left: 75vw;
+      top: 33vh;
+    }
+    .choice--3{
+      top: 42vh;
+      left: 66vw;
+    }
+    .choice--5{
+      top: 56vh;
+      left: 45vw;
+    }
+    .choice--7{
+      top: 14vh;
+      left: 63vw;
+    }
+    .choice--9{
+      top: 24vh;
+      left: 47vw;
+    }
+    .choice--11{
+      top: 41vh;
+      left: 28vw;
+    }
+    .choice--13{
+      top: 2vh;
+      left: 49vw;
+    }
+    .choice--15{
+      top: 13vh;
+      left: 31vw;
+    }
+    .choice--17{
+      top: 24vh;
+      left: 14vw;
+    }
+  .filter-appart {
+    float: none;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+.header.choice1{
+  padding-bottom: 30px;
+}
+.ch-left {
+  width: 145px;
+}
+.logo__1{
+  margin-top: 40px;
+}
+.logo__1 img {
+  width: 100%;
+  max-width: 140px;
+}
+.ch-level{
+  margin: 60px 0 40px;
+  font-size: 16px;
+  // text-align: right;
+}
+.appart-name {
+  margin-top: 30px;
+}
+.ch-center .ch-sec{
+  margin-top: 30px;
+}
+
+
+a.save{
+  white-space: normal;
+}
+.ch-imgsec {
+  margin-top: 60px;
+}
+
+  // убрала дроппозиции в отдельный файл
+.ch-right{
+  width: 160px;
+  padding-top: 40px;
+  .ch-sec {
+    margin-bottom: 30px;
+    font-size: 18px;
+  }
+  }
+.appart_square {
+  font-size: 16px;
+}
+.appart_square tr {
+  line-height: 22px;
+}
+
+.foot-wrap {
+  width: 468px;
+  .allright {
+    float: left;
+    font-size: 8px;
+    line-height: 20px;
+    a img {
+      width: 16px!important;
+    }
+  }
+  .web {
+    padding-top: 0px;
+    float: right;
+    img{
+        width: 30px;
+      }
+    }
+    span{
+      font-size: 8px;
+    }
+  }
+    #forms_floor {
+      #img_copy{
+        .span-img-popup {
+          font-size: 16px;
+          padding: 0;
+          margin-top: 38px;
+        }
+        // img {
+        //   height: 100%;
+        //   padding: 0!important;
+        //   padding-top: 10px;
+        //   width: 100%;
+        //   margin: 0 auto;
+        // }
+      }
+
+    }
+
+  .choice-name-kom {
+    max-width: 170px;
+  }
+}
+@media only screen and (min-width : 320px) and (max-width : 768px){
+  .commercProperty__container {
+    flex-direction: column;
+  }
+  .commerc__features {
+    .commercProperty__container {
+      flex-direction: column-reverse;
+    }
+  }
+  .commercProperty__image {
+    margin: 0 auto;
+    width: 320px;
+  }
+  .family-port__descr_blue-block h3 {
+    text-align: left;
+  }
+  .commerc__legend {
+    max-width: 100%;
+    ul {
+      margin-left: 0px;
+    }
+  }
+}

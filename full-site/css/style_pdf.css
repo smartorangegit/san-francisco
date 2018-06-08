@@ -1,0 +1,288 @@
+ body {
+  font-family: "gothamreg55";
+  width: 100%;
+  color: #000;
+}
+ 
+
+.ch-left {
+  width: 240px;
+  height: 85%;
+ float:left;
+ text-align: center;
+ color: #000;
+}
+.ch-right {
+/*width: 200px; height: 80%;*/
+max-width: 200px;
+min-width:180px;
+ height: 90%;
+ float:right;
+ text-align: center;
+ color: #000;
+
+}
+.ch-right2 {
+ float:right;
+ text-align: center;
+ color: #000;
+ position:absolute;
+ top:0px;
+ right:60px;
+}
+.ch-sec {
+height:30px;
+margin-top:-30px;
+padding-bottom:20px;
+
+}
+.ch-sec2 {
+height:10px;
+margin-top:-30px;
+}
+.ch-sec3 {
+height:10px;
+margin-top:-50px;
+}
+.ch-sec5 {
+margin-top:-40px;
+}
+.left-sp{
+	text-align:left;
+	float:left;
+}
+.right-sp{
+	text-align:right;
+}
+.ch-sec-bg{
+
+/*background-color:#ebecf1;*/	
+	
+}
+.ch-sec .ch-text {
+	padding:0px 10px;
+    font-family: "gothammedium";
+  
+    color: #6b6b6b;
+    font-size: 18px;
+	    text-align: center;
+	  margin-top: -35px;
+}
+
+.ch-text-2 {
+    font-family: "gothammedium";
+    color: #6b6b6b;
+    font-size: 22px;
+	
+	    text-align: center;
+}
+.ch-sec .ch-text2 {
+	padding:10px;
+	font-family: "gothammedium";
+
+    color: #000;	
+	    text-align: center;
+    font-size: 30px;
+	font-weight: bold;
+    margin-top: -1px;
+}
+.ch-text3{
+	padding:10px;
+	font-family: "gothamreg";
+    text-transform: uppercase;
+    color: #6b6b6b;
+	    font-size: 18px;
+		text-align:left;
+		padding-left:20px;
+}
+.b-text{font-size: 25px; 
+font-weight: bold; 
+font-family: "gothammedium";
+}
+.ch-a{
+	float:left;
+	
+}
+.ch-b{
+	float:right;
+	
+}
+.ch-sec .ch-sec-num {
+    font-size: 70px;
+	line-height:2;
+}
+
+.ch-center svg {
+    width: 100%;
+   
+}
+.ch-center{
+	display:block;
+	float:left;
+	width:61%;
+	height:80%;
+	
+}
+
+.compass,.call{
+	width: 50%;
+    float: left;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+footer {
+    opacity: 0.8;
+    bottom: 0;
+}
+.footer, footer {
+    width: 100%;
+    position: absolute;
+    height: 44px;
+    opacity: 0.8;
+    bottom: 0;
+}
+.foot-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+.allright {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ch-imgsec{
+width: 250px;
+padding:20px 0px;	
+}
+.ch-maplevel{
+	text-align:center;
+	margin-left:50px;
+	vertical-align:middle;
+	padding-top:0px;
+	margin-top:-10px;
+
+}
+
+.center{
+position: absolute;
+text-align:center;
+vertical-align:middle;
+}
+.clear{
+clear: both;	
+}
+.center4{
+width:100%;	
+}
+
+/* line 1642, ../sass/choise.scss */
+.ch-table .table-item1, .ch-table .table-item3, .ch-table .table-item5 {
+  text-align: left;
+
+  width: 164px;
+	float: left;
+	  font-family: "gothammedium";
+	  color: #6b6b6b;
+}
+/* line 1647, ../sass/choise.scss */
+.ch-table .table-item2, .ch-table .table-item4, .ch-table .table-item6 {
+  text-align: right;
+ /* padding-left: 10px;*/
+  width: 75px;
+  float: left;
+  font-weight:bold;
+  font-family: "gothammedium";
+}
+/* line 1653, ../sass/choise.scss */
+.table-item1-li{
+	font-size: 30px;
+	font-weight: bold;
+	padding:20px 0px 5px;
+	font-family: "gothammedium";
+}
+.ch-table li {
+  list-style: none;
+    text-transform: capitalize;
+  line-height: 35px; 
+}
+.ch-table ul {
+  padding:0px 0px 0px 0px;
+      margin: 0px;
+	  margin-top:5px;
+	    font-size: 18px;
+		
+}
+
+
+ TABLE {
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    border: 0px solid #888888; /* Рамка вокруг таблицы */
+   }
+ .table   TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+    border: 2px solid green; /* Рамка вокруг ячеек */
+   }
+   .tit1, .tit2{
+    font-weight: bold;
+	width: 132px;
+    float: left;
+	font-size: 18px;
+	line-height: 25px;
+   }
+    .tit1{
+	text-align: right;
+	 padding-right:10px;	
+	}
+   .tit2{
+	 border-left: 1px solid #888888;
+	 width: 80px;
+	 text-align: left;
+	 padding-left:10px;
+   }
+   .chimg{
+   width: 100%; 
+   padding:40px 0px 30px 50px;
+   }
+   .logo, .logo2{
+padding:30px 0px 32px 0px;
+   } .logo2{
+	padding:200px 0px 32px 0px;   
+   }
+   .logo-img{
+      max-width:180px;
+	  max-height:180px;
+   }
+   .block-foot{
+       margin-top: -20px;
+	   }
+	   .footer-img{
+	   /* margin-top: -10px;*/
+		padding:0px 0px;
+		margin-bottom:-50px;
+	   }
+.img-center{
+max-height:590px;
+ max-width:100%;
+ padding-left:10px;
+} 
+
+
+.ch-page1{
+width: 100%;
+height:	80%;
+padding:20px 20px 40px 20px;
+	
+}
+.ch-{
+height:	50px;	
+	
+}
+
+.floor_pdf_heading {
+    font-family: "gothammedium";
+    font-size: 35px;
+    width: 100%;
+    text-align: center;
+}
+

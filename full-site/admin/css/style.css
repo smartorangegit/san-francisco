@@ -1,0 +1,296 @@
+/* Базовый контейнер табов */
+.tabs {
+    min-width: 320px;
+    max-width: 800px;
+    padding: 0px;
+    margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+    display: none;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+.tabs>section>p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    color: #383838;
+    /* прикрутим анимацию */
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* Прячем чекбоксы */
+input#tab1,input#tab2,input#tab3,input#tab4 {
+    display: none;
+    position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+    width: 178px;
+    display: inline-flex;
+    margin: 0 0 -1px;
+    padding: 15px 25px;
+    font-weight: 600;
+    text-align: center;
+    color: #aaa;
+    border: 0px solid #ddd;
+    border-width: 1px 1px 1px 1px;
+    background: #f1f1f1;
+    border-radius: 3px 3px 0 0;
+
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+    font-family: fontawesome;
+    font-weight: normal;
+    margin-right: 10px;
+}
+.tabs>label[for*="1"]:before {
+    /*content: "\f19a";*/
+}
+.tabs>label[for*="2"]:before {
+    /*content: "\f17a";*/
+}
+.tabs>label[for*="3"]:before {
+    /*content: "\f13b";*/
+}
+.tabs>label[for*="4"]:before {
+    /*content: "\f13c";*/
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>label:hover {
+    color: #888;
+    cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+    color: #555;
+    border-top: 1px solid #009933;
+    border-bottom: 1px solid #fff;
+    background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3, #tab4:checked~#content-tab4 {
+    display: block;
+}
+/* Убираем текст с переключателей
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+    .tabs>label {
+        font-size: 0;
+    }
+    .tabs>label:before {
+        margin: 0;
+        font-size: 18px;
+    }
+}
+/* Изменяем внутренние отступы
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+    .tabs>label {
+        padding: 15px;
+    }
+}
+.form-group{
+    display: grid;
+}
+section{
+
+}
+.bot_div{
+    width: 99.8%;
+    display: inline-flex;
+    border-bottom: 1px solid #ddd ;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.b_chi_1{
+    width:50%;
+    padding: 17px;
+}
+.b_chi_2{
+    width: 50%;
+    position: relative;
+    /*left: 240px;*/
+}
+.list_left{
+    width: 20%;
+    background: ghostwhite;
+}
+.list_right{
+    width: 20%;
+    background: ghostwhite;
+}
+.list_center{
+    width:60%;
+    text-align: center;
+    background: rgba(133, 133, 133, 0.51);
+}
+.obol{
+    display: inline-flex;
+    width: 100%;
+}
+
+/*кнопка наверх*/
+#go-top {
+    position: fixed;
+    bottom: 25px;
+    right: 70px;
+    text-align: center;
+    cursor:pointer;
+    display:none;
+    width: 80px;
+    height: 30px;
+    background: #c0c0c0;
+    line-height: 30px;
+    border-radius: 5px;
+}
+ul,li{
+    list-style-type: none;
+}
+
+#go-top:hover {
+    background: #333;
+    color: #fff;
+}
+.a_text{
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 5px;
+    font-family: Roboto-Regular;
+    font-size: 30px;
+    color: #013b69;
+    text-decoration: none;
+}
+
+.cont_b{
+    border-bottom: solid black 1px;
+
+}
+
+.cont_b>ul{
+    list-style-type:none;
+
+}
+#login>input, #logout>input{
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow:  0 1px 3px black;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+#login{
+    display: inline-grid;
+    margin: 20% 0 0 40%;
+}
+#logout{
+    display: inline-grid;
+    margin: 0 0 0 2.5%;
+}
+#login>input[type=submit]:hover{
+    background: #67b355;
+}
+#logout>input[type=submit]:hover{
+    background: #ff0f2f;
+    color: white;
+}
+.butt{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px #999;
+}
+.butt:hover{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #227217;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px black;
+}
+.butt_red{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #dc2728;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px #999;
+}
+.butt_red:hover{
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    background-color: #a10707;
+    border: none;
+    border-radius: 15px;
+    box-shadow: inset 0 1px 3px black;
+}
+a{
+    text-decoration: none;
+}
+form#del_news{
+    position: relative;
+    top: 165px;
+    right: 8px;
+
+}

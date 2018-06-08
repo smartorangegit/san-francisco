@@ -1,0 +1,85 @@
+@font-face{	font-family: "AkzidenzGroteskPro-Cn"; src: url("../fonts/AkzidenzGroteskPro-Cn.otf") format("opentype");	font-style: normal;	font-weight: normal;}
+@font-face{	font-family: "AkzidenzGroteskPro-LightCn"; src: url("../fonts/AkzidenzGroteskPro-LightCn.otf") format("opentype");	font-style: normal;	font-weight: 200;}
+@font-face{	font-family: "Kazmann"; src: url("../fonts/Kazmann Sans.ttf") format("truetype");	font-style: normal;	font-weight: normal;}
+@font-face{	font-family: "StTransmission-300Light"; src: url("../fonts/StTransmission-300Light.otf") format("opentype");	font-style: normal;	font-weight: 300;}
+@font-face{	font-family: "StTransmission-400Regular"; src: url("../fonts/StTransmission-400Regular.otf") format("opentype");	font-style: normal;	font-weight: 400;}
+
+$akz:         "AkzidenzGroteskPro-Cn";
+$akz-l :      "AkzidenzGroteskPro-LightCn";
+$kazman:      "Kazmann";
+$st-trans300: "StTransmission-300Light";
+$st-trans400: "StTransmission-400Regular";
+$white:       #d4d4d4;
+$red:         #ef4136;
+$grey:        #1a1a1a;
+$menu_bg:     #1b1717;
+
+@mixin gradient {
+background: -moz-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(27,23,23,0.65) 52%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%,rgba(27,23,23,0.65) 52%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(0,0,0,0) 0%,rgba(27,23,23,0.65) 52%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+}
+
+@mixin gradient_hov {
+background: -moz-linear-gradient(left, rgba(27,23,23,0.65) 0%, rgba(0,0,0,0) 52%, rgba(27,23,23,0.65) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, rgba(27,23,23,0.65) 0%,rgba(0,0,0,0) 52%,rgba(27,23,23,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, rgba(27,23,23,0.65) 0%,rgba(0,0,0,0) 52%,rgba(27,23,23,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#00000000',GradientType=1 );
+}
+
+@font-face {
+  font-family: 'icomoon'; src:  url('../fonts/icomoon.eot?7t0u5z');
+   src:  url('../fonts/icomoon.eot?7t0u5z#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?7t0u5z') format('truetype'),
+    url('../fonts/icomoon.woff?7t0u5z') format('woff'),
+    url('../fonts/icomoon.svg?7t0u5z#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 40px;
+}
+
+.icon-gym:before {content: "\e902";}
+.icon-transport:before {content: "\e903";}
+.icon-eating:before {content: "\e904";}
+.icon-rest:before {content: "\e905";}
+.icon-panarama:before {content: "\e906";}
+.icon-metro_l:before {content: "\e90e";}
+.icon-location:before {content: "\e90f";}
+.icon-adv1:before {content: "\e907";}
+.icon-adv3:before {content: "\e908";}
+.icon-adv4:before {content: "\e909";}
+.icon-adv5:before {content: "\e90a";}
+.icon-adv7:before {content: "\e90b";}
+.icon-adv8:before {content: "\e90c";}
+.icon-adv9:before {content: "\e90d";}
+.icon-near1:before {content: "\e910";}
+.icon-near2:before {content: "\e911";}
+.icon-near3:before {content: "\e912";}
+.icon-near4:before {content: "\e913";}
+.icon-near5:before {content: "\e914";}
+.icon-soc1:before {content: "\e91b";}
+.icon-soc2:before {content: "\e916";}
+.icon-soc3:before {content: "\e917";}
+.icon-ab2:before {content: "\e915";}
+.icon-ab4:before {content: "\e91a";}
+.icon-ab5:before {content: "\e900";}
+.icon-ab6:before {content: "\e919";}
+.icon-ab7:before {content: "\e918";}
+.icon-ab8:before {content: "\e91c";}
+.icon-ab9:before {content: "\e901";}
+.icon-ab11:before {content: "\e91d";}

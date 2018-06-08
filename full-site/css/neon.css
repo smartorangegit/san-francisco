@@ -1,0 +1,50 @@
+.neon, .neon1, .neon2, .neon3, .neon4{
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.neon{
+  background: url('../img/neon_logo.png');
+  background-size: 100% 100%;
+  animation: linear 2s infinite neon;
+}
+.neon1{
+  background: url('../img/neon_logo1.png');
+  background-size: 100% 100%;
+  animation-delay: 0.2s;
+  animation: linear 2s infinite neon;
+}
+.neon2{
+  background: url('../img/neon_logo2.png');
+  background-size: 100% 100%;
+  animation-delay: 0.4s;
+  animation: linear 2s infinite neon;
+}
+.neon3{
+  background: url('../img/neon_logo3.png');
+  background-size: 100% 100%;
+  animation-delay: 0.6s;
+  animation: linear 2s infinite neon;
+}
+.neon4{
+  background: url('../img/neon_open.png');
+  background-size: 100% 100%;
+  animation: linear 0.1s infinite open;
+}
+
+@keyframes neon {
+  0%{opacity: 0.2;}
+  25%{opacity: 0.5;}
+  50% {opacity: 1;  }
+  75%{opacity: 0.5;}
+  100%{opacity: 0;}
+}
+@keyframes open {
+  0{opacity: 1;}
+  25%{opacity: 0.5;}
+  50%{opacity: 1.0;}
+  75%{opacity: 0.5;}
+  100%{opacity: 1;}
+}

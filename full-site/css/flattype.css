@@ -1,0 +1,158 @@
+                                     /* commercial */
+.content_commerc .content_name{
+  width: 100%;
+  float: none;
+  margin-bottom: 10px;
+}
+.content_commerc .content_text{
+  margin: 15px auto;
+}
+.main_svg {
+  display: inline-block;
+  width: 78%;
+}
+.main_data {
+  display: inline-block;
+  width: 20%;
+  vertical-align: top;
+  text-align: center;
+}
+/*Commercial Form Start*/
+.commercial_form {
+  display: block;
+  position: static;
+  height: auto;
+  width: 320px;
+  margin: 0 auto;
+  background-color: transparent;
+  text-align: center;
+}
+
+.commercial_botom input {
+  display: block;
+  margin: 12px auto;
+  background-color: transparent;
+  outline: none;
+  width: 320px;
+  height: 40px;
+  font-family: "AkzidenzGroteskPro-LightCn";
+  font-size: 16px;
+  border: 1px solid #ffffff;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  padding: 0 0 0 20px;
+  box-sizing: border-box;
+  color: white;
+}
+
+.commercial_botom input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+.commercial_botom input::-moz-placeholder {
+  color: #ffffff;
+}
+.commercial_botom input:-ms-input-placeholder {
+  color: #ffffff;
+}
+.commercial_botom input:-moz-placeholder {
+  color: #ffffff;
+}
+
+.commercial_botom .content_text {
+  color: white;
+}
+
+.commercial_form_wraper {
+  display: inline-block;
+  width: 68%;
+}
+.form_submitions {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  text-align: center;
+}
+
+.commercial_botom .content_text {
+  padding: 10px 0px;
+  text-align: center;
+}
+
+.content.content_floorplan .commercial_botom .content_name {
+  text-align: center;
+  width: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .content.content_commerc{
+    height: auto;
+  }
+  .main_svg {
+    width: 100%;
+  }
+  .main_data {
+    width: 100%;
+  }
+  .form_submitions {
+    width: 100%;
+  }
+  .commercial_form_wraper {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  .commercial_form{
+    width: 100%;
+  }
+  .intl-tel-input{
+    display: block;
+    margin: 0 auto;
+  }
+  .commercial_botom input {
+    width: 100%;
+  }
+  .content_commerc .bottom_form_plan{
+    margin: 0 auto;
+  }
+  .content_commerc .bottom_form_plan .button{
+    padding: 10px 40px;
+  }
+}
+
+/* 1-komnatnie kvartiri */
+.content_flattype{
+  background: url(../img/main_bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.content_flattype .content_wrap{
+  padding: 30px;
+}
+.results_box__outer {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #666;
+  margin: 20px auto;
+  height: 450px;
+  box-sizing: border-box;
+}
+.content_flattype .results_box {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 20px;
+  float: none;
+  border: 1px solid #666;
+}
+.content_flattype .results_box th{
+width: 100px;
+}
+/* .flattype_form.form{
+  display: block;
+  position: static;
+  transform: none;
+  margin: 0 auto 30px;
+  background: none;
+  border: 1px solid #666;
+
+} */

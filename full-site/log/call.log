@@ -1,0 +1,186 @@
+
+
+[2018-02-20 12:10:11]
+Tel: +38(000)0000000
+
+HTTP/1.1 200 OK
+Server: nginx/1.8.1
+Date: Tue, 20 Feb 2018 10:10:11 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=8uza6LZszyeU4vKavSdq76d5xxEqkidF; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+Set-Cookie: BITRIX_SM_SALE_UID=0; expires=Fri, 15-Feb-2019 10:10:11 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_CC=Y; expires=Fri, 15-Feb-2019 10:10:11 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_NCC=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: BITRIX_SM_PK=%2F52%2F66be7720f6d13d9f83e3244888206244; path=/; HttpOnly
+Set-Cookie: BITRIX_SM_LOGIN=vitaliyzell%40gmail.com; expires=Wed, 25-Jan-2023 10:10:11 GMT; Max-Age=155520000; path=/
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'201','ID':'3358','error_message':'Лид добавлен','AUTH':'5d9a397d8451883e5d7ce11e876e3753'}
+
+
+[2018-02-20 13:29:03]
+Tel: +38(097)8978978
+
+HTTP/1.1 200 OK
+Server: nginx/1.8.1
+Date: Tue, 20 Feb 2018 11:29:03 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=bXYo9je07Q7I0KVP3JgZeTaJ7iBpmHl1; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+Set-Cookie: BITRIX_SM_SALE_UID=0; expires=Fri, 15-Feb-2019 11:29:03 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_CC=Y; expires=Fri, 15-Feb-2019 11:29:03 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_NCC=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: BITRIX_SM_PK=%2F54%2F072bfccc5206416d543e93edf14b6339; path=/; HttpOnly
+Set-Cookie: BITRIX_SM_LOGIN=gav.sqrt%40gmail.com; expires=Wed, 25-Jan-2023 11:29:03 GMT; Max-Age=155520000; path=/
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'201','ID':'3360','error_message':'Лид добавлен','AUTH':'b976b5b38777dbc41fd2ed4b38341a12'}
+
+
+[2018-02-20 14:08:37]
+Tel: +38(099)9999999
+
+HTTP/1.1 200 OK
+Server: nginx/1.8.1
+Date: Tue, 20 Feb 2018 12:08:37 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=m6ON4D7JN5jZxGuHdBFqZcJqZvzbsnjx; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+Set-Cookie: BITRIX_SM_SALE_UID=0; expires=Fri, 15-Feb-2019 12:08:36 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_CC=Y; expires=Fri, 15-Feb-2019 12:08:36 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_NCC=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: BITRIX_SM_PK=%2F54%2F072bfccc5206416d543e93edf14b6339; path=/; HttpOnly
+Set-Cookie: BITRIX_SM_LOGIN=gav.sqrt%40gmail.com; expires=Wed, 25-Jan-2023 12:08:36 GMT; Max-Age=155520000; path=/
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'201','ID':'3362','error_message':'Лид добавлен','AUTH':'00519bd5d9cb92c5b01d407b36a240da'}
+
+
+[2018-05-23 14:00:56]
+Tel: +38(098)0000000
+
+HTTP/1.1 200 OK
+Server: nginx/1.8.1
+Date: Wed, 23 May 2018 11:00:56 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=FturuGj7ENCpTvL8rd9VQMyrh4fD6rGE; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+Set-Cookie: BITRIX_SM_SALE_UID=0; expires=Sat, 18-May-2019 11:00:54 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_CC=Y; expires=Sat, 18-May-2019 11:00:54 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_NCC=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: BITRIX_SM_PK=%2F54%2F072bfccc5206416d543e93edf14b6339; path=/; HttpOnly
+Set-Cookie: BITRIX_SM_LOGIN=gav.sqrt%40gmail.com; expires=Thu, 27-Apr-2023 11:00:54 GMT; Max-Age=155520000; path=/
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'201','ID':'3504','error_message':'Лид добавлен','AUTH':'59e6fa9cfef0ea6c5cb13ac51aab25b2'}
+
+
+[2018-05-23 14:15:33]
+Tel: +38(088)8888888
+
+HTTP/1.1 200 OK
+Server: nginx/1.8.1
+Date: Wed, 23 May 2018 11:15:33 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=ETPz0DnvZrM5Gu2GINKpo47iV7ZdfcN5; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+Set-Cookie: BITRIX_SM_SALE_UID=0; expires=Sat, 18-May-2019 11:15:31 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_CC=Y; expires=Sat, 18-May-2019 11:15:31 GMT; Max-Age=31104000; path=/
+Set-Cookie: BITRIX_SM_NCC=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+Set-Cookie: BITRIX_SM_PK=%2F54%2F072bfccc5206416d543e93edf14b6339; path=/; HttpOnly
+Set-Cookie: BITRIX_SM_LOGIN=gav.sqrt%40gmail.com; expires=Thu, 27-Apr-2023 11:15:31 GMT; Max-Age=155520000; path=/
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'201','ID':'3506','error_message':'Лид добавлен','AUTH':'f3435ce9bfc840357bb88f82a5bcdc33'}
+
+
+[2018-05-31 08:51:26]
+Tel: +38(098)0000000
+
+HTTP/1.1 200 OK
+Server: nginx/1.12.2
+Date: Thu, 31 May 2018 05:51:26 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=270OZ7fk3h22x3eeHuFqz8d16NijGxt7; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'403','error_message':'Неверный логин или пароль.'}
+
+
+[2018-05-31 08:54:22]
+Tel: +38(099)9000000
+
+HTTP/1.1 200 OK
+Server: nginx/1.8.1
+Date: Thu, 31 May 2018 05:54:22 GMT
+Content-Type: application/json; charset=utf-8
+Connection: close
+P3P: policyref="/bitrix/p3p.xml", CP="NON DSP COR CUR ADM DEV PSA PSD OUR UNR BUS UNI COM NAV INT DEM STA"
+X-Powered-CMS: Bitrix Site Manager (1682f9867b9ef36eacf05e345db46f3c)
+Set-Cookie: PHPSESSID=V7jlqcYx3QniXK3iDScUQ4FeKkcWHdo0; path=/; secure; HttpOnly
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate
+Pragma: no-cache
+Set-Cookie: qmb=deleted; expires=Thu, 01-Jan-1970 00:00:01 GMT; Max-Age=0; path=/
+X-CRM-Version: 11.5.0
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000; includeSubdomains
+
+{'error':'403','error_message':'Неверный логин или пароль.'}

@@ -1,0 +1,241 @@
+.jur-doc__body {
+	font-family: "PFDinTextUniversal-Light";
+	box-sizing: border-box;
+	h2 {
+		background: rgba($blue, 0.8);
+		font-size: 16px;
+		line-height: 1.4;
+		letter-spacing: 1px;
+		width: 100%;
+		padding: 10px 20px 20px;
+		box-sizing: border-box;
+		margin: 30px auto;
+	}
+	& *{
+		box-sizing: border-box;
+	}
+}
+.wraper {
+  background: url(../img/jd-bg.jpg) center 0 no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.jur-doc__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 10px;
+  color: #fff;
+}
+.jur-doc__content {
+  width: 100%;
+  padding-top: 120px;
+  margin-bottom: 50px;
+}
+.jur-doc__content:before, .jur-doc__content:after {
+  content: "";
+  display: table;
+}
+.jur-doc__content:after {
+  clear: both;
+}
+.jur-doc__side-logo {
+  width: 17%;
+  position: relative;
+  float: left;
+  margin-top: 300px;
+}
+.jur-doc__body {
+	@include clearfix;
+  width: 83%;
+  float: right;
+}
+.jur-doc__body h1 {
+  padding-left: 15px;
+  font-size: 40px;
+  letter-spacing: 1px;
+}
+.jur-doc__text {
+  margin-top: 50px;
+}
+.jur-doc__body_list {
+  font-size: 24px;
+  letter-spacing: 0.025em;
+  line-height: 1.25;
+}
+.jur-doc__body_list:before, .jur-doc__body_list:after {
+  content: "";
+  display: table;
+}
+.jur-doc__body_list:after {
+  clear: both;
+}
+.jur-doc__body_item {
+  width: 50%;
+  list-style-type: disc;
+  float: left;
+  margin-bottom: 32px;
+  padding-right: 25px;
+}
+.jur-doc__body_link {
+  color: #fff;
+  text-decoration: none;
+}
+.jur-doc__body_link:hover {
+  color: #cbcbcb;
+}
+.empty-block {
+  height: 42px;
+}
+
+.jur-doc__item {
+	width: 50%;
+	float: left;
+	@include clearfix;
+}
+.jur-doc__item:last-child{
+	width: 100%;
+}
+
+.jur-doc__item_title {
+	font-size: 24px;
+	margin: 16px 0;
+}
+#jur-doc-link {
+	text-decoration: underline;
+	display: block;
+	padding-bottom: 15px;
+}
+.jur-doc-container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap:wrap;
+}
+.left_top_item {
+	padding-top: 30px;
+}
+.footer__jurdoc_link {
+	color: #fff;
+	display: inline-block;
+    padding-top: 12px;
+    padding-left: 200px;
+}
+#jur-doc-link {
+  margin: auto 0;
+}
+.jur-doc__item_pict {
+	box-sizing: border-box;
+	width: 25%;
+	max-width: 112px;
+	float: left;
+	padding: 0 5px;
+	img {
+		width: 100%;
+		display: block;
+	}
+	p {
+		font-size: 16px;
+		text-align: center;
+		margin-top: 15px;
+	}
+}
+footer {
+  position: static;
+  width: 100%;
+}
+.footer1 {
+  position: absolute;
+  bottom: 0;
+}
+@media only screen and (max-width: 1180px) {
+  .jur-doc__body h1 {
+    text-align: center;
+    padding-left: 0;
+    width: 100%;
+  }
+  .jur-doc__side-logo {
+    display: none;
+  }
+  .jur-doc__body {
+    width: 100%;
+    float: none;
+    margin: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .jur-doc__body_list {
+    padding: 50px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+	.footer__jurdoc_link {
+		padding-left: 25px;
+		font-size: 12px;
+    	padding-top: 4px;
+	}
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+  .jur-doc__content {
+    padding-top: 25px;
+    padding-bottom: 40px;
+  }
+  .footer__jurdoc_link {
+	padding-left: 0;
+	margin-left: -7px;
+  }
+  .jur-doc__body_item {
+    width: 100%;
+    float: none;
+    margin: auto;
+    text-align: center;
+  }
+  .jur-doc__body h1 {
+    font-size: 30px;
+    width: 100%;
+		margin-top: 40px;
+  }
+  .jur-doc__body {
+    text-align: center;
+    font-size: 24px;
+  }
+  .jur-doc__side-logo {
+    display: none;
+  }
+  .jur-doc__body_item {
+    padding-bottom: 20px;
+  }
+  .jur-doc__body {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    h2 {
+		text-align: left;
+    }
+  }
+  .empty-block {
+    height: 68px;
+  }
+  .jur-doc__item {
+  	width: 100%;
+  	max-width: 450px;
+  	float: none;
+  	margin: auto;
+  	margin-top: 35px;
+  	text-align: center;
+  }
+  .jur-doc__item_pict {
+  	margin-top: 10px;
+  	display: inline-block;
+  	float: none;
+  	vertical-align: top;
+  }
+  .footer1 {
+    margin-top: -68px;
+  }
+}
+@media screen and (max-width: 430px) {
+	.jur-doc__item_pict {
+		width: 120px;
+	}
+}

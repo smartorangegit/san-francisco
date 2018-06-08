@@ -1,0 +1,1111 @@
+/* line 3, ../sass/appart.scss */
+.content_floor {
+  background: url("../img/main_bg.jpg");
+  background-size: cover;
+}
+/* line 6, ../sass/appart.scss */
+.content_floor .content_wrap {
+  height: 100%;
+  max-width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 14, ../sass/appart.scss */
+.content_floor .floor_choice {
+  width: 100%;
+  position: static;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+/* line 20, ../sass/appart.scss */
+.content_floor .floor_choice img {
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../sass/appart.scss */
+.content_floor .content_name_block {
+  float: left;
+}
+/* line 28, ../sass/appart.scss */
+.content_floor .content_name {
+  position: static;
+  width: auto;
+}
+/* line 32, ../sass/appart.scss */
+.content_floor .floor_text {
+  position: static;
+  width: 300px;
+  float: right;
+  padding-top: 20px;
+}
+/* line 38, ../sass/appart.scss */
+.content_floor .param {
+  position: static;
+  float: right;
+  margin-right: 20px;
+}
+/* line 42, ../sass/appart.scss */
+.content_floor .param img {
+  width: 65px;
+}
+/* line 46, ../sass/appart.scss */
+.content_floor .turn {
+  position: absolute;
+  top: 330px;
+}
+/* line 50, ../sass/appart.scss */
+.content_floor .turn1 {
+  position: absolute;
+  top: 330px;
+  right: 30px;
+}
+/* line 55, ../sass/appart.scss */
+.content_floor .floor_control {
+  position: absolute;
+  top: 30vh;
+  right: 0;
+  width: 300px;
+}
+/* line 60, ../sass/appart.scss */
+.content_floor .floor_control .content_subname {
+  font-size: 70px;
+}
+/* line 63, ../sass/appart.scss */
+.content_floor .floor_control .content_text {
+  padding: 10px;
+}
+/* line 66, ../sass/appart.scss */
+.content_floor .floor_control .control_item {
+  float: left;
+  text-align: center;
+}
+
+/* line 73, ../sass/appart.scss */
+.clas_svg svg .st0:hover, .clas_svg svg .st1:hover,
+.clas_svg svg .st0:focus, .clas_svg svg .st1:focus {
+  fill: #ef4136;
+  cursor: pointer;
+  opacity: 1;
+}
+
+/* line 79, ../sass/appart.scss */
+.clas_svg svg .st0 {
+  fill: #DDDDDD;
+  opacity: 0.6;
+  transition: 0.35s;
+}
+
+/* line 84, ../sass/appart.scss */
+.clas_svg svg .st1 {
+  fill: #BFBFBF;
+  opacity: 0.6;
+  transition: 0.35s;
+}
+
+/* line 89, ../sass/appart.scss */
+.clas_svg svg .st-on {
+  fill: #ef4136;
+}
+
+/* line 92, ../sass/appart.scss */
+.lin_1, .lin_2, .lin_3, .lin_4, .lin_5, .lin_6, .lin_7, .lin_8, .lin_9, .lin_10, .lin_11, .lin_12, .lin_13, .lin_14, .lin_15 {
+  display: none;
+  padding: 16px;
+  font-family: "StTransmission-300Light";
+  color: white;
+  border-radius: 0px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 1.2;
+  background-color: rgba(23, 23, 23, 0.9);
+  transition: 0s;
+  opacity: 1;
+}
+
+@media screen and (max-height: 680px) {
+  /* line 107, ../sass/appart.scss */
+  .content.content_floor {
+    min-height: 100%;
+    height: auto;
+  }
+}
+/* line 115, ../sass/appart.scss */
+.content_floorplan {
+  background: url("../img/appart_bg.jpg");
+  background-size: cover;
+}
+/* line 118, ../sass/appart.scss */
+.content_floorplan .content_wrap {
+  height: 100%;
+  max-width: 1080px;
+  padding: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+}
+/* line 126, ../sass/appart.scss */
+.content_floorplan .content_name {
+  display: inline-block;
+  vertical-align: top;
+  width: 79%;
+}
+/* line 132, ../sass/appart.scss */
+.content_floorplan .compas {
+  width: 19%;
+  text-align: center;
+  display: inline-block;
+}
+/* line 137, ../sass/appart.scss */
+.content_floorplan .content_flats_top {
+  width: 100%;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+}
+/* line 144, ../sass/appart.scss */
+.content_floorplan .control_panel {
+  width: 210px;
+  margin-top: 10px;
+}
+/* line 148, ../sass/appart.scss */
+.content_floorplan .control_floor {
+  text-align: center;
+  width: 60px;
+  margin: 80px 0 30px;
+}
+/* line 152, ../sass/appart.scss */
+.content_floorplan .control_floor a {
+  display: block;
+  margin: 16px 0;
+}
+/* line 155, ../sass/appart.scss */
+.content_floorplan .control_floor a img {
+  width: 40px;
+}
+/* line 159, ../sass/appart.scss */
+.content_floorplan .control_floor span {
+  display: block;
+}
+/* line 164, ../sass/appart.scss */
+.content_floorplan .info_panel {
+  width: 150px;
+  text-align: center;
+  margin-top: 10px;
+}
+/* line 169, ../sass/appart.scss */
+.content_floorplan .info_section {
+  margin: 12px auto;
+}
+/* line 173, ../sass/appart.scss */
+.content_floorplan .flats_img {
+  width: 57%;
+  max-width: 640px;
+  height: 460px;
+  text-align: center;
+}
+/* line 178, ../sass/appart.scss */
+.content_floorplan .flats_img img, .content_floorplan .flats_img svg {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 183, ../sass/appart.scss */
+.content_floorplan .number {
+  font-size: 5vh;
+  font-family: "Kazmann";
+}
+/* line 187, ../sass/appart.scss */
+.content_floorplan .name {
+  font-size: 18px;
+  display: block;
+  font-family: "StTransmission-300Light";
+}
+
+/* line 197, ../sass/appart.scss */
+.content.content_flats {
+  background: url("../img/appart_bg.jpg");
+  background-size: cover;
+  height: auto;
+  min-height: 100%;
+  position: relative;
+}
+/* line 203, ../sass/appart.scss */
+.content.content_flats .content_wrap {
+  max-width: 1000px;
+  padding: 30px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  position: relative;
+  min-height: calc(100vh - 44px);
+}
+/* line 215, ../sass/appart.scss */
+.content.content_flats .compas {
+  float: right;
+  margin-top: -96px;
+  width: 180px;
+  height: 120px;
+  text-align: center;
+}
+/* line 221, ../sass/appart.scss */
+.content.content_flats .compas img {
+  max-height: 100%;
+}
+/* line 225, ../sass/appart.scss */
+.content.content_flats .control_panel {
+  width: 210px;
+  height: auto;
+  float: left;
+  margin-top: 55px;
+}
+/* line 230, ../sass/appart.scss */
+.content.content_flats .control_panel .button {
+  padding: 14px 42px;
+  background: rgba(239, 65, 54, 0.8);
+  border: 0px solid red;
+  font-size: 16px;
+}
+/* line 237, ../sass/appart.scss */
+.content.content_flats .control_floor {
+  text-align: center;
+  width: 60px;
+  margin: 30px 0;
+}
+/* line 241, ../sass/appart.scss */
+.content.content_flats .control_floor a {
+  display: block;
+  margin: 16px 0;
+}
+/* line 244, ../sass/appart.scss */
+.content.content_flats .control_floor a img {
+  width: 40px;
+}
+/* line 248, ../sass/appart.scss */
+.content.content_flats .control_floor span {
+  display: block;
+}
+/* line 253, ../sass/appart.scss */
+.content.content_flats .info_panel {
+  width: 165px;
+  height: auto;
+  float: right;
+  text-align: center;
+  margin-top: 45px;
+}
+/* line 260, ../sass/appart.scss */
+.content.content_flats .info_section {
+  margin: 20px auto;
+}
+/* line 264, ../sass/appart.scss */
+.content.content_flats .flats_img {
+  width: 50%;
+  max-width: 640px;
+  height: 460px;
+  text-align: center;
+  float: left;
+  padding-top: 50px;
+}
+/* line 271, ../sass/appart.scss */
+.content.content_flats .flats_img img {
+  max-width: 100%;
+  max-height: 100%;
+}
+/* line 276, ../sass/appart.scss */
+.content.content_flats .number {
+  font-size: 50px;
+  font-family: "Kazmann";
+}
+/* line 280, ../sass/appart.scss */
+.content.content_flats .name {
+  font-size: 18px;
+  display: block;
+  font-family: "StTransmission-300Light";
+}
+/* line 286, ../sass/appart.scss */
+.content.content_flats table tr {
+  font-family: "StTransmission-300Light";
+  font-size: 16px;
+  line-height: 18px;
+}
+/* line 291, ../sass/appart.scss */
+.content.content_flats td:first-child,
+.content.content_flats th:first-child {
+  text-align: right;
+  padding-right: 6px;
+}
+/* line 296, ../sass/appart.scss */
+.content.content_flats td:last-child,
+.content.content_flats th:last-child {
+  text-align: left;
+  padding-left: 4px;
+}
+/* line 301, ../sass/appart.scss */
+.content.content_flats .content_block {
+  display: block;
+  margin: 20px auto;
+  width: 550px;
+  height: 320px;
+}
+/* line 306, ../sass/appart.scss */
+.content.content_flats .content_block .content_subname {
+  padding-top: 12px;
+}
+/* line 310, ../sass/appart.scss */
+.content.content_flats .content_block-commercial {
+  width: 100%;
+  border: 2px solid #000;
+  padding: 2px;
+}
+/* line 314, ../sass/appart.scss */
+.content.content_flats .content_block-commercial .plan_floor {
+  padding: 2px;
+}
+/* line 318, ../sass/appart.scss */
+.content.content_flats .floor-plan-svg {
+  margin-top: 10px;
+}
+/* line 321, ../sass/appart.scss */
+.content.content_flats .floor-plan-svg_heading {
+  font-family: "StTransmission-300Light";
+}
+/* line 324, ../sass/appart.scss */
+.content.content_flats .plan_floor {
+  padding: 40px 20px;
+  box-sizing: border-box;
+}
+/* line 327, ../sass/appart.scss */
+.content.content_flats .plan_floor img, .content.content_flats .plan_floor svg {
+  width: 100%;
+  max-height: 100%;
+}
+
+/* line 333, ../sass/appart.scss */
+.control_block {
+  height: 52px;
+  width: 54px;
+  overflow: hidden;
+  margin: 10px 0;
+  border: 2px solid transparent;
+  transition: 0.35s;
+  white-space: nowrap;
+}
+
+/* line 342, ../sass/appart.scss */
+.control_block:hover {
+  width: 210px;
+  border-color: #b2b2b2;
+}
+
+/* line 347, ../sass/appart.scss */
+.control_panel_item {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 2px;
+  color: white;
+  text-decoration: none;
+  width: 52px;
+  height: 52px;
+  border: 1px solid #646464;
+}
+/* line 357, ../sass/appart.scss */
+.control_panel_item img {
+  padding: 6px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* line 363, ../sass/appart.scss */
+img.arrow {
+  padding-top: 18px;
+  padding-bottom: 16px;
+}
+
+/* line 367, ../sass/appart.scss */
+.control_coment {
+  color: white;
+  text-decoration: none;
+  font-family: "StTransmission-300Light";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  width: 154px;
+  text-align: center;
+  white-space: normal;
+}
+
+/* line 380, ../sass/appart.scss */
+.content_param {
+  background: url("../img/dev_bg.jpg");
+  background-size: cover;
+  font-family: "StTransmission-300Light";
+}
+/* line 384, ../sass/appart.scss */
+.content_param .content_name {
+  width: 90%;
+  min-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* line 392, ../sass/appart.scss */
+.param_container1 {
+  margin: 20px auto;
+  width: 90%;
+  min-width: 800px;
+  height: 480px;
+  border: 1px solid #666666;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+/* line 401, ../sass/appart.scss */
+.param_container {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border: 1px solid #666666;
+  position: relative;
+}
+
+/* line 409, ../sass/appart.scss */
+.param_container1.cl {
+  height: 0;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+}
+
+/* line 417, ../sass/appart.scss */
+.param__text {
+  max-width: 1050px;
+  width: 100%;
+  line-height: 2;
+  margin: 0 auto;
+  padding: 20px 50px;
+  box-sizing: border-box;
+  letter-spacing: 0.6px;
+}
+
+/* line 426, ../sass/appart.scss */
+.no-results {
+  text-align: center;
+  font-family: "StTransmission-300Light";
+}
+
+/* line 430, ../sass/appart.scss */
+.no-results_hidden {
+  display: none;
+}
+
+/* line 433, ../sass/appart.scss */
+.no-results_visible {
+  display: block;
+  position: absolute;
+  top: 100px;
+}
+
+/* line 438, ../sass/appart.scss */
+.reset_button:hover {
+  cursor: pointer;
+}
+
+/* line 441, ../sass/appart.scss */
+.no-results a {
+  text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+/* line 446, ../sass/appart.scss */
+.range_box {
+  width: 40%;
+  float: left;
+  padding-top: 130px;
+  margin: 0 5%;
+  transition: 0.35s;
+}
+/* line 453, ../sass/appart.scss */
+.range_box span {
+  display: block;
+  font-family: "StTransmission-300Light";
+  text-align: center;
+}
+/* line 459, ../sass/appart.scss */
+.range_box input {
+  display: block;
+  margin: 10px auto 80px;
+  width: 80%;
+}
+
+/* line 465, ../sass/appart.scss */
+.irs.js-irs-1, .irs.js-irs-0, .irs.js-irs-2 {
+  margin-top: -20px;
+}
+
+/* line 468, ../sass/appart.scss */
+.results_box {
+  margin-top: 4%;
+  width: 48.5%;
+  height: 90%;
+  padding: 16px;
+  box-sizing: border-box;
+  float: left;
+  position: relative;
+}
+/* line 477, ../sass/appart.scss */
+.results_box table {
+  font-family: "AkzidenzGroteskPro-Cn";
+  text-transform: uppercase;
+  font-size: 18px;
+}
+/* line 484, ../sass/appart.scss */
+.results_box th {
+  width: 86px;
+  text-align: center;
+  line-height: 3;
+}
+/* line 489, ../sass/appart.scss */
+.results_box td {
+  line-height: 3;
+  text-align: center;
+}
+/* line 493, ../sass/appart.scss */
+.results_box tr {
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+}
+/* line 499, ../sass/appart.scss */
+.results_box tr:hover {
+  border: 1px solid #ef4136;
+  background: rgba(239, 65, 54, 0.7);
+}
+/* line 503, ../sass/appart.scss */
+.results_box thead tr:hover {
+  border: none;
+  background: transparent;
+}
+/* line 507, ../sass/appart.scss */
+.results_box .table_scroll {
+  margin-top: 40px;
+}
+/* line 509, ../sass/appart.scss */
+.results_box .table_scroll tbody {
+  overflow: scroll;
+  height: 320px;
+  display: block;
+}
+/* line 514, ../sass/appart.scss */
+.results_box .table_scroll td {
+  width: 86px;
+  text-align: center;
+  line-height: 3;
+}
+
+/* line 521, ../sass/appart.scss */
+.table_fixed {
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+}
+
+/* line 527, ../sass/appart.scss */
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+}
+
+/* line 538, ../sass/appart.scss */
+.blured table {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+
+/* line 542, ../sass/appart.scss */
+.blured .loader {
+  opacity: 0.9;
+  transition: 0.35s;
+  -webkit-transition: 0.35s;
+}
+
+/* line 548, ../sass/appart.scss */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* line 551, ../sass/appart.scss */
+::-webkit-scrollbar-thumb {
+  border-width: 1px 1px 1px 2px;
+  border-radius: 6px;
+  background-color: #ef4136;
+  background-image: url("../img/lin.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 559, ../sass/appart.scss */
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+/* line 562, ../sass/appart.scss */
+::-webkit-scrollbar-track-piece {
+  background: transparent;
+}
+
+/* line 565, ../sass/appart.scss */
+a.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  /* line 573, ../sass/appart.scss */
+  .content_floor .content_name {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+
+  /* line 579, ../sass/appart.scss */
+  .content_param .content_name {
+    min-width: auto;
+    font-size: 70px;
+  }
+  /* line 583, ../sass/appart.scss */
+  .content_param .param_container1 {
+    min-width: auto;
+  }
+  /* line 586, ../sass/appart.scss */
+  .content_param .range_box {
+    width: 35%;
+    padding-top: 130px;
+  }
+  /* line 590, ../sass/appart.scss */
+  .content_param .results_box {
+    width: 53%;
+    padding: 6px;
+  }
+  /* line 594, ../sass/appart.scss */
+  .content_param .results_box th {
+    text-transform: lowercase;
+    width: 70px;
+  }
+
+  /* line 601, ../sass/appart.scss */
+  .content_flats .content_name {
+    font-size: 50px;
+    letter-spacing: 4px;
+  }
+  /* line 605, ../sass/appart.scss */
+  .content_flats .compas {
+    margin-top: -60px;
+    width: 100px;
+    height: 100px;
+  }
+  /* line 610, ../sass/appart.scss */
+  .content_flats .control_panel {
+    margin-top: 10px;
+    width: 160px;
+  }
+  /* line 614, ../sass/appart.scss */
+  .content_flats .flats_img {
+    width: calc(100% - 160px);
+    height: 400px;
+  }
+  /* line 618, ../sass/appart.scss */
+  .content_flats .info_panel {
+    margin-top: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  /* line 624, ../sass/appart.scss */
+  .content_flats .info_house, .content_flats .info_section, .content_flats .info_table {
+    width: 28%;
+    margin: 0 auto;
+  }
+  /* line 629, ../sass/appart.scss */
+  .content_flats .info_table {
+    width: 90%;
+  }
+  /* line 631, ../sass/appart.scss */
+  .content_flats .info_table table {
+    margin: 0 auto;
+  }
+
+  /* line 637, ../sass/appart.scss */
+  .content_flats.commercial .info_house, .content_flats.commercial .info_section, .content_flats.commercial .info_table {
+    width: 100%;
+  }
+
+  /* line 641, ../sass/appart.scss */
+  .control_block:hover {
+    width: 144px;
+  }
+
+  /* line 644, ../sass/appart.scss */
+  .control_coment {
+    width: 80px;
+    margin-top: -12px;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  /* line 651, ../sass/appart.scss */
+  .content.content_flats .info_house, .content.content_flats .info_section, .content.content_flats .info_table {
+    float: left;
+    margin: 0 3px;
+  }
+  /* line 655, ../sass/appart.scss */
+  .content.content_flats .info_panel {
+    width: 180px;
+    float: none;
+    clear: both;
+    margin: 0 auto;
+  }
+
+  /* line 662, ../sass/appart.scss */
+  .content_floorplan .control_panel {
+    width: 155px;
+    margin-top: 10px;
+  }
+
+  /* line 667, ../sass/appart.scss */
+  .content.content_flats.commercial .info_panel {
+    width: 310px;
+  }
+  /* line 670, ../sass/appart.scss */
+  .content.content_flats.commercial .info_house, .content.content_flats.commercial .info_section, .content.content_flats.commercial .info_table {
+    width: 30%;
+  }
+  /* line 672, ../sass/appart.scss */
+  .content.content_flats.commercial .info_house .number, .content.content_flats.commercial .info_section .number, .content.content_flats.commercial .info_table .number {
+    font-size: 40px;
+  }
+}
+@media only screen and (min-height: 1000px) {
+  /* line 679, ../sass/appart.scss */
+  .main_page.long_page {
+    height: 100%;
+  }
+}
+/* line 683, ../sass/appart.scss */
+.bottom_form, .bottom_form_plan {
+  display: none;
+}
+
+/* line 686, ../sass/appart.scss */
+.button.desc_button,
+.bottom_form .button {
+  border: 1px solid #dadada;
+}
+
+/* line 690, ../sass/appart.scss */
+.button.desc_button::after,
+.button.desc_button::before,
+.bottom_form .button::after,
+.bottom_form .button::before {
+  height: 1px;
+}
+
+/* line 696, ../sass/appart.scss */
+.button.desc_button::before,
+.bottom_form .button::before {
+  top: -1px;
+}
+
+/* line 700, ../sass/appart.scss */
+.button.desc_button::after,
+.bottom_form .button::after {
+  bottom: -1px;
+}
+
+@media only screen and (max-width: 768px) {
+  /* line 706, ../sass/appart.scss */
+  .main_page {
+    overflow: hidden;
+  }
+
+  /* line 709, ../sass/appart.scss */
+  .content.content_floor {
+    height: 670px;
+    overflow: hidden;
+  }
+  /* line 712, ../sass/appart.scss */
+  .content.content_floor .content_wrap {
+    padding: 10px;
+    position: relative;
+  }
+  /* line 716, ../sass/appart.scss */
+  .content.content_floor .content_name {
+    width: 180px;
+    font-size: 50px;
+    left: auto;
+    text-align: left;
+  }
+  /* line 723, ../sass/appart.scss */
+  .content.content_floor .floor_choice {
+    position: static;
+    margin-top: 175px;
+    height: auto;
+  }
+  /* line 729, ../sass/appart.scss */
+  .content.content_floor .floor_text {
+    top: 135px;
+    left: auto;
+    right: auto;
+    width: 100%;
+    text-align: left;
+  }
+  /* line 736, ../sass/appart.scss */
+  .content.content_floor .param {
+    position: absolute;
+    top: 80px;
+    right: 0px;
+  }
+  /* line 741, ../sass/appart.scss */
+  .content.content_floor .turn, .content.content_floor .turn1 {
+    top: 370px;
+    width: 100%;
+    left: 0;
+    text-align: center;
+  }
+  /* line 747, ../sass/appart.scss */
+  .content.content_floor .turn1 {
+    top: 600px;
+  }
+  /* line 750, ../sass/appart.scss */
+  .content.content_floor .position.content_text {
+    top: 430px;
+    width: 300px;
+    margin-left: -150px;
+    left: 50%;
+    text-align: center;
+  }
+
+  /* line 761, ../sass/appart.scss */
+  .content.content_floorplan {
+    overflow: hidden;
+    height: 935px;
+  }
+  /* line 764, ../sass/appart.scss */
+  .content.content_floorplan .content_wrap {
+    padding: 10px;
+    max-width: 380px;
+    position: relative;
+  }
+  /* line 769, ../sass/appart.scss */
+  .content.content_floorplan .content_name {
+    font-size: 60px;
+    text-align: left;
+  }
+  /* line 773, ../sass/appart.scss */
+  .content.content_floorplan .control_floor {
+    position: absolute;
+    top: 84px;
+    right: 40px;
+  }
+  /* line 778, ../sass/appart.scss */
+  .content.content_floorplan .flats_img {
+    width: 100%;
+    height: auto;
+    order: 3;
+  }
+  /* line 783, ../sass/appart.scss */
+  .content.content_floorplan .info_panel {
+    width: 100%;
+    text-align: center;
+  }
+  /* line 791, ../sass/appart.scss */
+  .content.content_floorplan .info_house {
+    float: left;
+    width: 50%;
+  }
+  /* line 796, ../sass/appart.scss */
+  .content.content_floorplan .info_section {
+    float: left;
+    margin: 0;
+    width: 50%;
+  }
+  /* line 802, ../sass/appart.scss */
+  .content.content_floorplan .name {
+    font-size: 16px;
+  }
+  /* line 813, ../sass/appart.scss */
+  .content.content_floorplan .compas img {
+    width: 100%;
+  }
+
+  /* line 818, ../sass/appart.scss */
+  .bottom_form {
+    display: flex;
+  }
+
+  /* line 821, ../sass/appart.scss */
+  .desc_button {
+    display: none !important;
+  }
+
+  /* line 824, ../sass/appart.scss */
+  .bottom_form_plan {
+    display: block;
+    margin: 260px auto 0;
+    text-align: center;
+  }
+
+  /* line 829, ../sass/appart.scss */
+  .content_floorplan
+  .content_flats_top {
+    flex-direction: column;
+    -webkit-flex-direction: column;
+  }
+
+  /* line 837, ../sass/appart.scss */
+  .content.content_flats {
+    overflow: hidden;
+  }
+  /* line 839, ../sass/appart.scss */
+  .content.content_flats .desc_button {
+    display: none !important;
+  }
+  /* line 842, ../sass/appart.scss */
+  .content.content_flats .bottom_form {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  /* line 847, ../sass/appart.scss */
+  .content.content_flats .content_wrap {
+    padding: 6px;
+    max-width: 380px;
+    position: relative;
+  }
+  /* line 852, ../sass/appart.scss */
+  .content.content_flats .content_name {
+    text-align: left;
+  }
+  /* line 855, ../sass/appart.scss */
+  .content.content_flats .content_block {
+    width: 100%;
+    border-width: 8px;
+  }
+  /* line 859, ../sass/appart.scss */
+  .content.content_flats .compas {
+    margin-top: 0;
+    width: 130px;
+    height: 100px;
+  }
+  /* line 864, ../sass/appart.scss */
+  .content.content_flats .control_panel {
+    margin-top: -110px;
+    clear: both;
+  }
+  /* line 869, ../sass/appart.scss */
+  .content.content_flats .control_floor {
+    position: absolute;
+    top: 120px;
+    right: 40px;
+  }
+  /* line 874, ../sass/appart.scss */
+  .content.content_flats .flats_img {
+    width: 100%;
+    height: 320px;
+  }
+  /* line 878, ../sass/appart.scss */
+  .content.content_flats .info_panel {
+    clear: both;
+    overflow: hidden;
+    width: 100%;
+  }
+  /* line 883, ../sass/appart.scss */
+  .content.content_flats .info_house, .content.content_flats .info_section {
+    width: 33%;
+    float: left;
+    margin: 0;
+  }
+  /* line 888, ../sass/appart.scss */
+  .content.content_flats .info_table {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    text-align: -webkit-center;
+  }
+  /* line 895, ../sass/appart.scss */
+  .content.content_flats .content_block {
+    padding: 6px;
+  }
+  /* line 898, ../sass/appart.scss */
+  .content.content_flats .plan_floor {
+    padding: 10px;
+  }
+
+  /* line 902, ../sass/appart.scss */
+  .content_param {
+    height: 1200px;
+  }
+  /* line 904, ../sass/appart.scss */
+  .content_param .content_wrap {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+  }
+  /* line 910, ../sass/appart.scss */
+  .content_param .content_name {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 46px;
+    letter-spacing: 1px;
+    text-align: center;
+    min-width: auto;
+  }
+  /* line 919, ../sass/appart.scss */
+  .content_param .param_container1 {
+    width: 96%;
+    min-width: auto;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* line 925, ../sass/appart.scss */
+  .content_param .param_container1.cl {
+    height: 0;
+  }
+  /* line 928, ../sass/appart.scss */
+  .content_param .param_container {
+    height: auto;
+  }
+  /* line 932, ../sass/appart.scss */
+  .content_param .range_box {
+    width: 80%;
+    float: none;
+    padding-top: 80px;
+    margin: 0 auto;
+  }
+  /* line 938, ../sass/appart.scss */
+  .content_param .results_box {
+    height: 430px;
+    width: 100%;
+    padding: 4px;
+  }
+  /* line 942, ../sass/appart.scss */
+  .content_param .results_box table th {
+    font-size: 16px;
+  }
+
+  /* line 947, ../sass/appart.scss */
+  .param__text {
+    padding: 20px;
+  }
+}

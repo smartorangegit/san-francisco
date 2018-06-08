@@ -1,0 +1,21 @@
+@font-face {font-family: "IntroBlack"; src: url("../fonts/IntroBlack.otf") format("opentype"); font-style: normal; font-weight: normal;}
+@font-face {font-family: "PFDinTextUniversal-XBlack"; src: url("../fonts/PFDinTextUniversal-XBlack.otf") format("opentype"); font-style: normal; font-weight: 900;}
+@font-face {font-family: "PFDinTextUniversal-Light"; src: url("../fonts/PFDinTextUniversal-Light.otf") format("opentype"); font-style: normal; font-weight: 300;}
+@font-face {font-family: "PFDinTextUniversal-Medium"; src: url("../fonts/PFDinTextUniversal-Medium.otf") format("opentype"); font-style: normal; font-weight: 600;}
+@font-face {font-family: "PFDinTextUniversal-Bold"; src: url("../fonts/PFDinTextUniversal-Bold.otf") format("opentype"); font-style: normal; font-weight: 800;}
+@font-face {font-family: "PFDinTextUniversal-Regular"; src: url("../fonts/PFDinTextUniversal-Regular.otf") format("opentype"); font-style: normal; font-weight: 500;}
+@font-face {font-family: "PFDinTextUniversal-Thin"; src: url("../fonts/PFDinTextUniversal-Thin.otf") format("opentype"); font-style: normal; font-weight: 200;}
+@font-face {font-family: "PFDinTextUniversal-XThin"; src: url("../fonts/PFDinTextUniversal-XThin.otf") format("opentype"); font-style: normal; font-weight: 100;}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,600i,700,800&subset=cyrillic,cyrillic-ext');
+
+$pdf:            "PFDinTextUniversal-Regular";
+$pdf-light:      "PFDinTextUniversal-Light";
+$pdf-medium:     "PFDinTextUniversal-Medium";
+$pdf-bold:       "PFDinTextUniversal-Bold";
+$pdf-thin:       "PFDinTextUniversal-Thin";
+$pdf-xthin:      "PFDinTextUniversal-XThin";
+$pdf-xbold:      "PFDinTextUniversal-XBlack";
+$intro:          "IntroBlack";
+
+$blue:           #0035aa;
+$blue-hov:       #0f1157;
