@@ -8,5 +8,8 @@ full-site/admin_old
 full-site/img
 full-site/pdf
 full-site/pdf_docs
+full-site/include/config.php
+full-site/include/application.php
+full-site/admin/bd.php
 
 
