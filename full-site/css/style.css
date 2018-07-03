@@ -860,12 +860,13 @@ body, html {
   background-color: #ef4136;
   z-index: 1000;
   top: 45%;
-  right: -56px;
+  right: -85px;
   padding: 8px;
   line-height: 12px;
   text-align: center;
   transform: rotate(-90deg);
   border-radius: 2px;
+  width: 180px;
 }
 /* line 420, ../sass/style.scss */
 .promotions_btn .promotions_btn__link {
