@@ -89,46 +89,69 @@
      </svg>
      
     </div>
-    <script>
-    var sagapreloaderAnimation = (function() {
 
-var preloaderContainer = document.querySelector('.preloader-container');
-var circle = document.querySelector('.svg-circle');
-var loadingCircleText = document.querySelector('.svg-loading-circle__text');
-var loadingCircleContainer = document.querySelector('.svg-loading-circle-container');
-var currentPercent = 0;
+<script>
+  var sagapreloaderAnimation = (function() {
+    var preloaderContainer = document.querySelector('.preloader-container');
+      function init() {
+          // sessionStorage.setItem('preloaderRan', true);
+          var circle = document.querySelector('.svg-circle');
+          var loadingCircle = document.querySelector('.svg-loading-circle');
+          var loadingCircleText = document.querySelector('.svg-loading-circle__text');
 
-function init() {
+          var currentOffset = 236;
+          var startingOffset = currentOffset;
+          var step = 2.5;
 
-    sessionStorage.setItem('preloaderRan', true);
+          preloaderContainer.style.display = 'block';
 
-    preloaderContainer.style.display = 'block';
+          // js based animation starts here
+          circle.addEventListener('animationstart', animateLoadingCircle);
+          function calculatePercents(current) {
+              return Math.ceil((100 - (current / startingOffset) * 100));
+          };
+          function animateLoadingCircle() {
+              currentOffset -= step;
+              loadingCircle.style.strokeDashoffset = currentOffset;
+              if(currentOffset >= 0) {
+                  loadingCircleText.innerHTML = calculatePercents(currentOffset) + '%';
+                  requestAnimationFrame(animateLoadingCircle);
+              } else {
+                  preloaderContainer.classList.add('remove-svg');
+              }
+          };
 
-    circle.addEventListener('animationstart', function() {
-        var showPercent = window.setInterval(function() {
-            if (currentPercent < 100) {
-              currentPercent += 1;
-            } else {
-              currentPercent = 100;
-              clearInterval(showPercent);
-              preloaderContainer.classList.add('remove-svg');
-            }
-            // Updates a div that displays the current percent
-            loadingCircleText.innerHTML = currentPercent + '%';
-        }, 60);
-    });
-}
+      };
 
-return {
-    init: init
-};
+      function checkDate() {
+        if(localStorage.getItem('preloader')===null) {
+          localStorage.setItem('preloader', Date.now());
+          return true;
+        }
+        var hour = 3600 * 1000;  
+        if(Date.now() - localStorage.getItem('preloader') < hour) {
+          return false;
+        } else {
+          localStorage.setItem('preloader', Date.now());
+          return true;
+        }
+      }
 
-})();
+      return {
+        init: init,
+        preloaderContainer: preloaderContainer,
+        checkDate: checkDate
+      };
 
-// Для того чтобы заработал прелоавдер разкоментируй строку
-if(!sessionStorage.getItem('preloaderRan')) {
+  })();
+
+  // if(!sessionStorage.getItem('preloaderRan')) {
+  //     sagapreloaderAnimation.init();
+  // }
+
+  if(sagapreloaderAnimation.checkDate()) {
     sagapreloaderAnimation.init();
-}
-
-// preloaderAnimation
-    </script>
+  } else {
+    sagapreloaderAnimation.preloaderContainer.style.display = 'none';
+  }
+</script>
