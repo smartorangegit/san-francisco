@@ -98,7 +98,7 @@ $result = $db->prepare("SELECT date, hod_name_$lg, hod_full_$lg, path,ar_imgs, s
 						<div class="status_picture clearfix">
 							<div class="status_img">
 								<img  <?LazyLoad ("/img/house.png", array("class"=>"house_status"))?> alt="house">
-								<img <?LazyLoad ("/img/house_full.png", array("class"=>"house_full"))?> alt="house" style="clip-path: inset(90% 0 0 0); -webkit-clip-path: inset(90% 0 0 0);">
+								<img <?LazyLoad ("/img/house_full.png", array("class"=>"house_full"))?> alt="house" style="clip-path: inset(63% 0 0 0); -webkit-clip-path: inset(90% 0 0 0);">
 							</div>
 							<!--<div class="status_level">
 								<div class="content_subname">5</div>
