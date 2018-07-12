@@ -7,6 +7,8 @@
         <div class="content_wrap clearfix">
           <h1 class="content_name"><?H1page()?></h1>
 
+          <?php include_once('includes/inc/form/form_new.php')?>
+
 
           <div class="about__box">
             <div class="about__item">

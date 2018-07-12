@@ -6,6 +6,10 @@
       <div class="content content_arrangment">
         <div class="content_wrap clearfix">
           <h1 class="content_name"><?=$mes['arrangement-h1']?></h1>
+
+<?php include_once('includes/inc/form/form_new_v2.php')?>
+
+
           <div class="arrinfo__box">
             <div class="content_subname"><?=$mes['arr-mes1']?></div>
             <div class="content_text"><?=$mes['arr-mes2']?></div>
