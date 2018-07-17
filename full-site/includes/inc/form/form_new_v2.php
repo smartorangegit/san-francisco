@@ -169,6 +169,7 @@ $('#picker').dateTimePicker({
   dateFormat: "YYYY-MM-DD HH:mm",
   locale: 'ru',
   title: "",
+  minTime:'08:00',
   positionShift: { top: 40, left: -30}
 });
 </script>

@@ -8,6 +8,8 @@
           <h1 class="content_name"><?=$mes['arrangement-h1']?></h1>
 
 <?php include_once('includes/inc/form/form_new_v2.php')?>
+<?php include_once('includes/inc/form/form_new_v3.php')?>
+
 
 
           <div class="arrinfo__box">
