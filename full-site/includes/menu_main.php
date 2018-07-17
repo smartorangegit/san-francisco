@@ -78,7 +78,7 @@ global $eng_link;
   </div>
   </div>
   <div class="promotions_btn">
-    <a href="/news/akcijni_umovi_rozstrochki/" class="promotions_btn__link"><?=$mes['menu20']?></a>
+    <a href="<?UrlAdd('news')?>kredit-sho-nadihae/" class="promotions_btn__link"><?=$mes['menu20']?></a>
   </div>
  <!-- конец меню -->
  <script type="text/javascript">

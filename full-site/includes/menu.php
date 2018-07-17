@@ -84,9 +84,9 @@ global $ua_swicth_link;
     </div>
   </div>
   <!-- Плашка с акциями-->
-  <!-- <div class="promotions_btn">
-    <a href="/news/akcijni_umovi_rozstrochki/" class="promotions_btn__link"><?=$mes['menu20']?></a>
-  </div> -->
+  <div class="promotions_btn">
+    <a href="<?UrlAdd('news')?>kredit-sho-nadihae/" class="promotions_btn__link"><?=$mes['menu20']?></a>
+  </div>
 
  <!-- конец меню -->
  <script src="/js/alllibrary.js"></script>
