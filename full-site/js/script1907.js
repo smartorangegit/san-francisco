@@ -67,6 +67,8 @@ $(".place__map").click(function(e){
     $(".bigmap_overlay").removeClass("over__active"),
     $(".bigmap_box").fadeOut("slow")
   });
+
+
 // preloader
 $(window).on('load', function () {
 	var $preloader = $('.box_preloader'),
@@ -124,9 +126,20 @@ $('#formclose, .overlay').click(function(){
     })
 });
 
+// realtor-form
+$(".rieltor_btn").on("click", function(e) {
+    e.preventDefault();
+    $("#static-form").toggle();
+    $("#realtor-static-form").toggle();
+});
+// end__realtor-form
+
+
 $(document).ready(function(){
     form('#form_main');
 	form('#form_static');
+	form('#form_call_commercial');
+	form('#form_rieltor');
     // Выбор языка
     $('.language_select').mouseover(function() {
         $(this).removeClass('language_select_hidden');
@@ -409,27 +422,43 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
                         url: "/includes/application.php", //путь до php фаила отправителя
                         data: form_data,
                         success: function(dat) {
+						
+							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');	  
+							if (lang=='uk') {
+								lang='';
+							}
+							else{
+								lang='/'+lang;
+							}
+							  
+						    data= $.parseJSON(dat);
+							if (data.result){
+								if (data.page !== undefined) {
+									window.location = lang+data.page;
+								}
+							}
+							else{
+											 //код в этом блоке выполняется при успешной отправке сообщения
+											$('.form').animate({opacity: 0, top: '10%'}, 1, function(){
+												$(this).css('display','none');
+												$('.overlay').fadeOut(1);
+											});
+											$('.overlay').fadeIn(300, function(){
+												$('.form-ok').css('display','block').animate({opacity: 1, top: '10%'}, 200);
+											})
+											$('form input[name="name"], form input[name="email"], form input[name="tel"], form textarea').val('');
+											$('#contactForm').css ({
+												display: 'none'
+											});
+											$('.form').css ({
+												display: 'none'
+											});
+											$('.overlay').css ({
+												display: 'none'
+											})		
+							
+							}	
 
-							console.log(dat)
-							 console.log(form_data)
-                            //код в этом блоке выполняется при успешной отправке сообщения
-                            $('.form').animate({opacity: 0, top: '10%'}, 1, function(){
-                                $(this).css('display','none');
-                                $('.overlay').fadeOut(1);
-                            });
-                            $('.overlay').fadeIn(300, function(){
-                                $('.form-ok').css('display','block').animate({opacity: 1, top: '10%'}, 200);
-                            })
-                            $('form input[name="name"], form input[name="email"], form input[name="tel"], form textarea').val('');
-                            $('#contactForm').css ({
-                                display: 'none'
-                            });
-                            $('.form').css ({
-                                display: 'none'
-                            });
-                            $('.overlay').css ({
-                                display: 'none'
-                            })
                         }
                     });
                 } else {

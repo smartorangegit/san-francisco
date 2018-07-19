@@ -93,7 +93,22 @@ $('#formclose, .overlay').click(function(){
       $('.overlay').fadeOut(300);
     })
 });
-
+//form for ab testing google
+$('#for_ab_testing_google').click(function(e){
+  e.preventDefault();
+  $('.overlay').fadeIn(300,
+  function(){
+    $('.form_new').css('display','block').animate({opacity: 1, top: '20%'}, 200);
+  })
+});
+$('#formclose_new, .overlay').click(function(){
+  $('#form_new-container').animate({opacity: 0, top: '10%'}, 200,
+    function(){
+      $(this).css('display','none');
+      $('.overlay').fadeOut(300);
+    })
+});
+//end form for ab testing google
 $('#formclose-ok, .overlay').click(function(){
 	  $('.form-ok').animate({opacity: 0, top: '10%'}, 200,
     function(){
@@ -422,15 +437,15 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
                         url: "/includes/application.php", //путь до php фаила отправителя
                         data: form_data,
                         success: function(dat) {
-						
-							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');	  
+
+							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');
 							if (lang=='uk') {
 								lang='';
 							}
 							else{
 								lang='/'+lang;
 							}
-							  
+
 						    data= $.parseJSON(dat);
 							if (data.result){
 								if (data.page !== undefined) {
@@ -455,9 +470,9 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
 											});
 											$('.overlay').css ({
 												display: 'none'
-											})		
-							
-							}	
+											})
+
+							}
 
                         }
                     });
