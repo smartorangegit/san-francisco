@@ -6,9 +6,7 @@ global $eng_link;
 global $ru_swicth_link;
 global $ua_swicth_link;
 ?>
-
 <?include('preloader_saga.php');?>
-
  <!-- начало меню -->
 <div class="menu">
   <div class="menu__inner">
@@ -72,7 +70,7 @@ global $ua_swicth_link;
       <div class="mobile_menu"><img src="/img/pin/menu.svg" alt="menu"><?=$mes['menu-mes2']?></div>
       <a class="wowoo-link" href="#"><div class="tel">+38 (044) 498-05-00</div></a>
       <!-- <div class="tel">+38 (044) 223-59-89</div> -->
-      <a id="callform" class="button callback" href="#"><?=$mes['menu-mes3']?></a>
+      <a id="callform" class="button callback js-callform-both" href="#"><?=$mes['menu-mes3']?></a>
       <div class="ten_box_item">
         <div class="ten_round fb"><a href="https://www.facebook.com/sanfranciscocreativehouse/" target="_blank"><img <?LazyLoad("/img/facebook.svg")?> alt="pin" width="16"></a></div>
       </div>

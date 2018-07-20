@@ -79,13 +79,7 @@ $(window).on('load', function () {
 
 // callbackform
 
-$('#callform,#callform1').click(function(e){
-  e.preventDefault();
-  $('.overlay').fadeIn(300,
-  function(){
-    $('.form').css('display','block').animate({opacity: 1, top: '60%'}, 200);
-  })
-});
+
 $('#formclose, .overlay').click(function(){
   $('#form_main-container').animate({opacity: 0, top: '10%'}, 200,
     function(){
@@ -93,6 +87,7 @@ $('#formclose, .overlay').click(function(){
       $('.overlay').fadeOut(300);
     })
 });
+
 //form for ab testing google
 $('#for_ab_testing_google').click(function(e){
   e.preventDefault();
@@ -109,6 +104,21 @@ $('#formclose_new, .overlay').click(function(){
     })
 });
 //end form for ab testing google
+
+$('.js-callform-both').click(function(e) {
+	e.preventDefault();
+	if(e.target.id === "for_ab_testing_google") {
+		$('.overlay').fadeIn(300, function(){
+			$('.form_new').css('display','block').animate({opacity: 1, top: '20%'}, 200);
+		  });
+		
+	} else {
+		$('.overlay').fadeIn(300, function(){
+			$('.form').css('display','block').animate({opacity: 1, top: '60%'}, 200);
+		  })
+	}
+})
+
 $('#formclose-ok, .overlay').click(function(){
 	  $('.form-ok').animate({opacity: 0, top: '10%'}, 200,
     function(){
@@ -148,7 +158,6 @@ $(".rieltor_btn").on("click", function(e) {
     $("#realtor-static-form").toggle();
 });
 // end__realtor-form
-
 
 $(document).ready(function(){
     form('#form_main');
@@ -436,16 +445,16 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
                         type: "POST", //Метод отправки
                         url: "/includes/application.php", //путь до php фаила отправителя
                         data: form_data,
-                        success: function(dat) {
-
-							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');
+                             success: function(dat) {
+							
+							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');	  
 							if (lang=='uk') {
 								lang='';
 							}
 							else{
 								lang='/'+lang;
 							}
-
+							  
 						    data= $.parseJSON(dat);
 							if (data.result){
 								if (data.page !== undefined) {
@@ -470,10 +479,10 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
 											});
 											$('.overlay').css ({
 												display: 'none'
-											})
-
-							}
-
+											})		
+							
+							}	
+	
                         }
                     });
                 } else {

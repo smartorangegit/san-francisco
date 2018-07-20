@@ -113,6 +113,7 @@ function FooterAdd($html=['html'=>'']){ GLOBAL $site_url;	?>
 
 
 	<? /** inclides/inc/form/ */ FormInclude('form_call') ?>
+	<?php  FormInclude('form_new_v3') ?>
 	
 	<div itemscope itemtype="http://schema.org/LocalBusiness" style="font-size:0;">
     <span itemprop="name" content="SAN FRANCISCO Creative House"></span>

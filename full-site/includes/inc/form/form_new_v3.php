@@ -4,22 +4,22 @@
   <svg class="svg_close" id="formclose_new" enable-background="new 0 0 50 50" viewBox="0 0 50 50" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m37.304 11.282 1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="m12.696 11.282 26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
     <div class="content_name"><?=$mes['callback-mes1']?></div>
        <div class="grafic">
-           График работы
+           <?=$mes['callback-mes14']?>
            <p>ПН-ПТ: 9:00 - 19:00</p>
            <p>СБ-ВС: 10:00 - 17:00</p>
        </div>
        <form id="form_new_v3" class="contact_form" action="" method="post" onsubmit="ajax_form(this)">
          <div class="input_wrapper required_input">
-           <input class="js-input-name" type="text" name="name" placeholder="Ваше ім'я:" data-required="true" onkeyup="javascript:countme('form_new_v3');">
-           <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
+           <input class="js-input-name" type="text" name="name" placeholder="<?=$mes['callback-mes18']?>" data-required="true" onkeyup="javascript:countme('form_new_v3');">
+           <div class="validation-error validation-error_required" style="display: none"><?=$mes['callback-mes15']?></div>
          </div>
          <div class="input_wrapper required_input">
            <input class="js-input-phone" type="tel" name="tel" placeholder="Ваш телефон:" data-required="true">
-           <div class="validation-error validation-error_required" style="display: none">Данне поле обов'язкове для заповнення</div>
-           <div class="validation-error validation-error_phone-format" style="display: none">Невірний формат телефону</div>
+           <div class="validation-error validation-error_required" style="display: none"><?=$mes['callback-mes15']?></div>
+           <div class="validation-error validation-error_phone-format" style="display: none"><?=$mes['callback-mes16']?></div>
          </div>
          <div class="content_subname">
-           МЫ МОЖЕМ ПЕРЕЗВОНИТЬ В УДОБНОЕ ДЛЯ ВАС ВРЕМЯ
+           <?=$mes['callback-mes17']?>
          </div>
          <div class="input_wrapper">
            <input type="text" id="datetimepicker_dark" name="when"/>
@@ -48,10 +48,12 @@
             data: str
         })
             .done(function (msg) {
-                console.log(msg);
+               
+				location.replace('/message/');
                 var allInputs = document.querySelectorAll('[type="text"], [type="tel"], [type="email"]');
                 allInputs.forEach(function (input) {
                     input.value = '';
+
                 });
 
             });
