@@ -57,6 +57,7 @@ global $ua_swicth_link;
           <ul class="dropdown">
             <li><a href="<?UrlAdd('building')?>" title="<?=$mes['menu8']?>"><?=$mes['menu8']?></a></li>
             <li><a href="<?UrlAdd('webcam')?>" title="<?=$mes['menu11']?>"><?=$mes['menu11']?></a></li>
+            <li><a href="<?UrlAdd('ctc')?>" title="CLIENT TECHNICAL CONTROL">CLIENT TECHNICAL CONTROL</a></li>
           </ul>
         </li>
         <li><a href="<?UrlAdd('developer')?>" title="<?=$mes['menu7']?>"><?=$mes['menu7']?></a></li>
