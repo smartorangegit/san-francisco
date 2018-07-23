@@ -111,10 +111,8 @@
                      </div>
                      <div class="ctc__top">
                        <div class="content_text">
-                         <p class="bolder">
                              <?=$mes['ctc-7']?>
-                           <!-- За результатами візиту інвестори отримують звіт про те, які з пунктів зауважень компанія готова виконати. -->
-                         </p>
+                         <!-- За результатами візиту інвестори отримують звіт про те, які з пунктів зауважень компанія готова виконати. -->
                        </div>
                      </div>
 
@@ -181,12 +179,12 @@
                    .content_wrap { width: 100%; max-width: 1000px; padding: 0px 10px; margin: 50px auto 30px; line-height: 1.6; box-sizing: border-box;}
                    .content_name{color: white;  line-height: 1.4; text-align:center;}
                    .content_subname{
-                     font-family: inherit, sans-serif;
-                     color: white;
+                     font-family: inherit, sans-serif; color: white; margin-top: 20px;
                      font-size: 1.875em; line-height: 1.3; letter-spacing: .025em; text-align:center;}
                    .bolder{font-weight: bold;}
                    .ctc__top, .ctc__box, .ctc__footer{
-                     width: 100%;  max-width: 900px;  padding: 0 10px;  margin: 30px auto;}
+                     width: 100%;  max-width: 900px;  padding: 0 10px; }
+                  .ctc__box {margin: 30px auto;}
                    .ctc__footer, .ctc__box{
                      display: flex; display: -webkit-flex; justify-content: space-between; -webkit-justify-content: space-between;}
                    .ctc_item{  width: 25%;  text-align: center;  padding: 20px;}
@@ -195,7 +193,7 @@
                    .content_text p{padding: 14px 0;}
                    .ctc__content{  width: 85%;  column-count: 2;  -moz-column-count: 2;  -webkit-column-count: 2;}
                    .ctc__content ul{ padding:  0 12px;}
-                   .ctc__content li{ font-family: "StTransmission-300Light";}
+                   .ctc__content li{ font-family: "StTransmission-300Light"; list-style: disc;}
                    .ctc__box .ctc_img {width: 15%;display: flex;align-items: center;position: relative;left: -20px; }
                    @media only screen and (max-width: 570px) {
                      .content_name{font-size: 38px;}
