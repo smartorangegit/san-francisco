@@ -22,6 +22,11 @@
               <div class="ten_round"><span><img src="/img/pin/tel.png" alt="pin"></span></div>
               <span class="content_text"> +38 (044) 498-05-00</span>
             </div>
+			<div class="content_text"><?=$mes['i-mesService-department']?></div>
+			<div class="ten_box_item wow flip">
+              <div class="ten_round"><span><img src="/img/pin/tel.png" alt="pin"></span></div>
+              <span class="content_text"> +38 (044) 494 04 00</span>
+            </div>
             	<? FormInclude('form_static') ?>
 				<? FormInclude('form_rieltor') ?>
             <a class="button rieltor_btn" href="http://riverside.net.ua/agent" title="<?=$mes['callback-mes9']?>"><?=$mes['callback-mes9']?></a>
