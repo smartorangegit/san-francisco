@@ -39,6 +39,7 @@ global $ua_swicth_link;
             <li><a href="<?UrlAdd('social')?>" title="<?=$mes['menu6']?>"><?=$mes['menu6']?></a></li>
             <li><a href="<?UrlAdd('arrangement')?>" title="<?=$mes['menu13']?>"><?=$mes['menu13']?></a></li>
             <li><a href="<?UrlAdd('atmosfera')?>" title="SFERA Living System">SFERA Living System</a></li>
+			<li><a href="<?UrlAdd('day')?>" title="<?=$mes['1 день у <br>SAN FRANCISCO Creative House']?>"><?=$mes['1 день у <br>SAN FRANCISCO Creative House']?></a></li>
           </ul>
         </li>
         <li><a href="<?UrlAdd()?>#place" title="<?=$mes['menu2']?>"><?=$mes['menu2']?></a></li>
@@ -73,7 +74,12 @@ global $ua_swicth_link;
       <!-- <div class="tel">+38 (044) 223-59-89</div> -->
       <a id="callform" class="button callback js-callform-both" href="#"><?=$mes['menu-mes3']?></a>
       <div class="ten_box_item">
-        <div class="ten_round fb"><a href="https://www.facebook.com/sanfranciscocreativehouse/" target="_blank"><img <?LazyLoad("/img/facebook.svg")?> alt="pin" width="16"></a></div>
+        <a class="social_links" href="https://www.facebook.com/sanfranciscocreativehouse/" target="_blank">
+          <svg enable-background="new 0 0 512 512" height="16" viewBox="0 0 512 512" width="16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="m296.296 512h-95.936v-256h-64v-88.225l64-.029-.104-51.976c0-71.976 19.517-115.77 104.3-115.77h70.588v88.242h-44.115c-33.016 0-34.604 12.328-34.604 35.342l-.131 44.162h79.346l-9.354 88.225-69.926.029z" fill="#fff"/></svg>
+        </a>
+        <a class="social_links" href="https://www.instagram.com/sf_kyiv/" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" height="16"  width="16" enable-background="new 0 0 512 512" fill="#ffffff" viewBox="0 0 512 512"><path d="m352 0h-192c-88.352 0-160 71.648-160 160v192c0 88.352 71.648 160 160 160h192c88.352 0 160-71.648 160-160v-192c0-88.352-71.648-160-160-160zm112 352c0 61.76-50.24 112-112 112h-192c-61.76 0-112-50.24-112-112v-192c0-61.76 50.24-112 112-112h192c61.76 0 112 50.24 112 112z"/><path d="m256 128c-70.688 0-128 57.312-128 128s57.312 128 128 128 128-57.312 128-128-57.312-128-128-128zm0 208c-44.096 0-80-35.904-80-80 0-44.128 35.904-80 80-80s80 35.872 80 80c0 44.096-35.904 80-80 80z"/><circle cx="393.6" cy="118.4" r="17.056"/></svg>
+        </a>
       </div>
       <div class="menu_river">
         <a href="http://saga-development.com.ua/">
@@ -86,6 +92,18 @@ global $ua_swicth_link;
   <div class="promotions_btn">
     <a href="<?UrlAdd('news')?>kredit-sho-nadihae/" class="promotions_btn__link"><?=$mes['menu20']?></a>
   </div>
+  <style media="screen">
+    .social_links{
+      text-decoration: none;
+      border: 1px solid white;
+      border-radius: 100%;
+      padding: 8px 6px 4px;
+      margin: 0 4px;
+      width: 20px;
+      height: 20px;
+      display: inline-block;
+    }
+  </style>
 
  <!-- конец меню -->
  <script src="/js/alllibrary.js"></script>
