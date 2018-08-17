@@ -39,7 +39,7 @@ global $ua_swicth_link;
             <li><a href="<?UrlAdd('social')?>" title="<?=$mes['menu6']?>"><?=$mes['menu6']?></a></li>
             <li><a href="<?UrlAdd('arrangement')?>" title="<?=$mes['menu13']?>"><?=$mes['menu13']?></a></li>
             <li><a href="<?UrlAdd('atmosfera')?>" title="SFERA Living System">SFERA Living System</a></li>
-			<li><a href="<?UrlAdd('day')?>" title="<?=$mes['1 день у <br>SAN FRANCISCO Creative House']?>"><?=$mes['1 день у <br>SAN FRANCISCO Creative House']?></a></li>
+			<li><a href="<?UrlAdd('day')?>" title="<?=$mes['day-menu']?>"><?=$mes['day-menu']?></a></li>
           </ul>
         </li>
         <li><a href="<?UrlAdd()?>#place" title="<?=$mes['menu2']?>"><?=$mes['menu2']?></a></li>
