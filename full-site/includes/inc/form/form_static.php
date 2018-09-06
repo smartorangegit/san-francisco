@@ -24,6 +24,9 @@
           <div class="input__error empty-input empty-input_hidden">Данне поле обов'язкове для заповнення</div>
           <div class="input__error invalid-email invalid-email_hidden">Невірний формат email адреси</div>
         </div>
+        <div class="input input-box">
+           <input type="text" class="map_form_datepicker" required placeholder="<? echo $mes['callback-mes20'];?>" name="when"/>
+         </div>
           <input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
           <input  name="metka" class="metka" type="hidden" value="San-francisco with text"/>
           <input  name="inn" class="userInn" type="hidden" value="San-francisco"/>

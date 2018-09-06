@@ -172,6 +172,34 @@ $(document).ready(function(){
         $(this).addClass('language_select_hidden');
     });
 
+    // Datepicker для формы н карте
+
+    var logic1 = function( currentDateTime ){
+        if ( currentDateTime.getDate() == new Date().getDate() ){
+            this.setOptions({
+                minTime: new Date()
+            });
+        } else
+        {
+            this.setOptions({
+                minTime:'9:00'
+            });
+        }
+    };
+    
+    $('.map_form_datepicker').datetimepicker({
+        theme:'dark',
+      // value: 'trololo',
+      // value: new Date(),
+        minDate: new Date(),
+        maxTime: '20:00',
+        yearStart: 2018,
+        yearEnd: 2018,
+        dayOfWeekStart : 1,
+        onSelectDate: logic1,
+        onShow: logic1
+    });
+
 });
 
     //Валидация

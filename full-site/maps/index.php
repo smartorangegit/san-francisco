@@ -53,6 +53,9 @@
 <? /*footer*/ FooterAdd();	?>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_XaLtOX8vgeRAIeqgdfHh9q1lNTIS3Y0&callback=initMap"></script>
 <script src="/js/infobubble.js"></script>
+<link rel="stylesheet" href="/js/datapick/jquery.datetimepicker.css">
+<script src="/js/datapick/jquery.datetimepicker.js"></script>
+<script src="/js/datapick/php-date-formatter.min.js"></script>
 <script src="/js/map.js" type="text/javascript"></script>
   </body>
 </html>
