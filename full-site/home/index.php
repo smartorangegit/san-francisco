@@ -6,7 +6,7 @@
 		 'description'=>$mes['home-description']
 		 ]);?>
 
-		<?  /*preloader*/ include_once('includes/preloader.php');  ?>
+		<!-- <?  /*preloader*/ include_once('includes/preloader.php');  ?> -->
 
     <div class="main_page clearfix">
       <?  /*Menu*/ include_once('includes/menu.php');  ?>
