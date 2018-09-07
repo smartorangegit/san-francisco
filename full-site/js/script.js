@@ -79,7 +79,13 @@ $(window).on('load', function () {
 
 // callbackform
 
-
+$('#callform,#callform1').click(function(e){
+  e.preventDefault();
+  $('.overlay').fadeIn(300,
+  function(){
+    $('#form_main-container').css('display','block').animate({opacity: 1, top: '60%'}, 200);
+  })
+});
 $('#formclose, .overlay').click(function(){
   $('#form_main-container').animate({opacity: 0, top: '10%'}, 200,
     function(){
@@ -88,6 +94,22 @@ $('#formclose, .overlay').click(function(){
     })
 });
 
+// callbackform-ctc
+
+$('#callform-ctc').click(function(e){
+  e.preventDefault();
+  $('.overlay').fadeIn(300,
+  function(){
+    $('#form_main-container-ctc').css('display','block').animate({opacity: 1, top: '60%'}, 200);
+  })
+});
+$('#formclose-ctc, .overlay').click(function(){
+  $('#form_main-container-ctc').animate({opacity: 0, top: '10%'}, 200,
+    function(){
+      $(this).css('display','none');
+      $('.overlay').fadeOut(300);
+    })
+});
 //form for ab testing google
 $('#for_ab_testing_google').click(function(e){
   e.preventDefault();
@@ -104,21 +126,6 @@ $('#formclose_new, .overlay').click(function(){
     })
 });
 //end form for ab testing google
-
-$('.js-callform-both').click(function(e) {
-	e.preventDefault();
-	if(e.target.id === "for_ab_testing_google") {
-		$('.overlay').fadeIn(300, function(){
-			$('.form_new').css('display','block').animate({opacity: 1, top: '20%'}, 200);
-		  });
-		
-	} else {
-		$('.overlay').fadeIn(300, function(){
-			$('.form').css('display','block').animate({opacity: 1, top: '60%'}, 200);
-		  })
-	}
-})
-
 $('#formclose-ok, .overlay').click(function(){
 	  $('.form-ok').animate({opacity: 0, top: '10%'}, 200,
     function(){
@@ -154,16 +161,35 @@ $('#formclose, .overlay').click(function(){
 // realtor-form
 $(".rieltor_btn").on("click", function(e) {
     e.preventDefault();
-    $("#static-form").toggle();
-    $("#realtor-static-form").toggle();
+    if(($("#static-form").css("display") === 'none' && $("#realtor-static-form").css("display") === 'none') || 
+    ($("#static-form").css("display") === 'block' && $("#realtor-static-form").css("display") === 'block')) {
+        $("#static-form").toggle();
+        $('#realtor-static-form').css({"display" : "none"});
+    } else {
+        $("#static-form").toggle();
+        $("#realtor-static-form").toggle();
+    }
+    $('#form_service_department-form-container').css({"display" : "none"});
 });
 // end__realtor-form
+
+// service department btn
+$('.service_dep_btn').click(function(e) {
+    e.preventDefault();
+    $("#static-form").css({"display" : "none"});
+    $("#realtor-static-form").css({"display" : "none"});
+    $('#form_service_department-form-container').css({"display" : "block"});
+});
+// service department btn
+
+
 
 $(document).ready(function(){
     form('#form_main');
 	form('#form_static');
 	form('#form_call_commercial');
-	form('#form_rieltor');
+    form('#form_rieltor');
+    form('#form_service_department');
     // Выбор языка
     $('.language_select').mouseover(function() {
         $(this).removeClass('language_select_hidden');
@@ -171,8 +197,6 @@ $(document).ready(function(){
     $('.language_select').mouseout(function() {
         $(this).addClass('language_select_hidden');
     });
-
-    // Datepicker для формы н карте
 
     var logic1 = function( currentDateTime ){
         if ( currentDateTime.getDate() == new Date().getDate() ){
@@ -189,8 +213,6 @@ $(document).ready(function(){
     
     $('.map_form_datepicker').datetimepicker({
         theme:'dark',
-      // value: 'trololo',
-      // value: new Date(),
         minDate: new Date(),
         maxTime: '20:00',
         yearStart: 2018,
@@ -199,6 +221,18 @@ $(document).ready(function(){
         onSelectDate: logic1,
         onShow: logic1
     });
+
+    $('.form_service_department_datepicker').datetimepicker({
+        theme:'dark',
+        minDate: new Date(),
+        maxTime: '20:00',
+        yearStart: 2018,
+        yearEnd: 2018,
+        dayOfWeekStart : 1,
+        onSelectDate: logic1,
+        onShow: logic1
+    });
+
 
 });
 
@@ -473,16 +507,16 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
                         type: "POST", //Метод отправки
                         url: "/includes/application.php", //путь до php фаила отправителя
                         data: form_data,
-                             success: function(dat) {
-							
-							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');	  
+                        success: function(dat) {
+
+							var lang=document.getElementsByTagName('html')[0].getAttribute('lang');
 							if (lang=='uk') {
 								lang='';
 							}
 							else{
 								lang='/'+lang;
 							}
-							  
+
 						    data= $.parseJSON(dat);
 							if (data.result){
 								if (data.page !== undefined) {
@@ -507,10 +541,10 @@ a);C(a.options.offset);p(a.options.breakpoints,function(a){if(a.width>=window.sc
 											});
 											$('.overlay').css ({
 												display: 'none'
-											})		
-							
-							}	
-	
+											})
+
+							}
+
                         }
                     });
                 } else {

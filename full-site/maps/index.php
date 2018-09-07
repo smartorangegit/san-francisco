@@ -17,25 +17,29 @@
               <div class="ten_round"><span><img src="/img/pin/place.png" alt="pin"></span></div>
               <span  class="content_text"><?=$mes['map-mes2']?></span>
             </div>
-            <div class="ten_box_item wow flip">
+            <div class="ten_box_item wow flip ten_box_item_phone">
               <!--<div class="ten_round"><a  href="<?UrlAdd('maps')?>"><img src="../img/pin/tel.png" alt="pin"></a></div>-->
               <div class="ten_round"><span><img src="/img/pin/tel.png" alt="pin"></span></div>
               <span class="content_text"> +38 (044) 498-05-00</span>
             </div>
-			<div class="content_text"><?=$mes['i-mesService-department']?></div>
-			<div class="ten_box_item wow flip">
+			      <!-- <div class="content_text"><?=$mes['i-mesService-department']?></div>
+			      <div class="ten_box_item wow flip">
               <div class="ten_round"><span><img src="/img/pin/tel.png" alt="pin"></span></div>
               <span class="content_text"> +38 (044) 494 04 00</span>
-            </div>
+            </div> -->
             	<? FormInclude('form_static') ?>
-				<? FormInclude('form_rieltor') ?>
+				      <? FormInclude('form_rieltor') ?>
+              <? FormInclude('form_service_department') ?>
             <a class="button rieltor_btn" href="http://riverside.net.ua/agent" title="<?=$mes['callback-mes9']?>"><?=$mes['callback-mes9']?></a>
+            <a class="button service_dep_btn" href="http://riverside.net.ua/agent" title="<?=$mes['i-mesService-department']?>"><?=$mes['i-mesService-department']?></a>
             <style media="screen">
-              .rieltor_btn{
+              .rieltor_btn, .service_dep_btn{
                 display: block;
                 max-width: 100%;
                 text-align: center;
-                margin-bottom: 24px;
+              }
+              .ten_box_item_phone .content_text {
+                font-weight: 600;
               }
             </style>
           </div>
