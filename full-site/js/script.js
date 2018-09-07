@@ -161,24 +161,15 @@ $('#formclose, .overlay').click(function(){
 // realtor-form
 $(".rieltor_btn").on("click", function(e) {
     e.preventDefault();
-    if(($("#static-form").css("display") === 'none' && $("#realtor-static-form").css("display") === 'none') || 
-    ($("#static-form").css("display") === 'block' && $("#realtor-static-form").css("display") === 'block')) {
-        $("#static-form").toggle();
-        $('#realtor-static-form').css({"display" : "none"});
-    } else {
         $("#static-form").toggle();
         $("#realtor-static-form").toggle();
-    }
-    $('#form_service_department-form-container').css({"display" : "none"});
 });
 // end__realtor-form
 
 // service department btn
 $('.service_dep_btn').click(function(e) {
     e.preventDefault();
-    $("#static-form").css({"display" : "none"});
-    $("#realtor-static-form").css({"display" : "none"});
-    $('#form_service_department-form-container').css({"display" : "block"});
+    $('#form_service_department-phone').toggle();
 });
 // service department btn
 
@@ -189,7 +180,6 @@ $(document).ready(function(){
 	form('#form_static');
 	form('#form_call_commercial');
     form('#form_rieltor');
-    form('#form_service_department');
     // Выбор языка
     $('.language_select').mouseover(function() {
         $(this).removeClass('language_select_hidden');
