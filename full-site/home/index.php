@@ -573,7 +573,7 @@
 
 		</div>
 		<script type="text/javascript">
-		        var deadline = 'March 23 2018';
+		        var deadline = 'March 11 2018';
 				var t = getTimeRemaining(deadline);
 		        function getTimeRemaining(endtime){
 		      var t = Date.parse(endtime) - Date.parse(new Date());
