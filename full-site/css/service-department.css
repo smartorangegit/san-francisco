@@ -1,0 +1,213 @@
+/*service-department*/
+.content-department {
+    background: url(../img/service-department/bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.depatment_name {
+  text-transform: none;
+  font-size: calc(52/16*1rem);
+  margin-bottom: 45px;
+}
+
+.department-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.department-info__text {
+  width: calc(450/1020*100%);
+  font-family: "StTransmission-300Light";
+  font-size: calc(18/16*1rem);
+  line-height: 1.5;
+}
+
+.department-info__image {
+  width: calc(490/1020*100%);
+}
+
+.services__heading {
+  font-size: calc(52/16*1rem);
+  font-family: "AkzidenzGroteskPro-LightCn";
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.services-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.services-list__item {
+  max-width: 192px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services-list__icon {
+  width: 192px;
+  height: 192px;
+  background-image: url(/img/service-department/sprite.png);
+  margin-bottom: 35px;
+}
+.services-list__icon_1 {
+  background-position: 0px 0px;
+}
+.services-list__icon_2 {
+  background-position: -238px 0px;
+}
+.services-list__icon_3 {
+  background-position: -476px 0px;
+
+}
+.services-list__icon_4 {
+  background-position: -714px 0px;
+}
+
+.services-list__text {
+  width: 100%;
+  text-align: center;
+  font-family: "StTransmission-300Light";
+  font-size: calc(18/16*1rem);
+}
+
+.services-contact {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.services-contact-list {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-contact-list__item {
+  width: calc(460/1155*100%);
+}
+.services-contact-list__item:first-child {
+  padding-left: 70px;
+  position: relative;
+}
+.services-contact-list__item:first-child:after {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 38px;
+  height: 57px;
+  content: url(/img/service-department/phone-icon.png);
+}
+
+.services-contact-list__text {
+  color: #fff;
+  font-family: "StTransmission-300Light";
+  font-size: calc(24/16*1rem);
+  line-height: 1.5;
+}
+.services-contact-list__text_medium {
+  color: #EF4136;
+}
+
+.services-contact-list__link {
+  font-family: "PFDinTextUniversal-Light";
+  font-size: calc(24/16*1rem);
+  color: #fff;
+  text-decoration: none;
+}
+.services-contact-list__link_phone {
+  display: inline-block;
+  position: relative;
+  margin-top: 7px;
+  padding-left: 20px;
+  margin-right: 22px;
+  font-family: "PFDinTextUniversal-Medium";
+}
+.services-contact-list__link_phone:before {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 6px;
+  height: 18px;
+  content: url(/img/service-department/phone-icon_2.png);
+}
+.services-contact-list__link_phone:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width: 1086px) {
+  .services-list {
+    flex-wrap: wrap;
+  }
+  .services-list__item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .department-info {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .department-info__text {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .department-info__image {
+    width: 100%;
+  }
+
+  .services-list {
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  .services-list__item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .services-contact {
+    padding: 20px 0;
+  }
+  .services-contact-list {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+  }
+
+  .services-contact-list_icon {
+    margin-bottom: 10px;
+  }
+  .services-contact-list__item {
+    width: 90%;
+  }
+  .services-contact-list__item:first-child {
+    padding-left: 0;
+    margin-bottom: 20px;
+  }
+  .services-contact-list__item:first-child:after {
+    display: none;
+  }
+
+  .services-contact-list__text {
+    font-size: 1rem;
+  }
+
+  .services-contact-list__link {
+    font-size: 1rem;
+  }
+}
+/*end__service-department*/
