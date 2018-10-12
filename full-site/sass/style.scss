@@ -1846,6 +1846,10 @@ body, html {
   .menu__inner{
     position: static;
     width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+
   }
   .line {
     display: none;

@@ -494,7 +494,7 @@
 				    mode: "fade",
 				    captions: false,
 						auto: true,
-						pager: false,
+						pager: true,
 						adaptiveHeight: true
 
 				  });
