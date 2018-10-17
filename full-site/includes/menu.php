@@ -34,6 +34,7 @@ global $ua_swicth_link;
         <li class="dropdown_link"><a href="<?UrlAdd('about')?>" title="<?=$mes['menu23']?>"><?=$mes['menu23']?> <span class="menu_arr">&#9660;</span></a>
           <ul class="dropdown">
             <li><a href="<?UrlAdd('about')?>" title="<?=$mes['menu1']?>"><?=$mes['menu1']?></a></li>
+			<li><a href="<?UrlAdd('general-plan')?>" title="<?=$mes['general-plan-menu']?>"><?=$mes['general-plan-menu']?></a></li>
             <li><a href="<?UrlAdd()?>#values" title="<?=$mes['menu4']?>"><?=$mes['menu4']?></a></li>
             <li><a href="<?UrlAdd()?>#advantages" title="<?=$mes['menu3']?>"><?=$mes['menu3']?></a></li>
             <li><a href="<?UrlAdd('social')?>" title="<?=$mes['menu6']?>"><?=$mes['menu6']?></a></li>
