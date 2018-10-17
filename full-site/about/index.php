@@ -44,7 +44,7 @@
               </div>
               <div class="about__info">
                 <p class="content_subname"><?=$mes['ab-mes6']?></p>
-                <p class="content_text">269</p>
+                <p class="content_text">355</p>
               </div>
             </div>
             <div class="about__item">
