@@ -113,11 +113,16 @@
 	    </div>
       <div  <?LazyLoad ("/img/render1.jpg", array("class"=>"content_0"))?>>
 				<div class="bxslider">
-				  <div>
+					<div>
 						<img src="/img/render1.jpg" alt="SanFrancisco CREATIVE HOUSE">
 					</div>
 				  <div><img src="/img/slider1.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
-				  <!-- <div><img src="/img/slider2.jpg" alt="SanFrancisco CREATIVE HOUSE"></div> -->
+				  <div><img src="/img/slider2.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
+				  <div><img src="/img/slider3.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
+				  <div><img src="/img/slider4.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
+				  <div><img src="/img/slider5.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
+				  <div><img src="/img/slider6.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
+				  <div><img src="/img/slider7.jpg" alt="SanFrancisco CREATIVE HOUSE"></div>
 				</div>
         <div class="main_slogan wow fadeIn">
           <div class="center"><?=$mes['h-mes1']?></div>
@@ -493,9 +498,9 @@
 				  $(".bxslider").bxSlider({
 				    mode: "fade",
 				    captions: false,
-						auto: true,
-						pager: true,
-						adaptiveHeight: true
+					auto: true,
+					pager: true,
+					adaptiveHeight: true
 
 				  });
 				});
@@ -507,8 +512,8 @@
 
 
 
-
-		<!-- timer -->
+<?
+/* 		<!-- timer -->
 		 <div class="modal_window__container" style="display:none;">
 					<div class="modal_window">
 					<div class="modal_window__main-content">
@@ -615,4 +620,5 @@
 			$('.modal_window__container').fadeOut(1000);
 		});
 		</script>
-				<!-- end timer -->
+				<!-- end timer --> */
+				?>

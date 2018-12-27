@@ -2,8 +2,7 @@
 ParametrFlats();
 GLOBAL $floor_new,$plan,$flat,$plan,$sleh,$floor,$floor_prev,$floor_next;
 
-define('BreadcrumbsHouse', $mes['f-mes3'].' '.$plan);
-define('BreadcrumbsFloor', $mes['fl-mes9'].' '.$floor[0]);
+
 
 $result = $db->prepare("SELECT img, sort, compas   FROM `section` WHERE `sec`=$sec AND `build`=$plan AND `floor`=$floor[0] ");
 $result->execute();     $result->bind_result($si['img'],$si['sort'] ,$si['compas']);	$result->fetch(); 	$result->close();
@@ -17,8 +16,8 @@ $result = $db->prepare("SELECT floor, visible,number,buld,level,all_room,life_ro
 WHERE buld=$plan AND `sec`=$sec AND (`floor`=$floor[0] $pov1) ORDER BY sorts ASC");
    $result->execute();
     $result->bind_result($s['floor'],$s['visible'],$s['number'],$s['buld'],$s['level'],$s['all_room'],$s['life_room'],$s['id']); while($result->fetch()){   $i=0;
-
-	//$flats = explode(".", $s['number']);
+	
+	//$flats = explode(".", $s['number']);		 
 		$flats=	$s['number']{0};
    $s['kim']=$flats[0];
 		foreach($s as $key=>$k){
@@ -51,10 +50,10 @@ WHERE buld=$plan AND `sec`=$sec AND (`floor`=$floor[0] $pov1) ORDER BY sorts ASC
    <? /*head*/ HeadAdd($html=['head'=>'Y',
                 'title'=>$mes['floorplan-title'], 'description'=>$mes['floorplan-description'],
 							  'robots'=>'noindex, follow',
-							  'html'=>'<link rel="stylesheet" href="/css/appart.css">']);	?>
+							  'html'=>'<link rel="stylesheet" href="/css/appart.css">']);	?>  
 
-    <div class="main_page long_page clearfix">
-
+    <div class="main_page clearfix">
+     
  <?  /*Menu*/ MenuAdd();  ?>
 
       <div class="content content_floorplan">
@@ -73,34 +72,36 @@ WHERE buld=$plan AND `sec`=$sec AND (`floor`=$floor[0] $pov1) ORDER BY sorts ASC
               </div>
 
 			  <?/*Кнопки вибору поверху*/FloorPrevNextAdd($plan,$sec,$floor,$floor_next,$floor_prev);?>
-
+          
             </div>
 
             <div class="flats_img clas_svg" style=' display: block !important;'>
              <?/* <img src="/img/floorplan.png" alt="floor">*/
 			 include(svg_plan($svg=$si['img']));
-			 //print_r($si['img']);
 			 ?>
        <a class="button"  href="<?=UrlAdd($text='plan')?>"><?=$mes['floorplan-back-button']?></a>
 	   <div class="bottom_form"><a id="callform1" class="button callback"  href="#">дізнатись ціну</a></div>
-<script>
+<script>  
 <?$i=0; foreach($REZULT as $key=>$s){  $i++; $cl=$clas_css[$key];?>
-$('.<?=$clas_js[$key]?>').mousemove(function(e) {
+$('.<?=$clas_js[$key]?>').mouseover(function(e) {
   document.getElementById("number_s").innerHTML = "<?=$s['number']?>";
   document.getElementById("kim_s").innerHTML = "<?=$s['kim']?>";
   document.getElementById("life_room_s").innerHTML = "<?=$s['life_room']?> <span><?=$mes['pl-mes7']?></span>";
   document.getElementById("all_room_s").innerHTML = "<?=$s['all_room']?> <span><?=$mes['pl-mes7']?></span>";
   document.getElementById("flats").style = "display:block";
-
-    var x = e.pageX;
+  
+      var x = e.pageX;
     var y = e.pageY;
-    var leftPos = x - $('.lin_<?=$i?>').width() - 36;
-    var topPos = y - $('.lin_<?=$i?>').height() - 36;
+    var leftPos = x - $('.lin_<?=$i?>').width() - 250;
+    var topPos = y - $('.lin_<?=$i?>').height() - 20;
 
     $(".lin_<?=$i?>").css({top:topPos, left:leftPos});
-})
+}).mouseout(function()
+{
+document.getElementById("flats").style = "display:none";
+});
  <?}?>
-
+ 
  	<?$i=0; foreach($REZULT as $key=>$s){  $i++; $cl=$clas_css[$key];?>
 $('.<?=$clas_js[$key]?>').mouseover(function() {
   $('.lin_<?=$i?>').css('display', 'block');
@@ -110,6 +111,10 @@ $('.lin_<?=$i?>').css('display', 'none');
 });
  <?}?>
 </script>
+	<?$i=0; foreach($REZULT as $key=>$s){  $i++; $cl=$clas_css[$key];?>
+<div class="lin_<?=$i?>">
+<?=$mes['pl-mes16']?> <?=$s['number']?><br> <?=$s['all_room']?> <?=$mes['pl-mes20']?>  <?//=($key).'--'.$s['sorts'].'-'.$s['id']?>
+</div> <?}?>
 
 
             </div>
@@ -122,38 +127,35 @@ $('.lin_<?=$i?>').css('display', 'none');
                 <span class="number"><?=$sec?></span>
                 <span class="name"><?=$mes['pl-mes2']?></span>
               </div>
-		<div id="flats" >
+		<div id="flats" style="display:none">
               <div class="info_section">
-                <span class="number" id='number_s'>-</span>
+                <span class="number" id='number_s'></span>
                 <span class="name"><?=$mes['pl-mes3']?></span>
               </div>
 
               <div class="info_section">
-                <span class="number" id='kim_s'>-</span>
+                <span class="number" id='kim_s'></span>
                 <span class="name"><?=$mes['pl-mes4']?></span>
               </div>
 
               <div class="info_section">
-                <span class="number"  id='all_room_s'>- <span><?=$mes['pl-mes7']?></span></span>
+                <span class="number"  id='all_room_s'></span>
                 <span class="name"><?=$mes['pl-mes5']?></span>
               </div>
 
               <div class="info_section">
-                <span class="number"  id='life_room_s'>- <span><?=$mes['pl-mes7']?></span></span>
+                <span class="number"  id='life_room_s'><span><?=$mes['pl-mes7']?></span></span>
                 <span class="name"><?=$mes['pl-mes6']?></span>
               </div>
 		</div>
             </div>
           </div>
-
-
-
+		  
+		  
+		  
         </div>
       </div>
     </div>
-    <?$i=0; foreach($REZULT as $key=>$s){  $i++; $cl=$clas_css[$key];?>
-      <div class="lin_<?=$i?>">
-        <?=$mes['pl-mes16']?> <?=$s['number']?><br> <?=$s['all_room']?> <?=$mes['pl-mes20']?>  <?//=($key).'--'.$s['sorts'].'-'.$s['id']?>
-      </div> <?}?>
 
 <? /*footer*/ FooterAdd($html=['head'=>'Y']);	?>
+

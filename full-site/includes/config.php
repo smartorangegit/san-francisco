@@ -40,6 +40,7 @@ define(ControlDir, array('js','css','includes',
 						'home',
 						'news_list',
 						'plan',
+						'pdf',
 						'usloviya-priobreteniya-rassrochka',
 						'comingsoon',
 						'developer',
@@ -52,9 +53,12 @@ define(ControlDir, array('js','css','includes',
 						'application'
 						)
 		);
-define(NotCashlFile, array('news/index.php')); 
+define(NotCashlFile, array('news/index.php'));
 
-
+/**
+ * Підключення модулів
+ */
+include(dirname(__FILE__).'/modules/Breadcrumbs.php');
 
 
 
