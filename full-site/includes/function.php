@@ -17,7 +17,7 @@ function determmineLaguage() {
 	$eng_link,
 	$ua_swicth_link,
 	$ru_swicth_link;
-	
+
 	$actual_link = "$site_url$_SERVER[REQUEST_URI]";
 	$pieces = explode("/", $actual_link);
 	if($pieces[3] == "ru") {
@@ -118,7 +118,7 @@ function FooterAdd($html=['html'=>'']){ GLOBAL $site_url;	?>
 
 	<? /** inclides/inc/form/ */ FormInclude('form_call') ?>
 	<?php  						 FormInclude('form_new_v3') ?>
-	
+
 	<div itemscope itemtype="http://schema.org/LocalBusiness" style="font-size:0;">
     <span itemprop="name" content="SAN FRANCISCO Creative House"></span>
     <span itemprop="url" content="<?=$site_url?>"></span>
@@ -144,11 +144,11 @@ function FooterAdd($html=['html'=>'']){ GLOBAL $site_url;	?>
 	<?	if($html['html']): echo $html['html'];		endif;
 		if($html['head']){ echo  '</body></html>';}
 	}
-	
+
 function H1page($return=false){ GLOBAL $mes,$SETPAGE;
 
-	if ($return) 		return $mes[$SETPAGE.'-h1'];	
-	else 		echo $mes[$SETPAGE.'-h1'];	
+	if ($return) 		return $mes[$SETPAGE.'-h1'];
+	else 		echo $mes[$SETPAGE.'-h1'];
 
 }
 
@@ -199,10 +199,10 @@ function alternateAdd($url_origin=''){ global $site_url, $len_default, $len;
 			$st.='
 			<link rel="alternate" hreflang="'.$t.'" href="'.$site_url.'/'.$t.substr($url_origin, 3).'" />';
 		}
-		
-		
+
+
 	}
-	else 
+	else
 	{
 		if ($url_origin=='/')
 		{
@@ -212,10 +212,10 @@ function alternateAdd($url_origin=''){ global $site_url, $len_default, $len;
 		foreach ($len as $t)
 		{
 			$st.='
-			<link rel="alternate" hreflang="'.$t.'" href="'.$site_url.'/'.$t.$url_origin.'" />';		
+			<link rel="alternate" hreflang="'.$t.'" href="'.$site_url.'/'.$t.$url_origin.'" />';
 		}
-		
-	 } 
+
+	 }
  return $st;
 }
 
@@ -280,14 +280,14 @@ function copyringAdd(){ global $SETPAGE; ?>
 		<div class="footer clearfix">
 		<!-- початок breadcrumbs -->
 		<div class="breadcrumbs">
-		
+
 	<?
 		$breadcrumbs = Breadcrumbs();
-			
+
 		if ($SETPAGE != 'home') {
-			
+
 			echo '<ul class="breadcrumbs__list">';
-			
+
 			foreach (Breadcrumbs() as $k=>$url)
 			{
 				 if(count(Breadcrumbs())==$k+1)
@@ -298,13 +298,13 @@ function copyringAdd(){ global $SETPAGE; ?>
 				 {
 					 echo ' <li class="breadcrumbs__item"><span itemscope itemtype="https://data-vocabulary.org/Breadcrumb"><a  itemprop="url" class="breadcrumbs__link" href="'.$url['url'].'"><span itemprop="title">'.$url['text'].'</span></a></span> <span> > </span></li>';
 				 }
-			}	
-			
+			}
+
 		    echo '</ul>';
 		}
-		
-			?>	
-				
+
+			?>
+
 <!--		</span>-->
 		</div>
 		<!-- кінець breadcrumbs -->
@@ -399,95 +399,95 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 function FormInclude($id, $par=''){ GLOBAL $mes;
 	$kv=$par;
 	$webAd=$_SERVER['SCRIPT_URI'];
-		
+
 	 include("inc/form/".$id.".php");
-		
-}	
-	
+
+}
+
 /**
  *  @brief (Кешування сторынок)
  *  @param [in] $file Description for $file
- *  
+ *
  *  @details ()
- */	
+ */
 function CacheControls($file){
 
-	if (Cash) 
-	{			
+	if (Cash)
+	{
 		Global $result;
 
 		$result=array();
-		$write=0;	
-		$writeText=''; 
-				
+		$write=0;
+		$writeText='';
+
 			   ///***Функці пошуку файлів в казаному каталозі**
 			   function glob_recursive($dir, $mask=''){ Global $result;
-			   
-			   
+
+
 					foreach(glob($dir.'/*') as $filename){
-							if(strtolower(substr($filename, strlen($filename)-strlen($mask), strlen($mask)))==strtolower($mask)) 
+							if(strtolower(substr($filename, strlen($filename)-strlen($mask), strlen($mask)))==strtolower($mask))
 			if ($filename==CashFile) {continue;}
 						$result[$filename]=filemtime($filename);
-						
+
 							if(is_dir($filename)) glob_recursive($filename, $mask);
-					}		
-				
+					}
+
 				}
-				
+
 				///*** Пошуку файлів в каталогах з ControlDir**
-							
+
 					foreach (ControlDir as $t){
-						
+
 						glob_recursive($t);
 					}
-					
-				$cashFile = parse_ini_file(CashFile);	
-				
+
+				$cashFile = parse_ini_file(CashFile);
+
 				foreach($result as $key=>$t) {
-					
+
 					if (array_key_exists($key, $cashFile)) {
 						if ($cashFile[$key]!=$t) {	$write=1; }
 					} else {$write=1;}
-				
+
 				$writeText.=$key."=".$t."\r\n";
 				}
-						
+
 				if ($write) {
 					$fp = fopen(CashFile, "w"); // Открываем файл в режиме записи
-					$test = fwrite($fp, $writeText); 
+					$test = fwrite($fp, $writeText);
 				}
-				
-				if (array_search($file, NotCashlFile) ===false) {  	
-					
+
+				if (array_search($file, NotCashlFile) ===false) {
+
 	header("Cache-Control: public");
 	header("Expires: " . date("r", time()+CashTime));
 
 		$last_modified_time = filemtime($file);
-		if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) && strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $last_modified_time 
+		if (isset($_SERVER['HTTP_IF_MODIFIED_SINCE']) && strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= $last_modified_time
 			&& $write==0 && strtotime($_SERVER['HTTP_IF_MODIFIED_SINCE']) >= filemtime(CashFile)){
 		    header('HTTP/1.1 304 Not Modified');
 		   die; ///*** убили всё, что ниже**
 		}
-		
+
 		header('Last-Modified: '.gmdate('D, d M Y H:i:s', time()).' GMT');
-		
+
 	///***Cesh End**
 					}
-		
+
 		}
-	
-}		
-	
+
+}
+
 /**
 	 *  @brief (Перевіряє наявніть нових сторінок новин та додає їх в sitemap.xml)
-	 *  
+	 *
 	 *  @details (Функція виконується в адмінці!)
 */
 function renewalSitemap()
-{  
-		
+{
+
 		GLOBAL $len_default, $site_url,$news_url_in_db,$data_xml,$data_xml_news, $db;
-		
+
 		if (empty($db))
 		{
 			GLOBAL $DB;
@@ -497,7 +497,7 @@ function renewalSitemap()
 		function setPref($pref)
 		{
 			GLOBAL $len_default;
-			if ($len_default==$pref) 
+			if ($len_default==$pref)
 			{
 				$lang='';
 			}
@@ -511,12 +511,12 @@ function renewalSitemap()
 		function addPageInXml ($url)
 		{
 			GLOBAL $news_url_in_db,$data_xml,$data_xml_news;
-					
+
 			$news_url_in_db[]=$url;
-					
+
 			if (array_search($url,$data_xml_news)===false)
 			{
-						
+
 				$data_xml[]=(object) array('loc' => $url,
 													'lastmod' => date(DATE_RFC3339),
 													'changefreq' => 'daily',
@@ -537,14 +537,14 @@ function renewalSitemap()
 			if (strlen($item->loc)==strlen($site_url.'/') || strlen($item->loc)==strlen($site_url.'/')+3)
 			{
 				$item->changefreq='always';
-			}	
+			}
 			else{
 				$item->changefreq='daily';
 			}
-		
+
 			$data_xml[]=$item;
-			end($data_xml);	
-			
+			end($data_xml);
+
 			if (strripos($item->loc, $site_url.setPref('ua').'/section')!==false)
 			{
 				unset($data_xml[key($data_xml)]);
@@ -552,17 +552,17 @@ function renewalSitemap()
 			if (strripos($item->loc, $site_url.setPref('ru').'/section')!==false)
 			{
 				unset($data_xml[key($data_xml)]);
-			}			
+			}
 			if (strripos($item->loc, $site_url.setPref('en').'/section')!==false)
 			{
 				unset($data_xml[key($data_xml)]);
-			}	
+			}
 
 			if (strripos($item->loc, '/news/')!==false &&  substr($item->loc, -6)!='/news/')
 			{
 				$data_xml_news[key($data_xml)] = $item->loc;
 			}
-			
+
 		}
 
 		$data_xml_=$data_xml;
@@ -570,8 +570,8 @@ function renewalSitemap()
 			/*Видаляєм із списку sitemap сторінки новин, яких вже нема
 			*/
 			$result = $db->prepare("SELECT news_code, title_ua, title_ru,title_en, isActive FROM `news` ");
-			$result->execute();    
-			$result->bind_result($s['news_code'],$s['title_ua'],$s['title_ru'],$s['title_en'],$s['isActive']);	
+			$result->execute();
+			$result->bind_result($s['news_code'],$s['title_ua'],$s['title_ru'],$s['title_en'],$s['isActive']);
 
 			while($result->fetch())
 			{
@@ -580,18 +580,18 @@ function renewalSitemap()
 					continue;
 				}
 				if ($s['title_ua'])
-				{							
-					addPageInXml($site_url.setPref('ua').'/news/'.$s['news_code'].'/');				
+				{
+					addPageInXml($site_url.setPref('ua').'/news/'.$s['news_code'].'/');
 				}
 				if ($s['title_ru'])
-				{			
+				{
 					addPageInXml($site_url.setPref('ru').'/news/'.$s['news_code'].'/');
-				}		
+				}
 				if ($s['title_en'])
-				{			
+				{
 					addPageInXml($site_url.setPref('en').'/news/'.$s['news_code'].'/');
-				}			
-			}	
+				}
+			}
 
 
 			foreach($data_xml_news as $key=> $t)
@@ -600,42 +600,42 @@ function renewalSitemap()
 				{
 					unset($data_xml[$key]);
 				}
-			}		
+			}
 			/**
 				*/
-		
+
 		/** Генерування sitemap при виявленні змін сторінок
 		*/
 		end($data_xml);
 		end($data_xml_);
-		
+
 		if (count($data_xml)!=count($data_xml_) || key($data_xml)!=key($data_xml_))
 		{
-							
+
 			require_once(dirname(__FILE__)."/../sitemap/common.inc.php");
 
 			set_time_limit(0);
 			ini_set('memory_limit', '64M');
 
 			$dir = $_SERVER['DOCUMENT_ROOT'];//document root path
-				
+
 			$tmp_dir = dirname(__FILE__);//temp path
 			$base_url =  $site_url;//url with sitemaps (http://mysite.ru/sitemap.xml)
 
 			$config = array('path' => $dir , 'tmp_dir'=>$tmp_dir,'base_url'=>$base_url,'gzip'=>false, 'gzip_level'=>9);
 
 			$builder = new SitemapBuilder($config);
-				
+
 			$builder->start();
 			$time = time();
-			
+
 			foreach ($data_xml as $t)
 			{
 				$builder->addUrl(array('loc'=>$t->loc,'lastmod'=>$time,'priority'=>$t->priority,'changefreq'=>$t->changefreq));
 			}
-	 
+
 			$builder->commit();
-	
+
 		}
-	
-}	
+
+}

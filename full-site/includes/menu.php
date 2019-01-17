@@ -34,6 +34,7 @@ global $ua_swicth_link;
         <li class="dropdown_link"><a href="<?UrlAdd('about')?>" title="<?=$mes['menu23']?>"><?=$mes['menu23']?> <span class="menu_arr">&#9660;</span></a>
           <ul class="dropdown">
             <li><a href="<?UrlAdd('about')?>" title="<?=$mes['menu1']?>"><?=$mes['menu1']?></a></li>
+			<li><a href="<?UrlAdd('general-plan')?>" title="<?=$mes['general-plan-menu']?>"><?=$mes['general-plan-menu']?></a></li>
             <li><a href="<?UrlAdd()?>#values" title="<?=$mes['menu4']?>"><?=$mes['menu4']?></a></li>
             <li><a href="<?UrlAdd()?>#advantages" title="<?=$mes['menu3']?>"><?=$mes['menu3']?></a></li>
             <li><a href="<?UrlAdd('social')?>" title="<?=$mes['menu6']?>"><?=$mes['menu6']?></a></li>
@@ -50,6 +51,7 @@ global $ua_swicth_link;
             <li><a href="<?UrlAdd('plan/dvuhkomnatnaya')?>" title="<?=$mes['menu15']?>"><?=$mes['menu15']?></a></li>
             <li><a href="<?UrlAdd('plan/trehkomnatnaya')?>" title="<?=$mes['menu16']?>"><?=$mes['menu16']?></a></li>
             <li><a href="<?UrlAdd('plan/chetirehkomnatnaya')?>" title="<?=$mes['menu17']?>"><?=$mes['menu17']?></a></li>
+			<li><a href="<?UrlAdd('service-department')?>" title="<?=$mes['service-menu']?>"><?=$mes['service-menu']?></a></li>
             <!-- <li><a href="<?UrlAdd('usloviya-priobreteniya-rassrochka')?>" title="<?=$mes['menu19']?>"><?=$mes['menu19']?></a></li> -->
           </ul>
         </li>

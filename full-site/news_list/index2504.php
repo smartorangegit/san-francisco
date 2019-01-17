@@ -10,7 +10,7 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 	FROM news WHERE news_code='$id_url'");
 	$result->execute();
 	$result->bind_result($s['date'],$s['urls'],$s['name_news'],$s['description'],$s['filename'],$s['text'],$s['time'],$s['title'],$s['img-min'],$s['img']);
-
+	
 	 while ($result->fetch()) { $s['img_news'] = $s['img-min'].'/'.$s['img'];
 								$ts = strtotime($s['time']);
 								$ts2 = strtotime($s['date']);
@@ -22,13 +22,13 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 								$s['timeNewLong']= $d['d'].' '. $mons[$d['m']].' '.$d['Y'].' '.$s['timeNew'];
 								$s['timeNew']= $d['d'].' '. $mons[$d['m']].' '.$d['Y'].' '.$mes['new-mes2'];
 								$s['text']=str_replace("../../", "/", $s['text']);
-
+								
 				foreach($s as $key=>$k){			$rez[$key]=$k;	}
-
-	$ReaNews=$rez;
+		
+	$ReaNews=$rez; 
 	}
 	 /*
-	$i=0;
+	$i=0; 	
 	$marka = $ReaNews['mark'];
 	$result = $db->prepare("select mark,min_i,id_n,date,fname,filename from pic_news WHERE mark='$marka'");
 	$result->execute();
@@ -37,7 +37,7 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 								$s['img-min']="/admin/pic/images/".$s['date']."/min/".$s['filename'];
 
 				foreach($s as $key=>$k){			$rez[$key]=$k;	}
-
+		 
 		 $ReaNewsImgs[$i]=$rez;
 	 $i++; }
 */
@@ -45,36 +45,33 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 	$result->execute();
 	$result->bind_result($rez['ua'],$rez['ru'],$rez['en']);  $rel='';
 	 while ($result->fetch()) {
-		 if(!empty($rez['ua'])){	$t1='uk';$t2='';
+		 if(!empty($rez['ua'])){	$t1='uk';$t2='';  
 			 $rel.='<link rel="alternate" hreflang="'.$t1.'" href="'. servername().'/'.$t2.'news/'.$rez['urls'].'/" />';
 			}
-		 if(!empty($rez['ru'])){ 	$t1=$t2='ru'; $t2.='/';
-			 $rel.='<link rel="alternate" hreflang="'.$t1.'" href="'. servername().'/'.$t2.'news/'.$rez['urls'].'/" />';
+		 if(!empty($rez['ru'])){ 	$t1=$t2='ru'; $t2.='/'; 
+			 $rel.='<link rel="alternate" hreflang="'.$t1.'" href="'. servername().'/'.$t2.'news/'.$rez['urls'].'/" />';	
 			 }
 		 if(!empty($rez['en'])){ 	$t1=$t2='en'; $t2.='/';
-			$rel.='<link rel="alternate" hreflang="'.$t1.'" href="'. servername().'/'.$t2.'news/'.$rez['urls'].'/" />';
+			$rel.='<link rel="alternate" hreflang="'.$t1.'" href="'. servername().'/'.$t2.'news/'.$rez['urls'].'/" />';	
 		 }
-
-
+		
+		
 		}
-		
-define('BreadcrumbsNews', $ReaNews['name_news']);
-		
 		?>
 
 <? /*head*/ HeadAdd($html=['title'=>$ReaNews['title'], 'description'=>$ReaNews['description'],
- 'head'=>'Y',
+ 'head'=>'Y', 
   'mata_img'=>$ReaNews['img_news'],
  'html'=>'
     <link rel="stylesheet" href="/css/news.css">
     <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
-	<link rel="canonical" href="'.servername().$_SERVER['REQUEST_URI'].'"/>'.$rel]);	?>
+	<link rel="canonical" href="'.servername().$_SERVER['REQUEST_URI'].'"/>'.$rel]);	?>  
     <div class="main_page clearfix">
        <?  /*Menu*/ MenuAdd();  ?>
 
       <div class="content content_news_list long_page ">
         <div class="content_wrap clearfix">
-          <!-- <div class="content_name"><h1><?=$mes['news-list-h1']?></h1></div> -->
+          <div class="content_name"><h1><?=$mes['news-list-h1']?></h1></div>
 
           <div class="news_det clearfix">
 		  <?if(file_exists($_SERVER['DOCUMENT_ROOT'].$ReaNews['img_news'])){?>
@@ -90,7 +87,7 @@ define('BreadcrumbsNews', $ReaNews['name_news']);
                   <a class="news" href="<?=$s['img']?>" data-fancybox="group" data-caption="<?=$ReaNews['name_news']?>"><img src="<?=$s['img-min']?>" <?AltImgAdd($ReaNews['name_news'])?>></a>
                 </div>
 					<?endforeach?>
-
+    			
     					</div>
 						<?}?>
     				</div>
@@ -99,7 +96,7 @@ define('BreadcrumbsNews', $ReaNews['name_news']);
     					<div class="news_date">
     						<?=$ReaNews['timeNewLong']?>
     					</div>
-              <h1 class="content_subname"><?=$ReaNews['name_news']?></h1>
+              <div class="content_subname"><?=$ReaNews['name_news']?></div>
     					<div class="content_text">
     						<?=$ReaNews['text']?>
     					</div>
@@ -108,8 +105,6 @@ define('BreadcrumbsNews', $ReaNews['name_news']);
     			</div>
 
         </div>
-
       </div>
-	  
     </div>
-<? /*footer*/ FooterAdd(['html'=>'<script src="/js/jquery.fancybox.js"></script>', 'head'=>'Y']);	?>
+<? /*footer*/ FooterAdd($html=['html'=>'<script src="/js/jquery.fancybox.js"></script>', 'head'=>'Y']);	?>	

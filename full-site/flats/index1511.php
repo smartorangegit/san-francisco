@@ -4,9 +4,8 @@
 ParametrFlats();
 GLOBAL $floor_new,$plan,$flat,$plan,$sleh,$floor,$floor_prev,$floor_next, $PDF;
 
-define('COMERC',0,TRUE);
-define('BreadcrumbsHouse', $mes['f-mes3'].' '.$plan);
-define('BreadcrumbsFloor', $mes['fl-mes9'].' '.$floor[0]);
+ define('COMERC',0,TRUE);
+
 
 $floo=$floor[0];
 $flat=str_replace("flat", "",$flat);
@@ -118,6 +117,7 @@ if ($pos === false) {$raz=''; $zn=$mas1[$k];}else{$raz=' class="table-item1-li"'
 					}
 					if($kk==0){  $print_pdf.= '</ul></div>'.$print_pdf2.'</ul></div>';  }
 					$pdf['print']=$print_pdf;
+					
 
 	//echo '<pre>'; print_r($pdf['print']); echo '</pre>';
 
@@ -198,13 +198,11 @@ $pdf['svg_2']= ob_get_clean();
 */
 ob_start();
 
-require($DIR."pdf/html.php");
-$html= ob_get_clean();
+require("pdf/html.php");
+$svg_2= ob_get_clean();
 
-$_SESSION['svg_min_plan']=$html;
+$_SESSION['svg_min_plan']=$svg_2;
 
-
-define('BreadcrumbsFlat', $mes['f-mes5'].' '.$number);
 
 //echo '<pre>'; print_r($si); echo '</pre>';
 ?>
@@ -225,7 +223,7 @@ define('BreadcrumbsFlat', $mes['f-mes5'].' '.$number);
 
           <div class="control_panel">
             <a class="button desc_button" id="callformPrice" href="#"><?=$mes['callback-mes7']?></a>
-
+            
             <div class=" control_block">
               <a class="control_panel_item" href="<?=UrlAdd($text='plan')?>"><img class="arrow" src="/img/arr.png" alt="arrow"></a>
               <a class="control_coment" href="<?=UrlAdd($text='plan')?>" ><?=$mes['pl-mes10']?></a>
@@ -284,7 +282,7 @@ define('BreadcrumbsFlat', $mes['f-mes5'].' '.$number);
             </div>
           </div>
         </div>
-		<div class="bottom_form"><a id="callform1" class="button callback"  href="#"><?= $mes['callback-mes7'] ?></a></div>
+		<div class="bottom_form"><a id="callform1" class="button callback"  href="#">дізнатись ціну</a></div>
 
 		<?
 		//echo '<pre>'; print_r($mas2); echo '</pre>';
@@ -311,8 +309,8 @@ $(document).ready(function(){
       $(".<?=$clas_js[$key]?>").mousemove(function(e){
     var x = e.pageX;
     var y = e.pageY;
-    var leftPos = x - $('.lin_<?=$i?>').width() - 200;
-    var topPos = y - $('.lin_<?=$i?>').height() - 50;
+    var leftPos = x - $('.lin_<?=$i?>').width() - 250;
+    var topPos = y - $('.lin_<?=$i?>').height() - 20;
     $(".lin_<?=$i?>").css({top:topPos, left:leftPos});
     });
 	 <?}?>
