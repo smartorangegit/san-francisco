@@ -33,107 +33,47 @@
                  <div class="content content_atmosfera">
                    <div class="content_wrap clearfix border-line">
                      <h1 class="content_name">Client Technical Control</h1>
-                     <div class="breadcrumbs">
-                       <ul class="breadcrumbs__list">
-                         <li class="breadcrumbs__item">
-                           <span itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
-                              <a itemprop="url" class="breadcrumbs__link" href="/"><span itemprop="title">Головна</span></a>
-                            </span>
-                          </li>
-                          <li class="breadcrumbs__item"><span> &nbsp;&gt;&nbsp; </span></li>
-                          <li class="breadcrumbs__item">
-                            <span itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
-                                <span itemprop="title" class="breadcrumbs__link">CLIENT TECHNICAL CONTROL</span>
-                            </span>
-                          </li>
-                      </ul>
-                    </div>
+
                      <div class="ctc__top">
                        <div class="content_text">
                          <?=$mes['ctc-1']?>
-                         <!-- <p>
-                           <span class="bolder">Клієнтський Технічний Контроль</span> – унікальний проект компанії SAGA Development, який дозволяє майбутньому мешканцю бути учасником процесу будівництва.              </p>
-                         <p>
-                           Ми розуміємо, що клієнт як інвестор і замовник послуги, повинен мати можливість слідкувати за ходом будівництва, контролювати термін здачі об’єкта в експлуатацію, вносити свої пропозиції щодо якості будівельних матеріалів та впливати на окремі проектні рішення. Саме тому ми залучаємо покупця нерухомості до процесу та змінюємо його роль спостерігача на роль учасника.
-                         </p>
-                         <p>
-                           <span class="bolder">Мета проекту Client Technical Control </span> – створити систему взаємодії, яка допоможе збудувати житловий комплекс у відповідністі до очікувань інвестора.
-                         </p> -->
                        </div>
                      </div>
-
                      <div class="content_subname">
                        <?=$mes['ctc-2']?>
-                       <!-- Client Technical Control надає право майбутнім мешканцям: -->
                      </div>
-
                      <div class="ctc__box">
                        <div class="ctc_img">
                          <svg class="ctc_icon"><use xlink:href="#user"></use></svg>
                        </div>
                        <div class="ctc__content">
                          <?=$mes['ctc-3']?>
-                         <!-- <ul>
-                           <li>разом з головним архітектором, менеджером проекту та представниками компанії SAGA Development проводити щомісячний огляд будівельного майданчика;</li>
-                           <li>контролювати відповідність планових і фактичних характеристик об'єкта;</li>
-                           <li>слідкувати за темпами будівництва;</li>
-                           <li>контролювати виконання робіт з благоустрою території;</li>
-                           <li>перевіряти освітлення та обладнання місць загального користування;</li>
-                           <li>обговорювати результати технагляду;</li>
-                           <li>складати перелік пропозицій для компанії; </li>
-                           <li>разом з замовником приймати будинок у генерального підрядника</li>
-                         </ul> -->
                        </div>
                      </div>
-
                      <div class="content_subname">
                        <?=$mes['ctc-4']?>
-                       <!-- Як здійснюється Клієнтський Контроль? -->
                      </div>
-
                      <div class="ctc__top">
                        <div class="content_text">
                            <?=$mes['ctc-5']?>
-                         <!-- <p>
-                           Ми запрошуємо всіх інвесторів стати учасником Клієнтського Контролю.
-                         </p>
-                         <p>
-                           Інформування про зустріч відбувається через чат-асистент Viber, підключитися до якого можно через мобільний додаток Sfera або за посиланням, отриманим в смс-повідомленні. Через чат-асистент Viber менеджер проекту відправляє запрошення, отримує підтвердження, збирає питання та надає відповіді.
-                         <p>
-                           Один раз на місяць всі інвестори будинку отримують запрошення на зустріч з метою контролю його готовності, підготовки пропозицій щодо благоустрою території тощо.
-                         </p>
-                         <p class="bolder">
-                           Під час відвідування будівельного майданчика інвесторів зустрічають:
-                         </p> -->
                        </div>
                      </div>
-
                      <div class="ctc__box">
                        <div class="ctc_img  icon_man">
                          <svg class="ctc_icon" style="max-height: 116px;"><use xlink:href="#man"></use></svg>
                        </div>
                        <div class="ctc__content">
                            <?=$mes['ctc-6']?>
-                         <!-- <ul>
-                           <li>менеджер проекту;</li>
-                           <li>керівник служби технічного клієнтського контролю SAGA Development;</li>
-                           <li>архітектор будинку; </li>
-                           <li>інженер будинку;</li>
-                           <li>представник відділу продажів;</li>
-                           <li>представник управляючої компанії ATMOSFERA.</li>
-                         </ul> -->
-                       </div>
+                        </div>
                      </div>
                      <div class="ctc__top">
                        <div class="content_text">
                              <?=$mes['ctc-7']?>
-                         <!-- За результатами візиту інвестори отримують звіт про те, які з пунктів зауважень компанія готова виконати. -->
                        </div>
                      </div>
 
                      <div class="content_subname">
                          <?=$mes['ctc-8']?>
-                       <!-- Інвестори можуть впливати на:  -->
                      </div>
 
                      <div class="ctc__footer">
@@ -143,7 +83,6 @@
                          </div>
                          <div class="content_text">
                              <?=$mes['ctc-9']?>
-                           <!-- відповідність якості заявленого проекту реальному будівництву -->
                          </div>
                        </div>
                        <div class="ctc_item">
@@ -152,7 +91,6 @@
                          </div>
                          <div class="content_text">
                              <?=$mes['ctc-10']?>
-                           <!-- вибір окремих видів оздоблювальних матеріалів -->
                          </div>
                        </div>
                        <div class="ctc_item">
@@ -161,7 +99,6 @@
                          </div>
                          <div class="content_text">
                              <?=$mes['ctc-11']?>
-                           <!-- оформлення місць загального користування -->
                          </div>
                        </div>
                        <div class="ctc_item">
@@ -170,7 +107,6 @@
                          </div>
                          <div class="content_text">
                              <?=$mes['ctc-12']?>
-                           <!-- благоустрій -->
                          </div>
                        </div>
                      </div>
@@ -181,6 +117,7 @@
                      </div>
 					 <div class="bottom_form"><a id="callform-ctc" class="button callback button_ctc"  href="#"><?=$mes['callform-ctc']?></a></div>
                    </div>
+                   <?/*copyring*/copyringAdd();?>
 
                    <style media="screen">
                    .content_atmosfera{

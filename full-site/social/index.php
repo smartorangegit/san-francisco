@@ -38,6 +38,7 @@
 
         </div>
 		<div class="bottom_form"><a id="callform1" class="button callback"  href="#">замовити дзвінок</a></div>
+    <?/*copyring*/copyringAdd();?>
       </div>
     </div>
 <? /*footer*/ FooterAdd($html=['head'=>'Y']);	?>

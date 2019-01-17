@@ -2,6 +2,7 @@
 .content_floor {
   background: url("../img/main_bg.jpg");
   background-size: cover;
+  padding-bottom: 48px;
 }
 /* line 6, ../sass/appart.scss */
 .content_floor .content_wrap {

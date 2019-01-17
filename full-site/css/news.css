@@ -8,6 +8,12 @@
   background: url("../img/main_bg.jpg");
   background-attachment: fixed;
 }
+.content_news_list{
+  padding-bottom: 48px;
+}
+.content_news_list .content_wrap{
+  min-height: 100%;
+}
 
 /* line 9, ../sass/news.scss */
 .content_wrap {

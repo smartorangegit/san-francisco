@@ -32,11 +32,17 @@
             </div>
         </div>
 		<!-- <div class="bottom_form"><a id="callform1" class="button callback"  href="#">замовити дзвінок</a></div> -->
+    <?/*copyring*/copyringAdd();?>
       </div>
+
     </div>
 	<style>
+  .content_g-plan{
+    padding-bottom: 50px;
+  }
   .content.content_g-plan .content_wrap {
     max-width: none;
+    min-height: 100%;
   }
   .g_name {
     font-family: "AkzidenzGroteskPro-LightCn";
@@ -116,11 +122,11 @@
     top: 2px;
   }
 
-  .int_link1::before {left: -22px;background-image: url('../../img/general-plan/img_1.png');} 
-  .int_link2::before {left: -22px;background-image: url('../../img/general-plan/img_2.png');} 
-  .int_link3::before {right: -22px;background-image: url('../../img/general-plan/img_3.png');} 
-  .int_link4::before {left: -22px;background-image: url('../../img/general-plan/img_4.png');} 
-  .int_link5::before {right: -22px;background-image: url('../../img/general-plan/img_5.png');} 
+  .int_link1::before {left: -22px;background-image: url('../../img/general-plan/img_1.png');}
+  .int_link2::before {left: -22px;background-image: url('../../img/general-plan/img_2.png');}
+  .int_link3::before {right: -22px;background-image: url('../../img/general-plan/img_3.png');}
+  .int_link4::before {left: -22px;background-image: url('../../img/general-plan/img_4.png');}
+  .int_link5::before {right: -22px;background-image: url('../../img/general-plan/img_5.png');}
 
 
 .content_arrangment {
@@ -313,5 +319,5 @@ $('.interactive_link').hover(function(){
   var image = this.dataset.image;
   $('.four_interactive_select img').attr('src','/img/general-plan/slides/'+ image + '.jpg');
 });
-</script>	
+</script>
 <? /*footer*/ FooterAdd($html=['head'=>'Y']);	?>

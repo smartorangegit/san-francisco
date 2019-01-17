@@ -83,130 +83,21 @@ calcViewPort ();
 </style>
 <!-- конец код комерції -->
       <div class="content_wrap clearfix">
-        <? /*  <div class="content_name"><h1><?=$mes['commercial-h1']?></h1></div>
-          <div class="content_text">
-            <?=$mes['com-mes11']?>
-          </div>
 
-				  <div class="floor_choice commercial_top">
-
-            <div class="main_svg">
-            <!--Import svg image-->
-            <?php include($_SERVER['DOCUMENT_ROOT'] . '/img/commercial/plan1/index.php'); ?>
-            </div>
-            <div class="main_data">
-              <div id="data">
-                <div class="info_section">
-                  <span class="number" id="building">-</span>
-                  <span class="name"><?=$mes['com-mes1']?></span>
-                </div>
-                <div class="info_section" id="section_section">
-                  <span class="number" id="section">-</span>
-                  <span class="name"><?=$mes['com-mes2']?></span>
-                </div>
-                <div class="info_section">
-                  <span class="number" id="number_of_floors">-</span>
-                  <span class="name"><?=$mes['com-mes3']?></span>
-                </div>
-                <div class="info_section">
-                  <span class="number" id="number">-</span>
-                  <span class="name"><?=$mes['com-mes4']?></span>
-                </div>
-                <div class="info_section">
-                  <span class="number" id="total_area">-</span>
-                  <span class="name"><?=$mes['com-mes5']?></span>
-                </div>
-                </div>
-            </div> <!--main_data ends here-->  */?>
 
             <!-- Form starts here -->
             <div class="commercial_botom">
-              <!-- <div class="form_submitions">
-                <div class="form_submitions__number content_name"><?= $amount; ?></div>
-                <div class="content_text"><?=$mes['com-mes6']?></div>
-              </div> -->
-              <!-- <div class="commercial_form_wraper"> -->
-             <?  /*  <div class="commercial_form  horizontal__form">
-                  <div class="content_name"><?=$mes['callback-mes1']?></div>
-                  <div class="content_text"><?=$mes['com-mes8']?></div>
-                  <form class="horizontal" action="" method="POST">
-                    <div class="input">
-                      <input type="text" name="name" value="" placeholder="<?=$mes['callback-mes3']?>" id="callbackName">
-                    </div>
-                    <div class="input">
-                      <input type="tel" class='inputtelmask' name="tel" value="" placeholder="<?=$mes['callback-mes4']?>" id="callbackTel">
-                    </div>
-                    <div class="input">
-                      <input type="email" name="email" value="" placeholder="E-MAIL" id="callbackEmail">
-                    </div>
-                    <input  name="webad" class="webad" type="hidden" value="http://san.smarto.com.ua/commercial"/>
-                    <input  name="metka" class="metka" type="hidden" value="San-francisco with text"/>
-                    <input  name="inn" class="userInn" type="hidden" value="San-francisco"/>
-                    <input type="hidden" name="typ" value="3">
-                    <div class="input">
-                      <input class="button" type="submit" name="" value="<?=$mes['callback-mes5']?>">
-                    </div>
-                  </form>
-                </div> */ ?>
-<!-- commercial_form -->
-<?/*
-<div class="overlay">
-</div>
-<div class="form" id="form_call_commercial" >
-    <img id="formclose" src="/img/close.svg" alt="close" width="40">
-    <div class="content_name"><?=$mes['callback-mes1']?></div>
-    <div class="content_text"><?=$mes['callback-mes2']?></div>
-    <div class="form_wrap">
-      <form id="form_main" >
-        <div class="input-box js-name-input">
-          <input class="input-box__field" type="text" name="name" value="" onkeyup="javascript:countme('form_call_commercial');" placeholder="<?=$mes['callback-mes3']?>" id="callbackName">
-          <span class="clear-input">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
-          </span>
-          <div class="input__error empty-input empty-input_hidden"><?=$mes['Данне поле обовязкове для заповнення']?></div>
-        </div>
-        <div class="input-box js-phone-input">
-          <input type="tel" class='inputtelmask input-box__field' onkeyup="javascript:countme('form_main');" name="tel" value="" placeholder="ТЕЛЕФОН" id="callbackTel">
-          <span class="clear-input">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
-          </span>
-          <div class="input__error invalid-number invalid-number_hidden"><?=$mes['Невірний формат номеру']?></div>
-        </div>
-
-        <div class="input-box js-message-input">
-          <textarea class="input-box__field" type="text" name="message" value="" placeholder="Повідомлення" id="callbackMessage"></textarea>
-          <span class="clear-input">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
-          </span>
-        </div>
-          <input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
-          <input  name="metka" class="metka" type="hidden" value="San-francisco with text"/>
-          <input  name="inn" class="userInn" type="hidden" value="San-francisco"/>
-        <div class="input">
-          <input class="button js-submit-button js-submit-button_disabled" type="submit" name="" value="<?=$mes['callback-mes5']?>">
-        </div>
-      </form>
-    </div>
-</div>
-
-<div class="form-ok">
-    <img id="formclose-ok" src="/img/close.svg" alt="close" width="40">
-    <div class="content_text"><?=$mes['callback-mes8']?></div>
-</div>
-
-
-
-<style>
-.news_image_container img {
-    max-height: 470px;
-}
-</style> */ ?>
-<!-- end commercial_form -->
-              <!-- </div> -->
             </div> <!-- Form ends here -->
-<div class="param__text">
-  <?=$mes['commercial-seo']?>
+
+
+<!-- <div class="param__text">
+  <?/* =$mes['commercial-seo'] */?>
+</div> -->
             <style media="screen">
+            .content_floorplan .content_wrap {
+              height: 0;
+              padding: 0;
+            }
             .param__text h1{
               font-size: 28px;
             }
@@ -233,7 +124,6 @@ calcViewPort ();
                 display: -webkit-flex;
                 align-items: center;
                 -webkit-align-items: center;
-
               }
               form.horizontal .input{
                 width: 25%;
@@ -257,28 +147,190 @@ calcViewPort ();
 				}
       }
             </style>
+ <!-- end of the old text -->
 
-          </div>
+
+
+<div class="info-popup" id="info-popup" style="display: none; top: 10%; opacity: 0;">
+  <svg class="svg_close" onclick="(function(close){
+    $('.overlay').fadeOut(300);
+    $('.info-popup').css('display','none').animate({opacity: 0, top: '10%'}, 200);
+  })(this)"id="info-popup_close" enable-background="new 0 0 50 50" viewBox="0 0 50 50" width="40" xmlns="http://www.w3.org/2000/svg"><path d="m37.304 11.282 1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"></path><path d="m12.696 11.282 26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"></path></svg>
+  <div>
+    <?php if($lneg_url = 'uk') { ?>
+<h1>КОМЕРЦІЙНА НЕРУХОМІСТЬ</h1>
+<p>При будівництві SAN FRANCISCO Creative House ми врахували запити не
+тільки майбутніх мешканців, але й власників бізнесу, та заздалегідь
+спроектували приміщення для магазинів, кафе, ресторанів. Перші два
+поверхи будинку займає нежитлова нерухомість площею від 60 м² до 550
+м² – це ідеальні варіанти як для малого, так і для середнього та великого
+бізнесу. Крім цього, ми ґрунтовно підійшли до будівництва офісних
+приміщень і відвели вісім поверхів житлового комплексу для компаній, що
+працюють в різних сегментах підприємницької діяльності.
+ЖК Сан-Франциско – це оптимальна локація для роботи юридичної
+компанії, дизайнерського шоу-руму або концептуальної кав&#39;ярні. Зручне
+розташування – 5 хвилин до метро та парку Нивки, в 150 метрах від
+будинку знаходяться зупинки наземного транспорту, також є можливість
+під&#39;їхати до будинку на автівці – особливості, на які ви точно звернете
+увагу при детальному знайомстві з житловим комплексом. Але головне,
+обираючи SAN FRANCISCO Creative House для комерційної нерухомості,
+є можливість бути ближче до своєї цільової аудиторії. З огляду на
+інфраструктуру району Києва, ваша діяльність точно буде користуватися
+попитом.</p>
+ <h2>1. Ресторани та кафе в SAN FRANCISCO Creative House</h2>
+<p>Перші два поверхи будинку ми відводимо для закладів громадського
+харчування. Ми заздалегідь поділяємо нежитлову нерухомість за
+призначенням, облаштовуючи кожне комерційне приміщення з
+урахуванням його функціональних особливостей. Для ресторанів та кафе
+встановлюємо вентиляційні виходи, враховуємо кількість
+енергоспоживання, а також передбачаємо безбар&#39;єрний вхід, який показує
+позитивну динаміку на відвідуваність клієнтів. Великі панорамні вікна
+забезпечують хорошу оглядовість – ще одна якість, важлива для подібних
+закладів.</p>
+ <h2>2. Торговельні приміщення </h2>
+<p>Магазин поряд з будинком – ключова складова його інфраструктури.
+Збираючись за покупками, мешканці завжди віддають перевагу пішим
+прогулянкам, а ніж поїздкам на автомобілі чи на громадському транспорті.
+А якщо бутік або супермаркет розташовані безпосередньо в житловому
+комплексі, це створює додаткову перевагу його власнику. У ЖК Сан-
+Франциско ми пропонуємо дворівневу комерційну нерухомість з площею
+від 100 м² до 500 м², великою вітриною та можливістю розміщення
+вивіски.</p>
+ <h2>3. Офіси</h2> 
+<p>Робота поруч з будинком – практика, яка все активніше стає нашою
+повсякденністю. У SAN FRANCISCO Creative House ви зможете слідувати
+світовим трендам, адже для розміщення офісів ми передбачили цілих 8
+поверхів. При цьому умови роботи в ЖК за своєю якістю нічим не
+поступаються умовам проживання. Насичена інфраструктура SAN
+FRANCISCO Creative House з кафе та ресторанами, де можна смачно
+пообідати з колегами, супермаркет, де можна купити все необхідне,
+зелений бульвар, на якому можна відпочити та відволіктися від робочих
+завдань. Компанії, які виберуть комерційну нерухомість в ЖК Сан-
+Франциско, стануть користувачами мобільного додатку Sfera –
+інноваційної онлайн-платформи, за допомогою якої можна оплачувати
+рахунки за комунальні послуги, купити квиток в кіно, замовити таксі,
+доставку їжі або викликати клінінг-сервіс.
+Ми пропонуємо нежитлові приміщення за прийнятною ціною як для
+продажу, так і для оренди. Більше інформації про ЖК Сан-Франциско ви
+можете дізнатися у менеджера комерційної нерухомості.</p>
+
+<?php } else { ?>
+  <h1>КОММЕРЧЕСКАЯ НЕДВИЖИМОСТЬ</h1>
+  <p>При строительстве SAN FRANCISCO Creative House мы учли запросы не
+  только будущих жильцов, но и владельцев бизнеса, и заранее
+  спроектировали помещения для магазинов, кафе, ресторанов. Первые два
+  этажа дома занимает нежилая недвижимость площадью от 60 м² до 550 м²
+  – это идеальные варианты как для малого, так и для среднего и крупного
+  бизнеса. Кроме этого, мы основательно подошли к строительству офисных
+  помещений и отвели восемь этажей жилого комплекса для компаний,
+  работающих в разных сегментах предпринимательской деятельности.
+  ЖК Сан-Франциско – это оптимальная локация для работы юридической
+  компании, дизайнерского шоу-рума или концептуальной кофейни.
+  Удобное расположение – 5 минут до метро и парка Нивки, в 150 метрах от
+  дома находятся остановки наземного транспорта, также есть возможность
+  подъехать к дому на автомобиле – особенности, на которые вы точно
+  обратите внимание при детальном знакомстве с жилым комплексом. Но
+  головное, выбирая SAN FRANCISCO Creative House для коммерческой
+  недвижимости, есть возможность быть ближе к своей целевой аудитории.
+  Учитывая инфраструктуру района Киева, ваша деятельность точно будет
+  пользоваться спросом.</p>
+  <h2>1. Рестораны и кафе в SAN FRANCISCO Creative House</h2>
+  <p>Первые два этажа дома мы отводим для заведений общественного
+  питания. Мы заранее разделяем нежилую недвижимость по назначению,
+  оборудуя каждое коммерческое помещение с учетом его функциональных
+  особенностей. Для ресторанов и кафе устанавливаем вентиляционные
+  выходы, учитываем количество энергопотребления, а также
+  предусматриваем безбарьерный вход, который показывает положительную
+  динамику на посещаемость клиентов. Большие панорамные окна
+  обеспечивают хорошую просматриваемость – еще одно качество, важное
+  для заведений.</p>
+   <h2>2. Торговые помещения</h2>
+  <p>Магазин поблизости с домом – ключевая составляющая его
+  инфраструктуры. Жители всегда предпочитают пешую прогулку за
+  покупками поездке на автомобиле или на общественном транспорте. А
+  если бутик или супермаркет расположены в самом жилом комплексе, это
+  создает дополнительное преимущество его владельцу. В ЖК Сан-
+  Франциско мы предлагаем двухуровневые коммерческую недвижимость
+  для торговой деятельности от 100 м² до 500 м² с большой витриной и
+  возможностью размещения вывески.</p>
+  <h2>3. Офисы</h2>
+  <p>Работа рядом с домом – практика, которая все активнее входит в нашу
+  повседневность. SAN FRANCISCO Creative House вы сможете следовать
+  мировым трендам, так как для размещения офисов мы предусмотрели
+  отдельную секцию дома в 8 этажей. При этом условия работы в ЖК по
+  своему качеству ничем не уступают условиям проживания. Насыщенная
+  инфраструктура SAN FRANCISCO Creative House с кафе и ресторанами,
+  где можно вкусно пообедать с коллегами, супермаркет, где можно купить
+  все необходимое, зеленый бульвар, на котором можно отдохнуть и
+  отвлечься от выполнения рабочих задач. Компании, которые выберут
+  коммерческую недвижимость в ЖК Сан-Франциско, станут
+  пользователями мобильного приложения Sfera – инновационной онлайн-
+  платформы, с помощью которой можно оплачивать счета за
+  коммунальные услуги, купить билет в кино, заказывать такси, доставку
+  еды или клининг-сервис.
+  Мы предлагаем нежилые помещения по приемлемой цене как для
+  продажи, так и для аренды. Больше информации про ЖК Сан-Франциско
+  вы можете узнать у менеджера коммерческой недвижимости.</p>
+<?php } ?>
+  </div>
+</div>
+
+<style>
+.info-popup {
+    z-index: 10000;
+   display: block;
+   top: 50%;
+   width: 100%;
+   opacity: 1;
+   position: fixed;
+   left: 46%;
+   transform: translate(-40%, -60%);
+   background: #1b1717;
+   padding: 15px;
+   color: black;
+   max-height: 86vh;
+   overflow: scroll;
+   max-width: 72%;
+}
+.info-popup .svg_close {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.info-popup h1 {
+  text-align: center;
+  font-size: 1.6em;
+  margin: 10px auto 20px;
+  color: #fff;
+}
+.info-popup p {
+  margin-top: 10px;
+  line-height: 1.5em;
+  color: #fff;
+}
+.info-popup h2 {
+	color: white;
+	font-size: 18px;
+	margin-top: 10px;
+    line-height: 1.5em;
+}
+</style>
+
      <!-- Floor choise ends here -->
 
 		<script>
-    // document.getElementById("data").style = "display:none";
     <? foreach($info['class_name'] as $key=>$value) { ?>
 			$('.<?= $value ?>').mouseover(function() {
         document.getElementById("building").innerHTML = "<?=$info['buld'][$key]?>";
         <? /* У некоторых помнещений нет секций */ ?>
         <? if($info['section'][$key] == NULL): ?>
           document.getElementById("section").innerHTML = "-";
-          // $('#section_section').css({'display': 'none'});
         <? else: ?>
-          // $('#section_section').css({'display': 'block'});
           document.getElementById("section").innerHTML = "<?=$info['section'][$key]?>";
         <? endif; ?>
 			  document.getElementById("number_of_floors").innerHTML = "<?=$info['number_of_floors'][$key]?>";
         document.getElementById("number").innerHTML = "<?=$info['number'][$key]?>";
         document.getElementById("total_area").innerHTML = "<?=$info['total_area'][$key]?>" + " м2";
-        // document.getElementById("floor_area").innerHTML = "<?=$info['floor_area'][$key]?>" + " м2";
-			  // document.getElementById("data").style = "display:block";
 
 			}).mouseout(function()
 			{
@@ -289,131 +341,8 @@ calcViewPort ();
 
           </div>
           <div class="bottom_form_plan"><a id="callform1" class="button callback"  href="#">замовити дзвінок</a></div>
+<?/*copyring*/copyringAdd();?>
         </div>
       </div>
-
     </div>
-	<!-- <style>
-
-    .content_commerc .content_name{
-      width: 100%;
-      float: none;
-      margin-bottom: 10px;
-    }
-    .content_commerc .content_text{
-      margin: 15px auto;
-    }
-    .main_svg {
-      display: inline-block;
-      width: 78%;
-    }
-    .main_data {
-      display: inline-block;
-      width: 20%;
-      vertical-align: top;
-      text-align: center;
-    }
-
-    /*Commercial Form Start*/
-    .commercial_form {
-      display: block;
-      position: static;
-      height: auto;
-      width: 320px;
-      margin: 0 auto;
-      background-color: transparent;
-      text-align: center;
-    }
-
-    .commercial_botom input {
-      display: block;
-      margin: 12px auto;
-      background-color: transparent;
-      outline: none;
-      width: 320px;
-      height: 40px;
-      font-family: "AkzidenzGroteskPro-LightCn";
-      font-size: 16px;
-      border: 1px solid #ffffff;
-      transition: 0.3s;
-      -webkit-transition: 0.3s;
-      padding: 0 0 0 20px;
-      box-sizing: border-box;
-      color: white;
-    }
-
-    .commercial_botom input::-webkit-input-placeholder {
-      color: #ffffff;
-    }
-    .commercial_botom input::-moz-placeholder {
-      color: #ffffff;
-    }
-    .commercial_botom input:-ms-input-placeholder {
-      color: #ffffff;
-    }
-    .commercial_botom input:-moz-placeholder {
-      color: #ffffff;
-    }
-
-    .commercial_botom .content_text {
-      color: white;
-    }
-
-    .commercial_form_wraper {
-      display: inline-block;
-      width: 68%;
-    }
-    .form_submitions {
-      display: inline-block;
-      width: 30%;
-      vertical-align: top;
-      text-align: center;
-    }
-
-    .commercial_botom .content_text {
-      padding: 10px 0px;
-      text-align: center;
-    }
-
-    .content.content_floorplan .commercial_botom .content_name {
-      text-align: center;
-      width: auto;
-    }
-
-		@media only screen and (max-width: 768px) {
-      .content.content_commerc{
-        height: auto;
-      }
-			.main_svg {
-        width: 100%;
-      }
-      .main_data {
-        width: 100%;
-      }
-      .form_submitions {
-        width: 100%;
-      }
-      .commercial_form_wraper {
-        width: 100%;
-        padding: 10px;
-        box-sizing: border-box;
-      }
-      .commercial_form{
-        width: 100%;
-      }
-      .intl-tel-input{
-        display: block;
-        margin: 0 auto;
-      }
-      .commercial_botom input {
-        width: 100%;
-      }
-      .content_commerc .bottom_form_plan{
-        margin: 0 auto;
-      }
-      .content_commerc .bottom_form_plan .button{
-        padding: 10px 40px;
-      }
-		}
-	</style> -->
 <? /*footer*/ FooterAdd($html=['head'=>'Y']);		?>

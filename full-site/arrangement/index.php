@@ -7,8 +7,8 @@
         <div class="content_wrap clearfix">
           <h1 class="content_name"><?=$mes['arrangement-h1']?></h1>
 
-<?php include_once('includes/inc/form/form_new_v2.php')?>
-<?php include_once('includes/inc/form/form_new_v3.php')?>
+<?php /* include_once('includes/inc/form/form_new_v2.php') */?>
+<?php /* include_once('includes/inc/form/form_new_v3.php') */?>
 
 
 
@@ -46,6 +46,7 @@
 
         </div>
 		<!-- <div class="bottom_form"><a id="callform1" class="button callback"  href="#">замовити дзвінок</a></div> -->
+       <?/*copyring*/copyringAdd();?>
       </div>
     </div>
 <? /*footer*/ FooterAdd($html=['head'=>'Y']);	?>

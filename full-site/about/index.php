@@ -123,6 +123,9 @@
       background: url('/img/about.jpg') center no-repeat;
       background-size: cover;
     }
+    .content_about .content_wrap{
+      min-height: 100%;
+    }
     .content_about .content_text{
       padding: 0;
       color: white;

@@ -57,9 +57,9 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 
 
 		}
-		
+
 define('BreadcrumbsNews', $ReaNews['name_news']);
-		
+
 		?>
 
 <? /*head*/ HeadAdd($html=['title'=>$ReaNews['title'], 'description'=>$ReaNews['description'],
@@ -108,8 +108,9 @@ define('BreadcrumbsNews', $ReaNews['name_news']);
     			</div>
 
         </div>
+				  <?/*copyring*/copyringAdd();?>
 
       </div>
-	  
+
     </div>
 <? /*footer*/ FooterAdd(['html'=>'<script src="/js/jquery.fancybox.js"></script>', 'head'=>'Y']);	?>

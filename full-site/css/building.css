@@ -222,11 +222,11 @@ a.build:focus {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  padding-bottom: 30px;
+  /* padding-bottom: 30px; */
 }
 /* line 173, ../sass/building.scss */
 .content_developer .content_wrap {
-  height: calc(100% - 44px);
+  /* height: calc(100% - 44px); */
   width: auto;
 }
 /* line 177, ../sass/building.scss */

@@ -5,6 +5,12 @@
 .content_day *{
   box-sizing: border-box;
 }
+.content_day .footer{
+  position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 60;
+}
 .content_day .content_subname{
   position: relative;
   font-size: 48px;

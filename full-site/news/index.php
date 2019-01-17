@@ -111,6 +111,7 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 
           </div>
         </div>
+          <?/*copyring*/copyringAdd();?>
       </div>
     </div>
 	<style>

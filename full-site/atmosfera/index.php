@@ -176,8 +176,8 @@
           </div>
           <div class="button docum__link" id="callformPrice" href="#"><?=$mes['h-mes19']?></div>
 
-
         </div>
+        <?/*copyring*/copyringAdd();?>
         <style media="screen">
         .content_atmosfera{
           background: url('/img/atm1.jpg') center no-repeat;

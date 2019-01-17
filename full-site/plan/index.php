@@ -190,6 +190,7 @@ for($i=1; $i<4;$i++){  $n=0;
             </div>
           </div><div class="bottom_form_plan"><a id="callform1" class="button callback"  href="#">замовити дзвінок</a></div>
         </div>
+				<?/*copyring*/copyringAdd();?>
       </div>
 
     </div>

@@ -42,9 +42,12 @@
               .ten_box_item_phone .content_text {
                 font-weight: 600;
               }
+              .footer{
+                position: absolute;
+              }
             </style>
           </div>
-
+	  <?/*copyring*/copyringAdd();?>
       </div>
     </div>
 <script>
