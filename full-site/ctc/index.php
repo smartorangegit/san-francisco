@@ -33,6 +33,21 @@
                  <div class="content content_atmosfera">
                    <div class="content_wrap clearfix border-line">
                      <h1 class="content_name">Client Technical Control</h1>
+                     <div class="breadcrumbs">
+                       <ul class="breadcrumbs__list">
+                         <li class="breadcrumbs__item">
+                           <span itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
+                              <a itemprop="url" class="breadcrumbs__link" href="/"><span itemprop="title">Головна</span></a>
+                            </span>
+                          </li>
+                          <li class="breadcrumbs__item"><span> &nbsp;&gt;&nbsp; </span></li>
+                          <li class="breadcrumbs__item">
+                            <span itemscope="" itemtype="https://data-vocabulary.org/Breadcrumb">
+                                <span itemprop="title" class="breadcrumbs__link">CLIENT TECHNICAL CONTROL</span>
+                            </span>
+                          </li>
+                      </ul>
+                    </div>
                      <div class="ctc__top">
                        <div class="content_text">
                          <?=$mes['ctc-1']?>
@@ -164,6 +179,7 @@
                              <?=$mes['ctc-13']?>
                        </div>
                      </div>
+					 <div class="bottom_form"><a id="callform-ctc" class="button callback button_ctc"  href="#"><?=$mes['callform-ctc']?></a></div>
                    </div>
 
                    <style media="screen">
@@ -208,10 +224,105 @@
                      .ctc__footer .ctc_img{height: 80px;}
                      .ctc__footer .ctc_icon{height: 100%;}
                    }
-
+					.button_ctc {
+						display: block;
+						max-width: 280px;
+						text-align: center;
+						margin: 40px auto;
+					}
                    </style>
                  </div>
-		<!-- <div class="bottom_form"><a id="callform1" class="button callback"  href="#">замовити дзвінок</a></div> -->
+
       </div>
+	  <div class="form" id="form_main-container-ctc">
+    <img id="formclose-ctc" src="/img/close.svg" alt="close" width="40">
+    <div class="content_name"><?=$mes['callback-mes1']?></div>
+    <div class="content_text"><?=$mes['callform-ctc']?></div>
+    <div class="form_wrap">
+      <form id="form_main-ctc" method="post" >
+        <div class="input-box js-name-input">
+          <input class="input-box__field" type="text" name="name" value="" placeholder="<?=$mes['callback-mes3']?>" id="callbackName-ctc">
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+          <div class="input__error empty-input empty-input_hidden"><?=$mes['Данне поле обовязкове для заповнення']?></div>
+        </div>
+		<div class="input-box js-name-input">
+          <input class="input-box__field" type="text" name="surname" value="" placeholder="<?=$mes['placeholder-surname']?>" id="callbackSurname-ctc">
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+          <div class="input__error empty-input empty-input_hidden"><?=$mes['Данне поле обовязкове для заповнення']?></div>
+        </div>
+        <div class="input-box js-phone-input">
+          <input type="tel" class='inputtelmask input-box__field' onkeyup="javascript:countme('form_main');" name="tel" value="" placeholder="ТЕЛЕФОН" id="callbackTel-ctc">
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+          <div class="input__error invalid-number invalid-number_hidden"><?=$mes['Невірний формат номеру']?></div>
+        </div>
+
+        <div class="input-box js-message-input">
+          <textarea class="input-box__field" type="text" name="apartment_number" value="" placeholder="<?=$mes['placeholder-apartment_number']?>" id="callbackApartmentNumber-ctc"></textarea>
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+        </div>
+          <!--<input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
+          <input  name="metka" class="metka" type="hidden" value="San-francisco with text"/>
+          <input  name="inn" class="userInn" type="hidden" value="San-francisco"/>-->
+        <div class="input">
+          <input class="button js-submit-button js-submit-button_disabled" type="submit" name="" value="<?=$mes['callback-mes5']?>" id="send">
+        </div>
+		<div class="answer"></div>
+      </form>
+    </div>
+</div>
+
+<div class="form-ok">
+    <img id="formclose-ok-ctc" src="/img/close.svg" alt="close" width="40">
+    <div class="content_text"><?=$mes['callback-mes8']?></div>
+</div>
+
+
+
+<style>
+.news_image_container img {
+    max-height: 470px;
+}
+#formclose-ctc {
+	position: absolute;
+    top: 0;
+	right: 0;
+}
+#form_main-ctc input, #form_main-ctc textarea{
+width: 100%;
+}
+</style>
+
+<script  type="text/javascript">
+    // отправялем данные с формы в обработчик
+    $("#send").click(function(){
+
+        var msg = $('#form_main-ctc').serialize();
+        $.ajax({
+          type: 'POST',
+          url: '/includes/application-ctc.php',
+          data: msg,
+          success: function(data) {
+            $('.answer').html(data).slideDown(300);
+
+          },
+          error:  function(xhr, str){
+                $('.answer').html('Возникла ошибка: ' + xhr.responseCode);
+            }
+        });
+        return false;
+    });
+
+
+
+</script>
+
     <!-- </div> -->
 <? /*footer*/ FooterAdd($html=['head'=>'Y']);	?>

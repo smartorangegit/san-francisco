@@ -166,6 +166,7 @@
         </div> -->
         <!--end result-box -->
         </div>
+		    <?/*copyring*/copyringAdd();?>
       </div>
 
 
@@ -383,4 +384,34 @@
         }
       </style>
     </div>
+    <style media="screen">
+    .param__text p, .param__text li{
+      line-height: 1.6;
+      margin: 10px 0;
+      }
+    .param__text li{
+      line-height: 1.6;
+      }
+    span.moreread{
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .moreread_text{
+      max-height: 0;
+      overflow: hidden;
+      transition: 0.3s;
+      -webkit-transition: .3s;
+    }
+    .moreread_text__opened{
+      max-height: 1500px;
+    }
+    </style>
+
+    <script type="text/javascript">
+    $('.moreread').click(function(){
+      $('.moreread_text').toggleClass('moreread_text__opened');
+    })
+
+
+    </script>
 <? /*footer*/ FooterAdd($html=['html'=>'<script src="/js/ion.rangeSlider.js"></script><script src="/js/range.js"></script>', 'head'=>'Y']);	?>

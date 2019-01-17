@@ -121,12 +121,12 @@ for($i=1; $i<4;$i++){  $n=0;
        </g>
 
        <g id="Слой_4">
-       <!--<a rel="nofollow" class="op_ajax <?=$SCRIPT[4]?>" xlink:href="/<?=$_POST['lang']?>plan1<?=$ur?>1/floor3/">
+       <a rel="nofollow" class="op_ajax <?=$SCRIPT[4]?>" xlink:href="/<?=$_POST['lang']?>plan1<?=$ur?>1/floor3/">
        <polygon
        class="st1"
        points="651.3,215.3 740.7,215.3 807,246.3 808.7,390.2 763.5,411 651.3,412.7    "
        id="polygon15" />
-       </a>-->
+       </a>
        </g>
 
        <g
@@ -224,6 +224,15 @@ for($i=1; $i<4;$i++){  $n=0;
 			.content_floor .position.content_text {
 				top: 290px;
 				width:100%;
+			}
+			.floor_control {
+				display: none;
+			}
+			.content.content_floor .position.content_text {
+				margin-left: 0;
+			}
+			.bottom_form_plan {
+				margin: 200px auto 0;
 			}
 		}
 	</style>

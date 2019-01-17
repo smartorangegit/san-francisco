@@ -44,7 +44,7 @@
               </div>
               <div class="about__info">
                 <p class="content_subname"><?=$mes['ab-mes6']?></p>
-                <p class="content_text">269</p>
+                <p class="content_text">355</p>
               </div>
             </div>
             <div class="about__item">
@@ -115,6 +115,7 @@
           <a href="/plan" class="button button_red"><?=$mes['menu21']?></a>
 
         </div>
+         <?/*copyring*/copyringAdd();?>
       </div>
     </div>
     <style media="screen">

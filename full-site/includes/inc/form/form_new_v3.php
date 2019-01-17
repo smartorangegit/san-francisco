@@ -18,9 +18,9 @@
            <div class="validation-error validation-error_required" style="display: none"><?=$mes['callback-mes15']?></div>
            <div class="validation-error validation-error_phone-format" style="display: none"><?=$mes['callback-mes16']?></div>
          </div>
-         <div class="content_subname">
+         <!-- <div class="content_subname">
            <?=$mes['callback-mes17']?>
-         </div>
+         </div> -->
          <div class="input_wrapper">
            <input type="text" id="datetimepicker_dark" name="when"/>
          </div>
@@ -28,7 +28,7 @@
            <input  name="metka" class="metka" type="hidden" value="San-francisco AB-test"/>
            <input  name="inn" class="userInn" type="hidden" value="San-francisco"/>
            <input  name="type" class="type" type="hidden" value="1"/>
-           <input type="submit" value="Відправити" class="contacts__tab-submit-btn">
+           <input type="submit" value="<?=$mes['callback-mes19']?>" class="contacts__tab-submit-btn">
        </form>
      </div>
 <style>
@@ -48,7 +48,7 @@
             data: str
         })
             .done(function (msg) {
-               
+
 				location.replace('/message/');
                 var allInputs = document.querySelectorAll('[type="text"], [type="tel"], [type="email"]');
                 allInputs.forEach(function (input) {
@@ -72,6 +72,7 @@
 
 $.datetimepicker.setLocale('ru');
 
+
 var logic1 = function( currentDateTime ){
 	if ( currentDateTime.getDate() == new Date().getDate() ){
 		this.setOptions({
@@ -87,7 +88,8 @@ var logic1 = function( currentDateTime ){
 
 $('#datetimepicker_dark').datetimepicker({
 	theme:'dark',
-  value: new Date(),
+  // value: 'trololo',
+  // value: new Date(),
 	minDate: new Date(),
 	maxTime: '20:00',
   yearStart: 2018,
@@ -97,6 +99,8 @@ $('#datetimepicker_dark').datetimepicker({
 	onShow: logic1
 
 });
+
+$('#datetimepicker_dark').val('Ми передзвонимо у зручний час');
 
 </script>
 <style media="screen">
@@ -156,7 +160,7 @@ $('#datetimepicker_dark').datetimepicker({
     border: 1px solid red;
     outline: none;
     margin-bottom: 16px;
-    text-indent: 60px;
+    text-indent: 12px;
     letter-spacing: 1px;
     -webkit-appearance: none;
 

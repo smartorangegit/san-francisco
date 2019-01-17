@@ -43,12 +43,47 @@ $result->close();
 <? /*head*/ HeadAdd($html=['head'=>'Y', 'html'=>'<link rel="stylesheet" href="/css/appart.css">
 <link rel="stylesheet" href="/css/flattype.css">']);	?>
 
+
     <div class="main_page clearfix">
            <?  /*Menu*/ MenuAdd();  ?>
 
       <div class="content content_floorplan content_commerc">
-        <div class="content_wrap clearfix">
-          <div class="content_name"><h1><?=$mes['commercial-h1']?></h1></div>
+<!-- код комерції -->
+<? $lang = '/'.$url_link_slashafter;
+if ($lang == '/ru/') {$lneg_url = 'ru';}else {$lneg_url = 'uk';}
+?>
+<div id="fs-commerce"></div>
+<script src = "https://hammerjs.github.io/dist/hammer.js?v=1.0.0"> </script>
+<script src = "https://commerce.flat.show/src/js/init.js"> </script>
+<script>
+var flatShowLang = '<?= $lneg_url ?>';
+var fsl = new FSLoader (
+[
+'https://commerce.flat.show/src/css/fsc.css'
+],
+[
+"https://commerce.flat.show/messages/<?= $lneg_url ?>.js",
+"https://commerce.flat.show/san-francisco/config.js",
+"https://commerce.flat.show/src/js/fsc.js",
+"https://commerce.flat.show/san-francisco/custom.js"
+], function () {
+calcViewPort ();
+});
+</script>
+
+
+<style>
+.desktop.show__floorplan-view #fsc-controls #floor-select--wrapper,
+.desktop.show__floorplan-view  .top-border {
+   display: none;
+   }
+   #fs-commerce * {
+    font-family: "StTransmission-300Light";
+}
+</style>
+<!-- конец код комерції -->
+      <div class="content_wrap clearfix">
+        <? /*  <div class="content_name"><h1><?=$mes['commercial-h1']?></h1></div>
           <div class="content_text">
             <?=$mes['com-mes11']?>
           </div>
@@ -82,7 +117,7 @@ $result->close();
                   <span class="name"><?=$mes['com-mes5']?></span>
                 </div>
                 </div>
-            </div> <!--main_data ends here-->
+            </div> <!--main_data ends here-->  */?>
 
             <!-- Form starts here -->
             <div class="commercial_botom">
@@ -91,7 +126,7 @@ $result->close();
                 <div class="content_text"><?=$mes['com-mes6']?></div>
               </div> -->
               <!-- <div class="commercial_form_wraper"> -->
-                <div class="commercial_form  horizontal__form">
+             <?  /*  <div class="commercial_form  horizontal__form">
                   <div class="content_name"><?=$mes['callback-mes1']?></div>
                   <div class="content_text"><?=$mes['com-mes8']?></div>
                   <form class="horizontal" action="" method="POST">
@@ -112,11 +147,84 @@ $result->close();
                       <input class="button" type="submit" name="" value="<?=$mes['callback-mes5']?>">
                     </div>
                   </form>
-                </div>
+                </div> */ ?>
+<!-- commercial_form -->
+<?/*
+<div class="overlay">
+</div>
+<div class="form" id="form_call_commercial" >
+    <img id="formclose" src="/img/close.svg" alt="close" width="40">
+    <div class="content_name"><?=$mes['callback-mes1']?></div>
+    <div class="content_text"><?=$mes['callback-mes2']?></div>
+    <div class="form_wrap">
+      <form id="form_main" >
+        <div class="input-box js-name-input">
+          <input class="input-box__field" type="text" name="name" value="" onkeyup="javascript:countme('form_call_commercial');" placeholder="<?=$mes['callback-mes3']?>" id="callbackName">
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+          <div class="input__error empty-input empty-input_hidden"><?=$mes['Данне поле обовязкове для заповнення']?></div>
+        </div>
+        <div class="input-box js-phone-input">
+          <input type="tel" class='inputtelmask input-box__field' onkeyup="javascript:countme('form_main');" name="tel" value="" placeholder="ТЕЛЕФОН" id="callbackTel">
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+          <div class="input__error invalid-number invalid-number_hidden"><?=$mes['Невірний формат номеру']?></div>
+        </div>
+
+        <div class="input-box js-message-input">
+          <textarea class="input-box__field" type="text" name="message" value="" placeholder="Повідомлення" id="callbackMessage"></textarea>
+          <span class="clear-input">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="16" height="16"><path d="M37.304 11.282l1.414 1.414-26.022 26.02-1.414-1.413z" fill="#ef4136"/><path d="M12.696 11.282l26.022 26.02-1.414 1.415-26.022-26.02z" fill="#f9322e"/></svg>
+          </span>
+        </div>
+          <input  name="webad" class="webad" type="hidden" value="<?=$webAd;?>"/>
+          <input  name="metka" class="metka" type="hidden" value="San-francisco with text"/>
+          <input  name="inn" class="userInn" type="hidden" value="San-francisco"/>
+        <div class="input">
+          <input class="button js-submit-button js-submit-button_disabled" type="submit" name="" value="<?=$mes['callback-mes5']?>">
+        </div>
+      </form>
+    </div>
+</div>
+
+<div class="form-ok">
+    <img id="formclose-ok" src="/img/close.svg" alt="close" width="40">
+    <div class="content_text"><?=$mes['callback-mes8']?></div>
+</div>
+
+
+
+<style>
+.news_image_container img {
+    max-height: 470px;
+}
+</style> */ ?>
+<!-- end commercial_form -->
               <!-- </div> -->
             </div> <!-- Form ends here -->
-
+<div class="param__text">
+  <?=$mes['commercial-seo']?>
             <style media="screen">
+            .param__text h1{
+              font-size: 28px;
+            }
+            .param__text h2{
+              font-size: 24px;
+            }
+
+            .param__text{
+              font-family: "StTransmission-300Light";
+              line-height: 1.6;
+            }
+            .param__text p, .param__text li{
+              line-height: 1.6;
+              margin: 10px 0;
+              }
+            .param__text li{
+              line-height: 1.6;
+              }
               .horizontal__form{
                 width: 100%;
               }
@@ -140,9 +248,18 @@ $result->close();
                 width: 100%;
 
               }
+			  .content_floorplan .content_wrap {
+				  height:auto;
+			  }
+			  @media only screen and (max-width: 768px){
+				.bottom_form_plan {
+					display:none;
+				}
+      }
             </style>
 
-          </div> <!-- Floor choise ends here -->
+          </div>
+     <!-- Floor choise ends here -->
 
 		<script>
     // document.getElementById("data").style = "display:none";
