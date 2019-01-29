@@ -44,7 +44,7 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 	$result = $db->prepare("SELECT name_news_ua,name_news_ru,name_news_en FROM news WHERE news_code='$id_url'");
 	$result->execute();
 	$result->bind_result($rez['ua'],$rez['ru'],$rez['en']);  $rel='';
-	 while ($result->fetch()) {
+/* 	 while ($result->fetch()) {
 		 if(!empty($rez['ua'])){	$t1='uk';$t2='';
 			 $rel.='<link rel="alternate" hreflang="'.$t1.'" href="'. servername().'/'.$t2.'news/'.$rez['urls'].'/" />';
 			}
@@ -56,10 +56,9 @@ if($_POST['lang']==''){$lg='ua';}else{$lg=substr($_POST['lang'], 0,2);}
 		 }
 
 
-		}
-
-define('BreadcrumbsNews', $ReaNews['name_news']);
-
+		} */
+	
+	define('BreadcrumbsNews', $ReaNews['name_news']);
 		?>
 
 <? /*head*/ HeadAdd($html=['title'=>$ReaNews['title'], 'description'=>$ReaNews['description'],
@@ -67,8 +66,8 @@ define('BreadcrumbsNews', $ReaNews['name_news']);
   'mata_img'=>$ReaNews['img_news'],
  'html'=>'
     <link rel="stylesheet" href="/css/news.css">
-    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">
-	<link rel="canonical" href="'.servername().$_SERVER['REQUEST_URI'].'"/>'.$rel]);	?>
+    <link rel="stylesheet" type="text/css" href="/css/jquery.fancybox.css">'
+	]);	?>
     <div class="main_page clearfix">
        <?  /*Menu*/ MenuAdd();  ?>
 
@@ -106,11 +105,18 @@ define('BreadcrumbsNews', $ReaNews['name_news']);
     					<a class="button"  href="<?UrlAdd('news')?>"><img src="/img/arrow_l.png" alt="arrow"><?=$mes['new-mes3']?></a>
     				</div>
     			</div>
-
+<style>
+.div_adapt_img {
+  width: 100%;
+  /* max-width: 960px; */
+  margin: 0 auto;
+}
+.adapt_img {
+	width: 100%;
+  height: auto;
+}
+</style>
         </div>
-				  <?/*copyring*/copyringAdd();?>
-
       </div>
-
     </div>
-<? /*footer*/ FooterAdd(['html'=>'<script src="/js/jquery.fancybox.js"></script>', 'head'=>'Y']);	?>
+<? /*footer*/ FooterAdd($html=['html'=>'<script src="/js/jquery.fancybox.js"></script>', 'head'=>'Y']);	?>
