@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Gotham';
+    src: url('Gotham-Ultra.eot');
+    src: url('Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('Gotham-Ultra.woff2') format('woff2'),
+        url('Gotham-Ultra.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+

@@ -1,0 +1,429 @@
+/* PRELOADER START */
+@font-face {
+    font-family: 'Gotham Book';
+    src: url('fonts/Gotham-Book.eot');
+    src: url('fonts/Gotham-Book.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Book.woff2') format('woff2'),
+        url('fonts/Gotham-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('fonts/Gotham-Ultra.eot');
+    src: url('fonts/Gotham-Ultra.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Gotham-Ultra.woff2') format('woff2'),
+        url('fonts/Gotham-Ultra.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.preloader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10000;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('img/preloader_sanfrancisco_bg.jpg');
+    background-repeat: no-repeat;
+}
+
+.preloader-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.preloader__saga-container {
+    min-width: 320px;
+}
+
+.preloader__saga-logo {
+    width: 250px;
+}
+
+.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    stroke: #fff;
+    width: 75px;
+    height: 75px;  
+}
+
+.precent-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Circle start */
+@keyframes svg-circle {
+    from { opacity: 0; transform: translate(-10%, 10%); }
+    to { opacity: 1; transform: translate(0, 0); }
+}
+
+.svg-circle {
+    stroke: #ffffff;
+    fill: #fff;
+    stroke-linecap: round;
+    animation: svg-circle 2s;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: both;
+}
+/* Circle end */
+
+/* Letters start */
+.svg-letters {
+    fill: #405174;
+}
+@keyframes svg-letters_upper {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.svg-letters_upper path{
+    opacity: 0;
+    animation-name: svg-letters_upper;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    z-index: 2;
+    fill: #405174;
+    stroke: #405174;
+}
+
+.svg-Saga {animation-delay: 1.3s;}
+.svg-sAga {animation-delay: 1.5s;}
+.svg-saGa {animation-delay: 1.7s;}
+.svg-sagA {animation-delay: 1.9s;}
+
+.svg-letters_lower {
+    opacity: 0;
+    animation-name: svg-letters_upper;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-delay: 2.5s;
+    fill: #405174;
+    stroke: #405174;
+}
+/* Letters end */
+
+/* Loading circle start */
+@keyframes svg-loading-cirlce {
+    from {stroke-dashoffset: 236;}
+    to {stroke-dashoffset: 0;}
+}
+
+.svg-loading-circle {
+    stroke:#b5b5b5;
+    stroke-width: 2px;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 236;
+    stroke-dashoffset: 236;
+    animation-name: svg-loading-cirlce;
+    animation-fill-mode: forwards;
+    animation-duration: 5s;
+}
+
+.svg-loading-circle__text {
+    font-family: sans-serif;
+    font-size: 16px;
+    fill: #b5b5b5;
+}
+/* Loading circle end */
+
+/* Outer lines start */
+@keyframes svg-outer-lines {
+    0% {stroke-dashoffset: 2684;}
+    50% {opacity:1;}
+    100% {stroke-dashoffset: 0; opacity: 0;}
+}
+.svg-outer-lines path {
+    stroke: #ffffff;
+    stroke-width: 2;
+    stroke-dasharray: 2684;
+    stroke-dashoffset: 2684;
+    animation-name: svg-outer-lines;
+    animation-duration: 0.7s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+path.svg-outer_s {animation-delay: 1.6s;}
+path.svg-outer_a_1_3 {animation-delay: 1.7s;}
+path.svg-outer_a_2 {animation-delay: 1.8s;}
+path.svg-outer_a_1_1 {animation-delay: 1.9s;}
+path.svg-outer_g {animation-delay: 2s;}
+path.svg-outer_a_1_2 {animation-delay: 2.1s;}
+/* Outer lines end */
+
+/* Inner lines start */
+@keyframes svg-inner-lines {
+    from {stroke-dashoffset: 185;}
+    to {stroke-dashoffset: 0;}
+}
+
+.svg-inner-lines path {
+    /*stroke:#405174;*/
+    stroke:#405174;
+    stroke-width: 2;
+    stroke-dasharray: 185;
+    stroke-dashoffset: 185;
+    animation-name: svg-inner-lines;
+    animation-duration: 1s;
+    animation-delay: 1.7s;
+    animation-fill-mode: forwards;
+}
+
+path.svg-inner_s {animation-delay: 1.8s;}
+path.svg-inner_a_1_3 {animation-delay: 1.9s;}
+path.svg-inner_a_2 {animation-delay: 2s;}
+path.svg-inner_a_1_1 {animation-delay: 2.1s;}
+path.svg-inner_g {animation-delay: 2.2s;}
+path.svg-inner_a_1_2 {animation-delay: 2.3s;}
+/* Inner lines end */
+
+/* Svg remove content start */
+
+@keyframes removeCircle {
+    15% {transform: translateY(20px);opacity:1}
+    100%{transform: translateY(-400px);opacity:0;}
+}
+
+.remove-svg .svg-circle {
+    animation-name: removeCircle;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+/* .remove-svg .svg-letters_lower {
+    animation-name: removeCircle;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+} */
+.remove-svg .svg-letters_upper {
+    animation-name: removeCircle;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+.remove-svg .svg-inner-lines {
+    animation-name: removeCircle;
+    animation-duration: 1s;
+    animation-delay: 0.25s;
+    animation-fill-mode: forwards;
+}
+.remove-svg .svg-loading-circle-container {
+    animation-name: removeCircle;
+    animation-duration: 1s;
+    animation-delay: .2s;
+    animation-fill-mode: forwards;
+}
+
+
+.remove-svg.preloader-container {
+    opacity: 0;
+    transform: translateY(-150%);
+}
+
+/* Svg remove content end */
+/* Saga logo ends here */
+
+/* quote start */
+.preloader__quote {
+    fill: none;
+    stroke: #ffffff;;
+    stroke-width:2;
+    width: 60px;
+}
+
+.preloader__quote-el {
+    stroke-dasharray: 153.81198120117188;
+    stroke-dashoffset: 153.81198120117188;
+    animation-name: preloaderquote;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes preloaderquote {
+    0% {
+        stroke-dashoffset: 153.81198120117188;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+/* quote end */
+
+/* message start */
+.preloader__wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.preloader__right {
+    margin-top: 200px;
+    margin-right: 40px;
+}
+.preloader__left {
+    margin-top: 200px;
+}
+.preloader__message {
+    position: relative;
+}
+
+.preloader__message-quote {
+    position: absolute;
+    top: 10px;
+    left: -70px;
+}
+
+.preloader__word {
+    font-family: 'Gotham', Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 84px;
+    font-weight: 900;
+    color: #ffffff;
+    margin: 0;
+    opacity: 0;
+    animation-name: preloaderMessage;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transform: translateX(60px);
+    text-shadow: 0 4px 6px rgba(5, 6, 7, 0.6);
+}
+
+.preloader__word_2 {
+    animation-delay: .5s;
+}
+
+@keyframes preloaderMessage {
+    0% {opacity: 0; transform: translateX(60px)}
+    100% {opacity: 1; transform: translateX(0px)}
+}
+/* message end */
+
+/* chicago logo start */
+.preloader__sanfrancisco-logo {
+    max-width: 300px;
+    width: 100%;
+    fill: #ffffff;
+    margin-top: 40px;
+    opacity: 0;
+    transform: translate(40px, 40px);
+    animation-name: chicagoLogo;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow( 5px 19px 7px rgba(40, 39, 39, 0.7)); 
+            filter: drop-shadow( 5px 19px 7px rgba(40, 39, 39, 0.7));
+}
+@keyframes chicagoLogo {
+    0% {opacity:0; transform: translate(40px, 40px);}
+    100% {opacity: 1; transform: none;}
+}
+/* chicago logo end */
+
+/* preloader motto start */
+.preloader__motto {
+    font-family: 'Gotham Book', Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 36px;
+    max-width: 150px;
+    padding-left: 55px;
+    margin-bottom: 45px;
+    opacity: 0;
+    text-shadow: 0 4px 6px rgba(5, 6, 7, 0.6);
+    animation-name: preloaderMotto;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes preloaderMotto {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+/* prelaoder motto end */
+
+@media screen and (max-width: 1900px) {
+    .preloader__word {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .preloader__right {
+        margin-right: 20px;
+    }
+    .preloader__word {
+        font-size: 50px;
+    }
+    .preloader__message-quote {
+        top: -15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .preloader-container {
+        background-position: left
+    }
+    
+    .preloader__right {
+        margin-top: 40px;
+        margin-left: 0;
+    }
+    .preloader__left {
+        margin-top: 0;
+    }
+    .preloader__motto {
+        font-size: 26px;
+    }
+    .preloader__message-quote {
+        left: 0px;
+        top: -15px;
+    }
+    .preloader__quote {
+        width: 40px;
+    }
+    .preloader__wrapper {
+        flex-direction: column-reverse;
+        min-height: 700px;
+    }
+    .preloader__message {
+        padding-left: 40px;
+    }
+}
+
+@media screen and (max-width: 488px) {
+    .preloader__saga-container {
+        padding-top: 40px;
+    }
+    .preloader__word {
+        font-size: 40px;
+    }
+    .preloader__newyork-logo {
+        margin: 10px auto;
+        display: block;
+    }
+    
+}
+
+/* PRELOADER END */

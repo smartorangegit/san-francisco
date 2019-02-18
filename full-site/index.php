@@ -144,7 +144,12 @@ if($_POST['lang']){$langs=str_replace("/", "", $_POST['lang']);}else{$langs=$len
     $result->execute();
 	$result->store_result();	$myrow=$result->num_rows;
 
-	if($myrow>0){ 	$file = "news_list/index.php"; $_GET['URLS']=$news;
+	if($myrow>0){ 	
+	
+	$file = "news_list/index.php"; 
+	$_GET['URLS']=$news;
+	$SETPAGE = 'news_list';
+		
 	//$result = $db->prepare("SELECT news_code FROM news WHERE news_code='".$news."'  ");
     $result->execute();
 	$result->bind_result($s['urls']);

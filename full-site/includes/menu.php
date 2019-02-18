@@ -6,7 +6,7 @@ global $eng_link;
 global $ru_swicth_link;
 global $ua_swicth_link;
 ?>
-<?include('preloader_saga.php');?>
+<?include('preloader_vibori.php');?>
  <!-- начало меню -->
 <div class="menu">
   <div class="menu__inner">
@@ -52,7 +52,7 @@ global $ua_swicth_link;
             <li><a href="<?UrlAdd('plan/trehkomnatnaya')?>" title="<?=$mes['menu16']?>"><?=$mes['menu16']?></a></li>
             <li><a href="<?UrlAdd('plan/chetirehkomnatnaya')?>" title="<?=$mes['menu17']?>"><?=$mes['menu17']?></a></li>
 			<li><a href="<?UrlAdd('service-department')?>" title="<?=$mes['service-menu']?>"><?=$mes['service-menu']?></a></li>
-            <!-- <li><a href="<?UrlAdd('usloviya-priobreteniya-rassrochka')?>" title="<?=$mes['menu19']?>"><?=$mes['menu19']?></a></li> -->
+			<!-- <li><a href="<?UrlAdd('usloviya-priobreteniya-rassrochka')?>" title="<?=$mes['menu19']?>"><?=$mes['menu19']?></a></li> -->
           </ul>
         </li>
         <li><a href="<?UrlAdd('commercial')?>" title="<?=$mes['menu18']?>"><?=$mes['menu18']?></a></li>
@@ -72,9 +72,9 @@ global $ua_swicth_link;
       </ul>
       <div class="line"></div>
       <div class="mobile_menu"><img src="/img/pin/menu.svg" alt="menu"><?=$mes['menu-mes2']?></div>
-      <a class="wowoo-link" href="#"><div class="tel">+38 (044) 498-05-00</div></a>
+      <a class="wowoo-link" href="#"><div class="tel <? if($_SERVER["REQUEST_URI"] == '/commercial/' || $_SERVER["REQUEST_URI"] == '/ru/commercial/'){echo'ringo-commerce';}?>">+38 (044) 498-05-00</div></a>
       <!-- <div class="tel">+38 (044) 223-59-89</div> -->
-      <a id="callform" class="button callback js-callform-both" href="#"><?=$mes['menu-mes3']?></a>
+      <a id="for_ab_testing_google" class="button callback js-callform-both" href="#"><?=$mes['menu-mes3']?></a>
       <div class="ten_box_item">
         <a class="social_links" href="https://www.facebook.com/sanfranciscocreativehouse/" target="_blank">
           <svg enable-background="new 0 0 512 512" height="16" viewBox="0 0 512 512" width="16" fill="#ffffff" xmlns="http://www.w3.org/2000/svg"><path d="m296.296 512h-95.936v-256h-64v-88.225l64-.029-.104-51.976c0-71.976 19.517-115.77 104.3-115.77h70.588v88.242h-44.115c-33.016 0-34.604 12.328-34.604 35.342l-.131 44.162h79.346l-9.354 88.225-69.926.029z" fill="#fff"/></svg>
@@ -84,7 +84,7 @@ global $ua_swicth_link;
         </a>
       </div>
       <div class="menu_river">
-        <a href="http://saga-development.com.ua/">
+        <a href="http://saga-development.com.ua/" rel="nofollow">
           <img src="/img/Saga_white.svg" alt="Saga">
         </a>
       </div>
@@ -92,7 +92,10 @@ global $ua_swicth_link;
   </div>
   <!-- Плашка с акциями-->
   <div class="promotions_btn">
-    <a href="<?UrlAdd('news')?>kredit-sho-nadihae/" class="promotions_btn__link"><?=$mes['menu20']?></a>
+    <a href="<?UrlAdd('service-department')?>" class="promotions_btn__link"><?=$mes['menu20']?></a>
+  </div>
+  <div class="promotions_btn reklama">
+    <a href="<?UrlAdd('news')?>individual-ni-umovi-rozstrochki-dlya-velikih-simej/" class="promotions_btn__link"><?=$mes['menu25']?></a>
   </div>
   <style media="screen">
     .social_links{
@@ -105,8 +108,10 @@ global $ua_swicth_link;
       height: 20px;
       display: inline-block;
     }
+	.reklama {
+        top: calc( 50% + 110px );
+	}
   </style>
-
  <!-- конец меню -->
  <script src="/js/alllibrary.js"></script>
  <script type="text/javascript">
